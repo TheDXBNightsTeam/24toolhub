@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A powerful online tool to find and replace text in bulk. Supports case-sensitive, whole word, and regular expression (regex) searches for advanced text manipulation.">
+  <meta name="keywords" content="find and replace, text replace, regex find replace, bulk text editor, online search replace">
+  <title>Online Find and Replace Tool (with Regex) | 24ToolHub</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../css/styles.css">
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-branding">
+        <a href="../index.html" class="logo-link">
+        <img src="../images/logo.png" alt="24ToolHub Logo" class="logo">
+        <h1 class="site-title">24ToolHub</h1>
+      </a>
+      <div class="header-actions">
+        <button id="langSwitcher" class="lang-switcher">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  <main class="main-content">
+    <div class="tool-container">
+      <div class="tool-header">
+        <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+        <h1 class="tool-title" data-en="Find and Replace" data-ar="البحث والاستبدال">Find and Replace</h1>
+        <p class="tool-description" data-en="Search and replace text with advanced options including regex support" data-ar="ابحث واستبدل النص مع خيارات متقدمة تشمل دعم regex">Search and replace text with advanced options including regex support</p>
+      </div>
+
+      <div class="tool-interface">
+        <div class="input-group">
+          <label class="input-label" data-en="Enter your text:" data-ar="أدخل النص:">Enter your text:</label>
+          <textarea id="inputText" class="input-textarea" placeholder="Type or paste your text here..." data-en-placeholder="Type or paste your text here..." data-ar-placeholder="اكتب أو الصق النص هنا..." rows="10"></textarea>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label class="input-label" data-en="Find:" data-ar="ابحث عن:">Find:</label>
+            <input type="text" id="findText" class="input-field" placeholder="Text to find" data-en-placeholder="Text to find" data-ar-placeholder="النص المطلوب البحث عنه">
+          </div>
+          <div class="input-group">
+            <label class="input-label" data-en="Replace with:" data-ar="استبدل بـ:">Replace with:</label>
+            <input type="text" id="replaceText" class="input-field" placeholder="Replacement text" data-en-placeholder="Replacement text" data-ar-placeholder="النص البديل">
+          </div>
+        </div>
+
+        <div class="options-group">
+          <label class="option-label">
+            <input type="checkbox" id="caseSensitive"> <span data-en="Case sensitive" data-ar="حساس للأحرف الكبيرة والصغيرة">Case sensitive</span>
+          </label>
+          <label class="option-label">
+            <input type="checkbox" id="wholeWord"> <span data-en="Whole word only" data-ar="كلمة كاملة فقط">Whole word only</span>
+          </label>
+          <label class="option-label">
+            <input type="checkbox" id="useRegex"> <span data-en="Use regex" data-ar="استخدم regex">Use regex</span>
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button onclick="findAndReplace()" class="btn btn-primary" data-en="Replace All" data-ar="استبدل الكل">Replace All</button>
+          <button onclick="highlightMatches()" class="btn btn-secondary" data-en="Find Only" data-ar="بحث فقط">Find Only</button>
+        </div>
+
+        <div class="stats-display mt-2">
+          <span data-en="Matches found:" data-ar="تم العثور على:">Matches found: <strong id="matchCount">0</strong></span>
+          <span data-en="Replacements made:" data-ar="تم الاستبدال:">Replacements made: <strong id="replaceCount">0</strong></span>
+        </div>
+
+        <div class="input-group mt-2">
+          <label class="input-label" data-en="Result:" data-ar="النتيجة:">Result:</label>
+          <textarea id="outputText" class="input-textarea" readonly rows="10"></textarea>
+        </div>
+
+        <div class="button-group">
+          <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          <button onclick="copyResult()" class="btn btn-primary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+        </div>
+      </div>
+
+      <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+      <div class="seo-content">
+        <div class="seo-section">
+          <h2>Find and Replace Text Online</h2>
+          <p>Our free find and replace tool makes it easy to search for specific text and replace it with new text instantly. Whether you need to update multiple instances of a word, fix typos throughout a document, or perform complex text transformations using regular expressions, this powerful tool handles it all in your browser with complete privacy.</p>
+          
+          <h3>Key Features</h3>
+          <ul>
+            <li><strong>Bulk Replace:</strong> Replace all occurrences at once with a single click</li>
+            <li><strong>Case Sensitive Search:</strong> Choose whether to match exact case or ignore case differences</li>
+            <li><strong>Whole Word Matching:</strong> Replace only complete words, not partial matches</li>
+            <li><strong>Regex Support:</strong> Use powerful regular expressions for advanced pattern matching</li>
+            <li><strong>Match Counter:</strong> See how many matches were found and replaced</li>
+            <li><strong>Preview Mode:</strong> Find and highlight matches before replacing</li>
+          </ul>
+
+          <h3>How to Use Find and Replace</h3>
+          <ol>
+            <li>Paste your text into the input field</li>
+            <li>Enter the text you want to find</li>
+            <li>Enter the replacement text</li>
+            <li>Select options (case sensitive, whole word, regex)</li>
+            <li>Click "Replace All" to replace all matches or "Find Only" to preview</li>
+            <li>Copy the result to use in your project</li>
+          </ol>
+
+          <h3>Common Use Cases</h3>
+          <p><strong>Content Editing:</strong> Quickly update product names, company names, or terminology throughout documents.</p>
+          <p><strong>Code Refactoring:</strong> Rename variables, functions, or classes across code files.</p>
+          <p><strong>Data Cleaning:</strong> Standardize formats, fix typos, or normalize data in CSV files or databases.</p>
+          <p><strong>URL Updates:</strong> Change domain names or update links in bulk.</p>
+          <p><strong>Translation:</strong> Replace terms with their translated equivalents.</p>
+
+          <h3>Regular Expression Examples</h3>
+          <p><strong>Find emails:</strong> <code>[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}</code></p>
+          <p><strong>Find phone numbers:</strong> <code>\d{3}-\d{3}-\d{4}</code></p>
+          <p><strong>Find URLs:</strong> <code>https?://[^\s]+</code></p>
+          <p><strong>Find dates (MM/DD/YYYY):</strong> <code>\d{2}/\d{2}/\d{4}</code></p>
+
+          <h3>Tips for Effective Find and Replace</h3>
+          <ul>
+            <li>Use "Find Only" first to preview matches before replacing</li>
+            <li>Enable "Whole word only" to avoid partial matches (e.g., "cat" won't match "category")</li>
+            <li>Test regex patterns on small samples before applying to large documents</li>
+            <li>Keep a backup of original text before making bulk replacements</li>
+            <li>Use case-sensitive mode when working with code or technical content</li>
+          </ul>
+
+          <div class="faq-section">
+              <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+              <div class="faq-item">
+                  <details>
+                      <summary data-en="Can I undo a replacement?" data-ar="هل يمكنني التراجع عن الاستبدال؟">Can I undo a replacement?</summary>
+                      <p data-en="This tool does not have a dedicated undo button. However, your original text remains in the top input box until you clear it, so you can easily start over if needed." data-ar="لا تحتوي هذه الأداة على زر تراجع مخصص. ومع ذلك، يظل النص الأصلي في مربع الإدخال العلوي حتى تقوم بمسحه، لذا يمكنك البدء من جديد بسهولة إذا لزم الأمر."></p>
+                  </details>
+              </div>
+              <div class="faq-item">
+                  <details>
+                      <summary data-en="How do I use regex capture groups in the replacement?" data-ar="كيف أستخدم مجموعات الالتقاط (capture groups) في الاستبدال؟">How do I use regex capture groups in the replacement?</summary>
+                      <p data-en="When using regex, you can reference captured groups from your 'Find' pattern in the 'Replace with' field using the dollar sign syntax (e.g., $1, $2). For example, to swap two words, you could find `(word1) (word2)` and replace it with `$2 $1`." data-ar="عند استخدام regex، يمكنك الإشارة إلى المجموعات الملتقطة من نمط 'البحث' في حقل 'الاستبدال بـ' باستخدام صيغة علامة الدولار (على سبيل المثال، $1، $2). على سبيل المثال، لتبديل كلمتين، يمكنك البحث عن `(word1) (word2)` واستبدالها بـ `$2 $1`."></p>
+                  </details>
+              </div>
+          </div>
+
+          <!-- Related Tools Section -->
+          <div class="tools-resources">
+              <h3 data-en="Related Text Tools" data-ar="أدوات النصوص ذات الصلة">Related Text Tools:</h3>
+              
+              <div class="resources-grid">
+                  <div class="resource-card">
+                      <h4 data-en="Text Analysis Tools" data-ar="أدوات تحليل النصوص">Text Analysis Tools</h4>
+                      <p data-en="Other text counting and analysis tools on our platform" data-ar="أدوات عد وتحليل النصوص الأخرى على منصتنا"></p>
+                      <div class="internal-links">
+                          <a href="word-counter.html" class="resource-link" data-en="Word Counter" data-ar="عداد الكلمات">Word Counter</a>
+                          <a href="character-counter.html" class="resource-link" data-en="Character Counter" data-ar="عداد الأحرف">Character Counter</a>
+                          <a href="line-counter.html" class="resource-link" data-en="Line Counter" data-ar="عداد الأسطر">Line Counter</a>
+                      </div>
+                  </div>
+                  
+                  <div class="resource-card">
+                      <h4 data-en="Text Processing Tools" data-ar="أدوات معالجة النصوص">Text Processing Tools</h4>
+                      <p data-en="More tools for text manipulation and formatting" data-ar="المزيد من أدوات معالجة وتنسيق النصوص"></p>
+                      <div class="internal-links">
+                          <a href="text-case-converter.html" class="resource-link" data-en="Text Case Converter" data-ar="محول حالة النص">Text Case Converter</a>
+                          <a href="string-reverser.html" class="resource-link" data-en="String Reverser" data-ar="عكس النص">String Reverser</a>
+                          <a href="text-splitter.html" class="resource-link" data-en="Text Splitter" data-ar="مقسم النص">Text Splitter</a>
+                      </div>
+                  </div>
+                  
+                  <div class="resource-card">
+                      <h4 data-en="Content Creation Tools" data-ar="أدوات إنشاء المحتوى">Content Creation Tools</h4>
+                      <p data-en="Tools for content creation and management" data-ar="أدوات إنشاء وإدارة المحتوى"></p>
+                      <div class="internal-links">
+                          <a href="dummy-text-generator.html" class="resource-link" data-en="Dummy Text Generator" data-ar="مولد النص المؤقت">Dummy Text Generator</a>
+                          <a href="slug-generator.html" class="resource-link" data-en="Slug Generator" data-ar="مولد الرابط">Slug Generator</a>
+                          <a href="markdown-to-html.html" class="resource-link" data-en="Markdown to HTML" data-ar="Markdown إلى HTML">Markdown to HTML</a>
+                      </div>
+                  </div>
+                  
+                  <div class="resource-card">
+                      <h4 data-en="Data Processing Tools" data-ar="أدوات معالجة البيانات">Data Processing Tools</h4>
+                      <p data-en="Tools for data cleaning and processing" data-ar="أدوات تنظيف ومعالجة البيانات"></p>
+                      <div class="internal-links">
+                          <a href="csv-to-json.html" class="resource-link" data-en="CSV to JSON" data-ar="CSV إلى JSON">CSV to JSON</a>
+                          <a href="remove-duplicates.html" class="resource-link" data-en="Remove Duplicates" data-ar="إزالة التكرارات">Remove Duplicates</a>
+                          <a href="trim-whitespace.html" class="resource-link" data-en="Trim Whitespace" data-ar="تقليم المسافات">Trim Whitespace</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo">
+        <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+  <script src="../js/find-replace.js"></script>
+</body>
+</html>

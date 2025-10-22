@@ -1,0 +1,110 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    Sentence Counter Analysis
+  </text>
+  
+  <!-- Input text example -->
+  <rect x="50" y="60" width="500" height="60" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    "Hello world. How are you today? I hope you're doing well!"
+  </text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    Sample text for analysis
+  </text>
+  
+  <!-- Statistics breakdown -->
+  <rect x="50" y="140" width="500" height="200" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    Text Analysis Results
+  </text>
+  
+  <!-- Sentences -->
+  <rect x="70" y="180" width="100" height="60" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="120" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    Sentences
+  </text>
+  <text x="120" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    3
+  </text>
+  <text x="120" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1e40af">
+    📝
+  </text>
+  
+  <!-- Words -->
+  <rect x="180" y="180" width="100" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="230" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534">
+    Words
+  </text>
+  <text x="230" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#166534">
+    11
+  </text>
+  <text x="230" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#166534">
+    📖
+  </text>
+  
+  <!-- Characters -->
+  <rect x="290" y="180" width="100" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="340" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e">
+    Characters
+  </text>
+  <text x="340" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+    58
+  </text>
+  <text x="340" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#92400e">
+    🔤
+  </text>
+  
+  <!-- Paragraphs -->
+  <rect x="400" y="180" width="100" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="450" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4338ca">
+    Paragraphs
+  </text>
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4338ca">
+    1
+  </text>
+  <text x="450" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4338ca">
+    📄
+  </text>
+  
+  <!-- Reading time -->
+  <rect x="70" y="250" width="100" height="60" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="120" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#be185d">
+    Reading Time
+  </text>
+  <text x="120" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#be185d">
+    0.1 min
+  </text>
+  <text x="120" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#be185d">
+    ⏱️
+  </text>
+  
+  <!-- Averages -->
+  <rect x="180" y="250" width="100" height="60" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="230" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+    Avg Words/Sentence
+  </text>
+  <text x="230" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+    3.7
+  </text>
+  <text x="230" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#047857">
+    📊
+  </text>
+  
+  <!-- Use cases -->
+  <rect x="50" y="360" width="500" height="30" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">
+    Perfect for: Content Writing • Academic Work • Social Media • SEO Analysis • Editing & Proofreading
+  </text>
+  
+  <!-- Text breakdown visualization -->
+  <text x="300" y="320" text-anchor="middle" font-family="Monaco, monospace" font-size="10" fill="#64748b">
+    "Hello world. | How are you today? | I hope you're doing well!"
+  </text>
+  <text x="300" y="335" text-anchor="middle" font-family="Monaco, monospace" font-size="8" fill="#64748b">
+    Sentence 1    |    Sentence 2      |    Sentence 3
+  </text>
+</svg>

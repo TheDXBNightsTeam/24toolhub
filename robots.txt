@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Priority crawling for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap location
+Sitemap: https://24toolhub.com/sitemap.xml
+
+# Favicon
+Favicon: https://24toolhub.com/favicon.ico

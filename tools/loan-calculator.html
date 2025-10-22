@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Estimate your loan payments with our free online calculator. See how loan amount, interest rate, and term affect your monthly payments and total interest paid. Ideal for mortgages, auto, and personal loans.">
+    <meta name="keywords" content="loan calculator, mortgage calculator, loan payment calculator, amortization calculator, interest rate, finance tool">
+    <title>Free Loan Calculator | Estimate Your Monthly Payments | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+                <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Loan Calculator" data-ar="حاسبة القروض">Loan Calculator</h1>
+          <p class="tool-description" data-en="Calculate loan payments and total interest" data-ar="احسب أقساط القروض وإجمالي الفوائد">Calculate loan payments and total interest</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Loan Amount ($):" data-ar="مبلغ القرض ($):">Loan Amount ($):</label>
+            <input type="number" id="loanAmount" class="input-field" placeholder="Enter loan amount" data-en-placeholder="Enter loan amount" data-ar-placeholder="أدخل مبلغ القرض" value="100000" min="0" step="0.01" />
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Annual Interest Rate (%):" data-ar="معدل الفائدة السنوي (%):">Annual Interest Rate (%):</label>
+            <input type="number" id="interestRate" class="input-field" placeholder="Enter interest rate" data-en-placeholder="Enter interest rate" data-ar-placeholder="أدخل معدل الفائدة" value="5.5" min="0" max="100" step="0.01" />
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Loan Term:" data-ar="مدة القرض:">Loan Term:</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="number" id="loanTerm" class="input-field" placeholder="Enter term" data-en-placeholder="Enter term" data-ar-placeholder="أدخل المدة" value="30" min="1" style="flex: 1;" />
+              <select id="termUnit" class="input-field" style="flex: 1;">
+                <option value="years" selected>Years</option>
+                <option value="months">Months</option>
+              </select>
+                    </div>
+                    </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Payment Frequency:" data-ar="تكرار الدفع:">Payment Frequency:</label>
+            <select id="paymentFrequency" class="input-field">
+              <option value="monthly" selected>Monthly</option>
+              <option value="biweekly">Bi-weekly</option>
+              <option value="weekly">Weekly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annually">Annually</option>
+            </select>
+                    </div>
+
+          <div class="button-group">
+            <button onclick="calculateLoan()" class="btn btn-primary" data-en="Calculate Loan" data-ar="احسب القرض">Calculate Loan</button>
+            <button onclick="clearLoan()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyResults()" class="btn btn-secondary" data-en="Copy Results" data-ar="نسخ النتائج">Copy Results</button>
+                </div>
+
+          <div id="loanResults" class="loan-results" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Loan Calculation Results:" data-ar="نتائج حساب القرض:">Loan Calculation Results:</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--accent-primary, #3b82f6);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--accent-primary, #3b82f6);" id="monthlyPayment">$0</div>
+                <div style="color: var(--text-secondary, #888);">Monthly Payment</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--success, #10b981);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--success, #10b981);" id="totalPayments">$0</div>
+                <div style="color: var(--text-secondary, #888);">Total Payments</div>
+                    </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--warning, #f59e0b);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--warning, #f59e0b);" id="totalInterest">$0</div>
+                <div style="color: var(--text-secondary, #888);">Total Interest</div>
+                    </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--error, #ef4444);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--error, #ef4444);" id="payoffDate">-</div>
+                <div style="color: var(--text-secondary, #888);">Payoff Date</div>
+                    </div>
+                </div>
+
+            <div style="margin-top: 1rem; background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+              <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">Additional Information:</h4>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; font-size: 0.875rem;">
+                <div><strong>Number of Payments:</strong> <span id="numberOfPayments">0</span></div>
+                <div><strong>Interest Rate (Monthly):</strong> <span id="monthlyRate">0%</span></div>
+                <div><strong>Principal Amount:</strong> <span id="principalAmount">$0</span></div>
+                <div><strong>Interest to Principal Ratio:</strong> <span id="interestRatio">0%</span></div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <div class="content-header">
+                <h2 data-en="What is a Loan Calculator?" data-ar="ما هي حاسبة القروض؟">What is a Loan Calculator?</h2>
+                <div class="content-image">
+                    <img src="../images/loan-calculator-diagram.svg" alt="Loan Calculator Diagram" class="diagram-image" 
+                         data-en-alt="Loan calculator shows payment calculations" 
+                         data-ar-alt="حاسبة القروض توضح حسابات الدفع">
+                </div>
+            </div>
+            <p data-en="A loan calculator is an essential financial tool that helps you calculate loan payments, total interest, and other important loan details. Whether you're planning to take out a personal loan, mortgage, auto loan, or business loan, our free loan calculator provides accurate calculations to help you make informed financial decisions." data-ar="حاسبة القروض هي أداة مالية أساسية تساعدك في حساب مدفوعات القروض وإجمالي الفوائد وتفاصيل القرض المهمة الأخرى. سواء كنت تخطط للحصول على قرض شخصي أو رهن عقاري أو قرض سيارة أو قرض تجاري، توفر حاسبة القروض المجانية حسابات دقيقة لمساعدتك في اتخاذ قرارات مالية مدروسة."></p>
+
+            <!-- Loan Types Section -->
+            <div class="loan-types-section">
+                <h3 data-en="Types of Loans" data-ar="أنواع القروض">Types of Loans:</h3>
+                <div class="loan-types-grid">
+                    <div class="loan-type-card">
+                        <div class="loan-type-icon">🏠</div>
+                        <h4 data-en="Mortgage" data-ar="الرهن العقاري">Mortgage</h4>
+                        <p data-en="Home loans with long-term repayment" data-ar="قروض المنازل مع سداد طويل الأجل"></p>
+                        <div class="loan-type-example">15-30 years</div>
+                    </div>
+                    <div class="loan-type-card">
+                        <div class="loan-type-icon">🚗</div>
+                        <h4 data-en="Auto Loan" data-ar="قرض السيارة">Auto Loan</h4>
+                        <p data-en="Vehicle financing with fixed terms" data-ar="تمويل المركبات بشروط ثابتة"></p>
+                        <div class="loan-type-example">3-7 years</div>
+                    </div>
+                    <div class="loan-type-card">
+                        <div class="loan-type-icon">👤</div>
+                        <h4 data-en="Personal Loan" data-ar="القرض الشخصي">Personal Loan</h4>
+                        <p data-en="Unsecured loans for personal use" data-ar="قروض غير مضمونة للاستخدام الشخصي"></p>
+                        <div class="loan-type-example">1-5 years</div>
+                    </div>
+                    <div class="loan-type-card">
+                        <div class="loan-type-icon">💼</div>
+                        <h4 data-en="Business Loan" data-ar="القرض التجاري">Business Loan</h4>
+                        <p data-en="Funding for business operations" data-ar="تمويل عمليات الأعمال"></p>
+                        <div class="loan-type-example">1-10 years</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How is the monthly payment calculated?" data-ar="كيف يتم حساب الدفعة الشهرية؟">How is the monthly payment calculated?</summary>
+                        <p data-en="The monthly payment is calculated using the standard loan payment formula: M = P × [r(1+r)^n] / [(1+r)^n - 1], where M is the monthly payment, P is the principal, r is the monthly interest rate, and n is the number of payments." data-ar="يتم حساب الدفعة الشهرية باستخدام معادلة دفع القرض القياسية: M = P × [r(1+r)^n] / [(1+r)^n - 1]، حيث M هي الدفعة الشهرية، P هي المبلغ الأساسي، r هو معدل الفائدة الشهري، و n هو عدد المدفوعات."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What's the difference between APR and interest rate?" data-ar="ما الفرق بين APR ومعدل الفائدة؟">What's the difference between APR and interest rate?</summary>
+                        <p data-en="The interest rate is the cost of borrowing the principal, while APR (Annual Percentage Rate) includes the interest rate plus other fees and costs, giving you the true cost of the loan." data-ar="معدل الفائدة هو تكلفة اقتراض المبلغ الأساسي، بينما APR (معدل النسبة المئوية السنوية) يشمل معدل الفائدة بالإضافة إلى الرسوم والتكاليف الأخرى، مما يعطيك التكلفة الحقيقية للقرض."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can I pay off my loan early?" data-ar="هل يمكنني سداد قرضي مبكراً؟">Can I pay off my loan early?</summary>
+                        <p data-en="Yes, most loans allow early payoff, but check for prepayment penalties. Paying off a loan early can save you a significant amount in interest over the life of the loan." data-ar="نعم، معظم القروض تسمح بالسداد المبكر، لكن تحقق من وجود غرامات السداد المسبق. يمكن أن يوفر لك سداد القرض مبكرًا مبلغًا كبيرًا من الفائدة على مدى عمر القرض."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How does the loan term affect my payment?" data-ar="كيف تؤثر مدة القرض على دفعتي؟">How does the loan term affect my payment?</summary>
+                        <p data-en="A longer loan term results in lower monthly payments but means you'll pay more in total interest over the life of the loan. A shorter term means higher monthly payments but less total interest paid." data-ar="تؤدي مدة القرض الأطول إلى دفعات شهرية أقل ولكنها تعني أنك ستدفع فائدة إجمالية أكبر على مدى عمر القرض. تعني المدة الأقصر دفعات شهرية أعلى ولكن فائدة إجمالية أقل مدفوعة."></p>
+                    </details>
+                </div>
+            </div>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/loan-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A free online tool to escape and unescape special characters for HTML, JavaScript, and other programming contexts. Prevent errors and security issues.">
+    <meta name="keywords" content="escape text, unescape text, html escape, javascript escape, special characters, developer tool">
+    <title>Online Escape & Unescape Tool | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Escape & Unescape Text" data-ar="أداة Escape/Unescape للنصوص">Escape & Unescape Text</h1>
+          <p class="tool-description" data-en="Safely handle special characters in your data for any context." data-ar="تعامل بأمان مع الأحرف الخاصة في بياناتك لأي سياق.">Safely handle special characters in your data for any context.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="io-grid">
+            <div class="input-group">
+              <label class="input-label" for="inputText" data-en="Input Text" data-ar="النص المدخل">Input Text</label>
+              <textarea id="inputText" class="input-textarea" placeholder="Paste your text here..." data-en-placeholder="Paste your text here..." data-ar-placeholder="الصق النص هنا..." rows="10"></textarea>
+            </div>
+            <div class="output-group">
+              <label class="output-label" for="outputText" data-en="Output Text" data-ar="النص الناتج">Output Text</label>
+              <textarea id="outputText" class="output-textarea" readonly placeholder="Result will appear here..." data-en-placeholder="Result will appear here..." data-ar-placeholder="ستظهر النتيجة هنا..."></textarea>
+            </div>
+          </div>
+
+          <div class="button-group-center">
+            <button id="escapeBtn" class="btn btn-primary" data-en="Escape" data-ar="Escape">Escape</button>
+            <button id="unescapeBtn" class="btn btn-primary" data-en="Unescape" data-ar="Unescape">Unescape</button>
+            <button id="clearBtn" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button id="copyBtn" class="btn btn-secondary" data-en="Copy Output" data-ar="نسخ الناتج">Copy Output</button>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"></div>
+
+        <!-- SEO Content Placeholder -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="What is Text Escaping?" data-ar="ما هو 'هروب' النص (Escaping)؟">What is Text Escaping?</h2>
+            <p data-en="Text escaping is the process of converting special characters (like '<', '>', '&', '"') into a different representation to ensure they are treated as literal characters and not as code. This is crucial in programming and web development to prevent syntax errors, broken layouts, and security vulnerabilities like Cross-Site Scripting (XSS)." data-ar="'هروب' النص هو عملية تحويل الأحرف الخاصة (مثل '<', '>', '&', '"') إلى تمثيل مختلف لضمان معاملتها كأحرف نصية وليس ككود. هذا أمر بالغ الأهمية في البرمجة وتطوير الويب لمنع أخطاء بناء الجملة، والتخطيطات المعطلة، والثغرات الأمنية مثل البرمجة النصية عبر المواقع (XSS)."></p>
+
+            <h3 data-en="Common Characters to Escape" data-ar="أحرف شائعة تحتاج إلى Escape">Common Characters to Escape</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th data-en="Character" data-ar="الحرف">Character</th>
+                        <th data-en="HTML Escape" data-ar="HTML Escape">HTML Escape</th>
+                        <th data-en="Reason" data-ar="السبب">Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;</td>
+                        <td><code>&amp;lt;</code></td>
+                        <td data-en="Interpreted as the start of an HTML tag." data-ar="يتم تفسيره كبداية وسم HTML.">Interpreted as the start of an HTML tag.</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td><code>&amp;gt;</code></td>
+                        <td data-en="Interpreted as the end of an HTML tag." data-ar="يتم تفسيره كنهاية وسم HTML.">Interpreted as the end of an HTML tag.</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td><code>&amp;amp;</code></td>
+                        <td data-en="Used to begin character entities." data-ar="يستخدم لبدء كيانات الأحرف.">Used to begin character entities.</td>
+                    </tr>
+                    <tr>
+                        <td>"</td>
+                        <td><code>&amp;quot;</code></td>
+                        <td data-en="Can prematurely close an attribute value in HTML." data-ar="يمكن أن يغلق قيمة السمة قبل الأوان في HTML.">Can prematurely close an attribute value in HTML.</td>
+                    </tr>
+                     <tr>
+                        <td>'</td>
+                        <td><code>&amp;#39;</code></td>
+                        <td data-en="Can prematurely close an attribute value in HTML." data-ar="يمكن أن يغلق قيمة السمة قبل الأوان في HTML.">Can prematurely close an attribute value in HTML.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 data-en="Use Cases for Developers" data-ar="حالات الاستخدام للمطورين">Use Cases for Developers</h3>
+            <ul>
+                <li data-en="<strong>Displaying Code Snippets:</strong> Safely show HTML, XML, or other code on a web page without it being executed by the browser." data-ar="<strong>عرض مقتطفات الكود:</strong> عرض HTML أو XML أو أي كود آخر بأمان على صفحة ويب دون أن يتم تنفيذه بواسطة المتصفح."><strong>Displaying Code Snippets:</strong> Safely show HTML, XML, or other code on a web page without it being executed by the browser.</li>
+                <li data-en="<strong>Storing User Input:</strong> Escape user-provided text before saving it to a database to prevent SQL injection and other attacks." data-ar="<strong>تخزين مدخلات المستخدم:</strong> عمل Escape للنص الذي يقدمه المستخدم قبل حفظه في قاعدة بيانات لمنع حقن SQL والهجمات الأخرى."><strong>Storing User Input:</strong> Escape user-provided text before saving it to a database to prevent SQL injection and other attacks.</li>
+                <li data-en="<strong>Generating Dynamic HTML:</strong> Ensure that data from a database or API is displayed correctly as text within your HTML structure." data-ar="<strong>إنشاء HTML ديناميكي:</strong> تأكد من عرض البيانات من قاعدة بيانات أو واجهة برمجة تطبيقات بشكل صحيح كنص داخل بنية HTML الخاصة بك."><strong>Generating Dynamic HTML:</strong> Ensure that data from a database or API is displayed correctly as text within your HTML structure.</li>
+                <li data-en="<strong>Working with JSON/XML:</strong> Make sure strings containing special characters are correctly formatted within JSON or XML data structures." data-ar="<strong>العمل مع JSON/XML:</strong> تأكد من أن السلاسل التي تحتوي على أحرف خاصة منسقة بشكل صحيح داخل هياكل بيانات JSON أو XML."><strong>Working with JSON/XML:</strong> Make sure strings containing special characters are correctly formatted within JSON or XML data structures.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What's the difference between escaping and encoding?" data-ar="ما الفرق بين 'escaping' و 'encoding'؟">What's the difference between escaping and encoding?</summary>
+                        <p data-en="'Escaping' is about making data safe for a specific context (like HTML), while 'encoding' (like URL encoding or Base64) is about transforming data for transmission or storage. They are related but serve different primary purposes." data-ar="'Escaping' يتعلق بجعل البيانات آمنة لسياق معين (مثل HTML)، بينما 'Encoding' (مثل ترميز URL أو Base64) يتعلق بتحويل البيانات للنقل أو التخزين. هما مرتبطان ولكنهما يخدمان أغراضًا أساسية مختلفة.">'Escaping' is about making data safe for a specific context (like HTML), while 'encoding' (like URL encoding or Base64) is about transforming data for transmission or storage. They are related but serve different primary purposes.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="When should I unescape text?" data-ar="متى يجب أن أقوم بعمل Unescape للنص؟">When should I unescape text?</summary>
+                        <p data-en="You typically unescape text when you retrieve it from a safe context (like a database) and want to display it in its original, human-readable form, for example, in a text editor or a form field for editing." data-ar="عادةً ما تقوم بعمل Unescape للنص عند استرداده من سياق آمن (مثل قاعدة بيانات) وتريد عرضه في شكله الأصلي القابل للقراءة، على سبيل المثال، في محرر نصوص أو حقل نموذج للتحرير.">You typically unescape text when you retrieve it from a safe context (like a database) and want to display it in its original, human-readable form, for example, in a text editor or a form field for editing.</p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/escape-unescape.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator | Create Linear & Radial Gradients | 24ToolHub</title>
+    <meta name="description" content="Visually create stunning CSS gradients for your website. Our free generator supports linear, radial, and conic gradients, with real-time preview and code generation.">
+    <meta name="keywords" content="css gradient generator, gradient tool, linear gradient, radial gradient, css background, web design tool, color gradient">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="CSS Gradient Generator | Create Linear & Radial Gradients | 24ToolHub">
+    <meta property="og:description" content="Visually create stunning CSS gradients for your website. Our free generator supports linear, radial, and conic gradients, with real-time preview and code generation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/gradient-generator">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CSS Gradient Generator | Create Linear & Radial Gradients | 24ToolHub">
+    <meta name="twitter:description" content="Visually create stunning CSS gradients for your website. Our free generator supports linear, radial, and conic gradients, with real-time preview and code generation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Gradient Generator" data-ar="مولد التدرجات">Gradient Generator</h1>
+                <p class="tool-description" data-en="Create beautiful CSS gradients instantly with multiple types, colors, and customization options" data-ar="أنشئ تدرجات CSS جميلة فوراً مع أنواع وألوان وخيارات تخصيص متعددة">Create beautiful CSS gradients instantly with multiple types, colors, and customization options</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Gradient Preview -->
+                <div class="gradient-preview">
+                    <div id="gradientPreview" class="preview-box"></div>
+                </div>
+
+                <!-- Gradient Settings -->
+                <div class="gradient-settings">
+                    <div class="settings-row">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Gradient Type:" data-ar="نوع التدرج:">Gradient Type:</label>
+                            <select id="gradientType" class="input-field">
+                                <option value="linear" data-en="Linear" data-ar="خطي">Linear</option>
+                                <option value="radial" data-en="Radial" data-ar="دائري">Radial</option>
+                                <option value="conic" data-en="Conic" data-ar="مخروطي">Conic</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-label" data-en="Direction:" data-ar="الاتجاه:">Direction:</label>
+                            <select id="gradientDirection" class="input-field">
+                                <option value="to right" data-en="To Right" data-ar="إلى اليمين">To Right</option>
+                                <option value="to left" data-en="To Left" data-ar="إلى اليسار">To Left</option>
+                                <option value="to bottom" data-en="To Bottom" data-ar="إلى الأسفل">To Bottom</option>
+                                <option value="to top" data-en="To Top" data-ar="إلى الأعلى">To Top</option>
+                                <option value="to bottom right" data-en="To Bottom Right" data-ar="إلى الأسفل يمين">To Bottom Right</option>
+                                <option value="to bottom left" data-en="To Bottom Left" data-ar="إلى الأسفل يسار">To Bottom Left</option>
+                                <option value="to top right" data-en="To Top Right" data-ar="إلى الأعلى يمين">To Top Right</option>
+                                <option value="to top left" data-en="To Top Left" data-ar="إلى الأعلى يسار">To Top Left</option>
+                                <option value="45deg" data-en="45°" data-ar="45°">45°</option>
+                                <option value="90deg" data-en="90°" data-ar="90°">90°</option>
+                                <option value="135deg" data-en="135°" data-ar="135°">135°</option>
+                                <option value="180deg" data-en="180°" data-ar="180°">180°</option>
+                                <option value="225deg" data-en="225°" data-ar="225°">225°</option>
+                                <option value="270deg" data-en="270°" data-ar="270°">270°</option>
+                                <option value="315deg" data-en="315°" data-ar="315°">315°</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Color Stops -->
+                    <div class="color-stops-section">
+                        <h4 class="section-heading" data-en="Color Stops" data-ar="نقاط الألوان">Color Stops</h4>
+                        <div id="colorStops" class="color-stops-container">
+                            <!-- Color stops will be added dynamically -->
+                        </div>
+                        <button id="addColorStop" class="btn btn-secondary" data-en="Add Color" data-ar="إضافة لون">Add Color</button>
+                    </div>
+
+                    <!-- Preset Gradients -->
+                    <div class="presets-section">
+                        <h4 class="section-heading" data-en="Preset Gradients" data-ar="تدرجات جاهزة">Preset Gradients</h4>
+                        <div class="presets-grid" id="presetsGrid">
+                            <!-- Presets will be added dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Output -->
+                <div class="output-section">
+                    <h4 class="section-heading" data-en="CSS Code" data-ar="كود CSS">CSS Code</h4>
+                    <div class="output-container">
+                        <textarea id="cssOutput" class="output-textarea" readonly rows="4"></textarea>
+                        <div class="output-actions">
+                            <button id="copyCSS" class="btn btn-primary" data-en="Copy CSS" data-ar="نسخ CSS">Copy CSS</button>
+                            <button id="downloadCSS" class="btn btn-secondary" data-en="Download CSS" data-ar="تحميل CSS">Download CSS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <button id="randomGradient" class="btn btn-primary" data-en="Random Gradient" data-ar="تدرج عشوائي">Random Gradient</button>
+                    <button id="clearGradient" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="What is a Gradient Generator?" data-ar="ما هو مولد التدرجات؟">What is a Gradient Generator?</h2>
+                <p data-en="A gradient generator is a tool that creates smooth color transitions between two or more colors. Gradients are widely used in web design, graphic design, and UI/UX to create visually appealing backgrounds, buttons, and other elements. Our gradient generator provides an intuitive interface to create and customize gradients with real-time preview." data-ar="مولد التدرجات هو أداة تنشئ انتقالات لونية سلسة بين لونين أو أكثر. تُستخدم التدرجات على نطاق واسع في تصميم الويب والرسوميات وواجهة المستخدم لإنشاء خلفيات وأزرار وعناصر أخرى جذابة بصرياً. يوفر مولد التدرجات واجهة بديهية لإنشاء وتخصيص التدرجات مع معاينة فورية.">A gradient generator is a tool that creates smooth color transitions between two or more colors. Gradients are widely used in web design, graphic design, and UI/UX to create visually appealing backgrounds, buttons, and other elements. Our gradient generator provides an intuitive interface to create and customize gradients with real-time preview.</p>
+                
+                <h3 data-en="Gradient Types" data-ar="أنواع التدرجات">Gradient Types</h3>
+                <ul>
+                    <li data-en="<strong>Linear Gradients:</strong> Color transitions in a straight line" data-ar="<strong>التدرجات الخطية:</strong> انتقالات لونية في خط مستقيم"><strong>Linear Gradients:</strong> Color transitions in a straight line</li>
+                    <li data-en="<strong>Radial Gradients:</strong> Color transitions radiating from a center point" data-ar="<strong>التدرجات الدائرية:</strong> انتقالات لونية تشع من نقطة مركزية"><strong>Radial Gradients:</strong> Color transitions radiating from a center point</li>
+                    <li data-en="<strong>Conic Gradients:</strong> Color transitions rotating around a center point" data-ar="<strong>التدرجات المخروطية:</strong> انتقالات لونية تدور حول نقطة مركزية"><strong>Conic Gradients:</strong> Color transitions rotating around a center point</li>
+                </ul>
+
+                <h3 data-en="Features" data-ar="المميزات">Features</h3>
+                <ul>
+                    <li data-en="Multiple gradient types (linear, radial, conic)" data-ar="أنواع تدرجات متعددة (خطي، دائري، مخروطي)">Multiple gradient types (linear, radial, conic)</li>
+                    <li data-en="Customizable color stops and positions" data-ar="نقاط ألوان ومواضع قابلة للتخصيص">Customizable color stops and positions</li>
+                    <li data-en="Real-time preview and CSS output" data-ar="معاينة فورية وإخراج CSS">Real-time preview and CSS output</li>
+                    <li data-en="Preset gradient collections" data-ar="مجموعات تدرجات جاهزة">Preset gradient collections</li>
+                    <li data-en="Copy and download CSS code" data-ar="نسخ وتحميل كود CSS">Copy and download CSS code</li>
+                    <li data-en="Random gradient generation" data-ar="توليد تدرجات عشوائية">Random gradient generation</li>
+                </ul>
+
+                <h3 data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</h3>
+                <ul>
+                    <li data-en="Website backgrounds and hero sections" data-ar="خلفيات المواقع وأقسام البطل">Website backgrounds and hero sections</li>
+                    <li data-en="Button and UI element styling" data-ar="تنسيق الأزرار وعناصر واجهة المستخدم">Button and UI element styling</li>
+                    <li data-en="Social media graphics and banners" data-ar="رسوميات وسائل التواصل والأعلام">Social media graphics and banners</li>
+                    <li data-en="Mobile app interfaces" data-ar="واجهات تطبيقات الهاتف المحمول">Mobile app interfaces</li>
+                    <li data-en="Presentation slides and documents" data-ar="شرائح العروض التقديمية والمستندات">Presentation slides and documents</li>
+                    <li data-en="Logo and branding design" data-ar="تصميم الشعارات والعلامات التجارية">Logo and branding design</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="How do I use the generated CSS code?" data-ar="كيف أستخدم كود CSS الذي تم إنشاؤه؟">How do I use the generated CSS code?</summary>
+                            <p data-en="Simply copy the code from the 'CSS Code' output box and paste it into your stylesheet. You can apply it to any element's `background` or `background-image` property." data-ar="ما عليك سوى نسخ الكود من مربع إخراج 'CSS Code' ولصقه في ملف الأنماط الخاص بك. يمكنك تطبيقه على خاصية `background` أو `background-image` لأي عنصر."></p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="Are these gradients supported by all browsers?" data-ar="هل هذه التدرجات مدعومة من قبل جميع المتصفحات؟">Are these gradients supported by all browsers?</summary>
+                            <p data-en="Linear and radial gradients are supported by all modern browsers. Conic gradients are newer but are now supported by the latest versions of Chrome, Firefox, Safari, and Edge. Our tool generates code with the necessary vendor prefixes for broad compatibility." data-ar="التدرجات الخطية والشعاعية مدعومة من قبل جميع المتصفحات الحديثة. التدرجات المخروطية أحدث ولكنها مدعومة الآن من قبل أحدث إصدارات Chrome و Firefox و Safari و Edge. تقوم أداتنا بإنشاء كود مع بادئات الموردين اللازمة لتوافق واسع."></p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/gradient-generator.js"></script>
+</body>
+</html>

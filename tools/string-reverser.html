@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instantly reverse text, flip words, or reverse the order of lines. Our free online string reverser is a fun and easy tool for text manipulation.">
+  <meta name="keywords" content="string reverser, reverse text, text flipper, backwards text generator, reverse word order">
+  <title>Online String & Text Reverser | Flip Text Backwards | 24ToolHub</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../css/styles.css">
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-branding">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/logo.png" alt="24ToolHub Logo" class="logo">
+        <h1 class="site-title">24ToolHub</h1>
+      </a>
+      <div class="header-actions">
+        <button id="langSwitcher" class="lang-switcher">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  <main class="main-content">
+    <div class="tool-container">
+      <div class="tool-header">
+        <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+        <h1 class="tool-title" data-en="String Reverser" data-ar="عاكس النصوص">String Reverser</h1>
+        <p class="tool-description" data-en="Reverse text, words, or lines instantly with our free online tool" data-ar="اعكس النص أو الكلمات أو الأسطر فوراً مع أداتنا المجانية">Reverse text, words, or lines instantly with our free online tool</p>
+      </div>
+
+      <div class="tool-interface">
+        <div class="input-group">
+          <label class="input-label" data-en="Enter your text:" data-ar="أدخل النص:">Enter your text:</label>
+          <textarea id="inputText" class="input-textarea" placeholder="Type or paste your text here..." data-en-placeholder="Type or paste your text here..." data-ar-placeholder="اكتب أو الصق النص هنا..." rows="8"></textarea>
+        </div>
+
+        <div class="options-group">
+          <label class="option-label">
+            <input type="radio" name="reverseType" value="text" checked> <span data-en="Reverse entire text" data-ar="اعكس النص كاملاً">Reverse entire text</span>
+          </label>
+          <label class="option-label">
+            <input type="radio" name="reverseType" value="words"> <span data-en="Reverse word order" data-ar="اعكس ترتيب الكلمات">Reverse word order</span>
+          </label>
+          <label class="option-label">
+            <input type="radio" name="reverseType" value="lines"> <span data-en="Reverse line order" data-ar="اعكس ترتيب الأسطر">Reverse line order</span>
+          </label>
+        </div>
+
+        <button onclick="reverseText()" class="btn btn-primary" data-en="Reverse Text" data-ar="اعكس النص">Reverse Text</button>
+
+        <div class="input-group mt-2">
+          <label class="input-label" data-en="Result:" data-ar="النتيجة:">Result:</label>
+          <textarea id="outputText" class="input-textarea" readonly rows="8"></textarea>
+        </div>
+
+        <div class="button-group">
+          <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          <button onclick="copyResult()" class="btn btn-primary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+        </div>
+      </div>
+
+      <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+      <div class="seo-content">
+        <div class="seo-section">
+            <h2 data-en="How Does the Text Reverser Work?" data-ar="كيف يعمل عاكس النص؟">How Does the Text Reverser Work?</h2>
+            <p data-en="Our tool offers multiple ways to reverse your text. You can flip the entire text backward, reverse the order of words while keeping the words themselves intact, or reverse the order of lines. It's a versatile tool for data manipulation, creating fun text effects, or for simple programming tasks." data-ar="توفر أداتنا طرقًا متعددة لعكس النص الخاص بك. يمكنك قلب النص بأكمله للخلف، أو عكس ترتيب الكلمات مع الحفاظ على الكلمات نفسها سليمة، أو عكس ترتيب الأسطر. إنها أداة متعددة الاستخدامات لمعالجة البيانات، أو إنشاء تأثيرات نصية ممتعة، أو لمهام البرمجة البسيطة."></p>
+            
+            <h3 data-en="Examples of Text Reversal" data-ar="أمثلة على عكس النص">Examples of Text Reversal</h3>
+            <ul>
+                <li data-en="<strong>Reverse Entire Text:</strong> 'Hello World' becomes 'dlroW olleH'."><strong>عكس النص بالكامل:</strong> 'Hello World' تصبح 'dlroW olleH'.</li>
+                <li data-en="<strong>Reverse Word Order:</strong> 'Hello World' becomes 'World Hello'."><strong>عكس ترتيب الكلمات:</strong> 'Hello World' تصبح 'World Hello'.</li>
+                <li data-en="<strong>Reverse Line Order:</strong> Reverses the sequence of lines in a paragraph."><strong>عكس ترتيب الأسطر:</strong> يعكس تسلسل الأسطر في الفقرة.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Does this tool work with all languages and special characters?" data-ar="هل تعمل هذه الأداة مع جميع اللغات والأحرف الخاصة؟">Does this tool work with all languages and special characters?</summary>
+                        <p data-en="Yes, our string reverser is designed to handle Unicode characters, so it works correctly with most languages, emojis, and special symbols.">نعم، تم تصميم عاكس السلسلة الخاص بنا للتعامل مع أحرف Unicode، لذا فهو يعمل بشكل صحيح مع معظم اللغات والرموز التعبيرية والرموز الخاصة.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is a palindrome?" data-ar="ما هو الـ Palindrome؟">What is a palindrome?</summary>
+                        <p data-en="A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., 'madam' or 'level'. You can use this tool to check if a word is a palindrome.">الـ Palindrome هو كلمة أو عبارة أو تسلسل يقرأ نفسه للخلف كما يقرأ للأمام، على سبيل المثال، 'madam' أو 'level'. يمكنك استخدام هذه الأداة للتحقق مما إذا كانت الكلمة عبارة عن palindrome.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  
+        <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+        <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/string-reverser.js"></script>
+</body>
+</html>

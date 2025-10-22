@@ -1,0 +1,6 @@
+# Google AdSense
+google.com, pub-2446710277775155, DIRECT, f08c47fec0942fa0
+
+# Important: This file helps prevent unauthorized ad inventory sales
+# Make sure this file is accessible at https://24toolhub.com/ads.txt
+# Last updated: October 2025

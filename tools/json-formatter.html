@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator | Beautify & Minify JSON | 24ToolHub</title>
+    <meta name="description" content="A free online tool to format, beautify, minify, and validate your JSON data. Features syntax highlighting and error detection to help developers debug and work with JSON more efficiently.">
+    <meta name="keywords" content="json formatter, json beautifier, json validator, json minify, format json, json tool, developer tools">
+    <!-- Fixed favicon path -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <!-- Added manifest and theme color -->
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Standardized header structure to match word-counter.html -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+        <a href="../index.html" class="logo-link">
+                <!-- Fixed logo path to use images folder -->
+                <img src="../images/logo.png" alt="24ToolHub Logo" class="logo">
+                <h1 class="site-title">24ToolHub</h1>
+            </a>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="JSON Formatter" data-ar="منسق JSON">JSON Formatter</h1>
+                <p class="tool-description" data-en="Format, validate, and beautify JSON data with syntax highlighting and error detection" data-ar="نسق وصحح وجمل بيانات JSON مع تمييز الصيغة وكشف الأخطاء">Format, validate, and beautify JSON data with syntax highlighting and error detection</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <div class="input-group">
+                    <label class="input-label" data-en="Input JSON:" data-ar="JSON المدخل:">Input JSON:</label>
+                    <textarea id="input" class="input-textarea" placeholder='{"key": "value"}' data-en-placeholder='{"key": "value"}' data-ar-placeholder='{"مفتاح": "قيمة"}' rows="10"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label" data-en="Indentation:" data-ar="المسافات البادئة:">Indentation:</label>
+                    <select id="indent" class="input-field" style="width: auto;">
+                        <option value="2">2 spaces</option>
+                        <option value="4" selected>4 spaces</option>
+                        <option value="tab">Tab</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="window.formatJSON()" class="btn btn-primary" data-en="Format" data-ar="تنسيق">Format</button>
+                    <button onclick="window.minifyJSON()" class="btn btn-secondary" data-en="Minify" data-ar="ضغط">Minify</button>
+                    <button onclick="window.validateJSON()" class="btn btn-secondary" data-en="Validate" data-ar="التحقق">Validate</button>
+                    <button onclick="window.copyOutput()" class="btn btn-secondary" data-en="Copy" data-ar="نسخ">Copy</button>
+                </div>
+
+                <div class="output-section">
+                    <label class="input-label" data-en="Formatted JSON:" data-ar="JSON المنسق:">Formatted JSON:</label>
+                    <textarea id="output" class="output-textarea" readonly rows="10"></textarea>
+                </div>
+
+                <div id="errorMessage" style="color: var(--error); margin-top: 1rem;"></div>
+            </div>
+
+            <!-- Ad Space - Rectangle -->
+            <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+            <!-- SEO Content -->
+            <div class="seo-content">
+                <div class="seo-section">
+                    <div class="content-header">
+                        <h2 data-en="What is JSON?" data-ar="ما هو JSON؟">What is JSON?</h2>
+                        <div class="content-image">
+                            <img src="../images/json-diagram.svg" alt="JSON Formatter Diagram" class="diagram-image" 
+                                 data-en-alt="JSON formatter shows data structure formatting" 
+                                 data-ar-alt="منسق JSON يوضح تنسيق هياكل البيانات">
+                        </div>
+                    </div>
+                    <p data-en="JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is commonly used for transmitting data in web applications between servers and clients." data-ar="JSON (JavaScript Object Notation) هو تنسيق تبادل بيانات خفيف الوزن سهل القراءة والكتابة للبشر وسهل التحليل والإنشاء للآلات. يُستخدم عادة لنقل البيانات في تطبيقات الويب بين الخوادم والعملاء."></p>
+
+                    <!-- Features Section -->
+                    <div class="features-section">
+                        <h3 data-en="Key Features" data-ar="الميزات الرئيسية">Key Features:</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">🎨</div>
+                                <h4 data-en="Format & Beautify" data-ar="تنسيق وتجميل">Format & Beautify</h4>
+                                <p data-en="Format and beautify JSON with custom indentation" data-ar="تنسيق وتجميل JSON مع مسافات بادئة مخصصة"></p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📦</div>
+                                <h4 data-en="Minify JSON" data-ar="تصغير JSON">Minify JSON</h4>
+                                <p data-en="Minify JSON to reduce file size" data-ar="تصغير JSON لتقليل حجم الملف"></p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">✅</div>
+                                <h4 data-en="Validate Syntax" data-ar="التحقق من الصيغة">Validate Syntax</h4>
+                                <p data-en="Validate JSON syntax and detect errors" data-ar="التحقق من صيغة JSON واكتشاف الأخطاء"></p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📋</div>
+                                <h4 data-en="Copy to Clipboard" data-ar="نسخ للحافظة">Copy to Clipboard</h4>
+                                <p data-en="Copy formatted JSON to clipboard" data-ar="نسخ JSON المنسق إلى الحافظة"></p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🔗</div>
+                                <h4 data-en="Nested Support" data-ar="دعم المتداخل">Nested Support</h4>
+                                <p data-en="Support for nested objects and arrays" data-ar="دعم الكائنات والمصفوفات المتداخلة"></p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">⚡</div>
+                                <h4 data-en="Real-time Detection" data-ar="الكشف الفوري">Real-time Detection</h4>
+                                <p data-en="Real-time error detection" data-ar="كشف الأخطاء في الوقت الفعلي"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How It Works Section -->
+                    <div class="how-it-works">
+                        <h3 data-en="How JSON Formatting Works" data-ar="كيف يعمل تنسيق JSON">How JSON Formatting Works:</h3>
+                        <div class="steps-container">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 data-en="Parse JSON" data-ar="تحليل JSON">Parse JSON</h4>
+                                    <p data-en="Parse the input JSON string to validate syntax" data-ar="تحليل سلسلة JSON المدخلة للتحقق من الصيغة"></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 data-en="Format Structure" data-ar="تنسيق الهيكل">Format Structure</h4>
+                                    <p data-en="Apply proper indentation and line breaks" data-ar="تطبيق المسافات البادئة وفواصل الأسطر المناسبة"></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 data-en="Validate Output" data-ar="التحقق من المخرجات">Validate Output</h4>
+                                    <p data-en="Ensure the formatted JSON is valid" data-ar="التأكد من أن JSON المنسق صحيح"></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4 data-en="Display Result" data-ar="عرض النتيجة">Display Result</h4>
+                                    <p data-en="Show the formatted JSON with syntax highlighting" data-ar="عرض JSON المنسق مع تمييز الصيغة"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                        <div class="faq-item">
+                            <details>
+                                <summary data-en="What is the most common JSON syntax error?" data-ar="ما هو خطأ بناء جملة JSON الأكثر شيوعًا؟">What is the most common JSON syntax error?</summary>
+                                <p data-en="A very common error is a trailing comma. Adding a comma after the last element in an object or array is not allowed in the JSON standard and will cause parsing to fail. Our validator will help you catch this." data-ar="خطأ شائع جدًا هو الفاصلة الزائدة. إضافة فاصلة بعد العنصر الأخير في كائن أو مصفوفة غير مسموح به في معيار JSON وسيؤدي إلى فشل التحليل. سيساعدك مدققنا في اكتشاف ذلك."></p>
+                            </details>
+                        </div>
+                        <div class="faq-item">
+                            <details>
+                                <summary data-en="What is the difference between 'Format' and 'Minify'?" data-ar="ما الفرق بين 'تنسيق' و 'تصغير'؟">What is the difference between 'Format' and 'Minify'?</summary>
+                                <p data-en="'Format' (or 'Beautify') adds indentation and line breaks to make the JSON human-readable. 'Minify' removes all whitespace to create the most compact version, which is ideal for reducing file size for transmission over a network." data-ar="'تنسيق' (أو 'تجميل') يضيف مسافات بادئة وفواصل أسطر لجعل JSON قابلاً للقراءة من قبل الإنسان. 'تصغير' يزيل كل المسافات البيضاء لإنشاء النسخة الأكثر ضغطًا، وهو مثالي لتقليل حجم الملف للنقل عبر الشبكة."></p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📦 API Response', 'text': '{"status":"success","data":{"id":123,"name":"John Doe","email":"john@example.com"}}'}, {'label': '⚙️ Config', 'text': '{"server":{"port":3000,"host":"localhost"},"database":{"type":"postgres","port":5432}}'}, {'label': '📊 Array', 'text': '[{"id":1,"value":"A"},{"id":2,"value":"B"},{"id":3,"value":"C"}]'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo">
+                <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/json-formatter.js"></script>
+</body>
+</html>

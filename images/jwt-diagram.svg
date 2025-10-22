@@ -1,0 +1,106 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    JWT Token Structure
+  </text>
+  
+  <!-- JWT Token -->
+  <rect x="50" y="60" width="500" height="40" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="80" text-anchor="middle" font-family="Monaco, monospace" font-size="10" fill="#374151">
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+  </text>
+  
+  <!-- Parts breakdown -->
+  <rect x="50" y="120" width="150" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="125" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    Header
+  </text>
+  <text x="60" y="160" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    {<br/>
+    &nbsp;&nbsp;"alg": "HS256",<br/>
+    &nbsp;&nbsp;"typ": "JWT"<br/>
+    }
+  </text>
+  
+  <rect x="225" y="120" width="150" height="80" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="300" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">
+    Payload
+  </text>
+  <text x="235" y="160" font-family="Monaco, monospace" font-size="8" fill="#166534">
+    {<br/>
+    &nbsp;&nbsp;"sub": "1234567890",<br/>
+    &nbsp;&nbsp;"name": "John Doe",<br/>
+    &nbsp;&nbsp;"iat": 1516239022<br/>
+    }
+  </text>
+  
+  <rect x="400" y="120" width="150" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="475" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    Signature
+  </text>
+  <text x="410" y="160" font-family="Monaco, monospace" font-size="8" fill="#92400e">
+    HMACSHA256(<br/>
+    &nbsp;&nbsp;base64UrlEncode(header) + "." +<br/>
+    &nbsp;&nbsp;base64UrlEncode(payload),<br/>
+    &nbsp;&nbsp;secret<br/>
+    )
+  </text>
+  
+  <!-- Arrows -->
+  <path d="M 125 100 L 125 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 300 100 L 300 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 475 100 L 475 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decoding process -->
+  <rect x="50" y="220" width="500" height="100" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+    JWT Decoding Process
+  </text>
+  
+  <!-- Process steps -->
+  <circle cx="100" cy="270" r="15" fill="#3b82f6"/>
+  <text x="100" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">1</text>
+  <text x="100" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Split
+  </text>
+  
+  <circle cx="200" cy="270" r="15" fill="#10b981"/>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">2</text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Decode
+  </text>
+  
+  <circle cx="300" cy="270" r="15" fill="#f59e0b"/>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">3</text>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Parse
+  </text>
+  
+  <circle cx="400" cy="270" r="15" fill="#8b5cf6"/>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">4</text>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Display
+  </text>
+  
+  <circle cx="500" cy="270" r="15" fill="#ef4444"/>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">✓</text>
+  <text x="500" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Result
+  </text>
+  
+  <!-- Use cases -->
+  <rect x="50" y="340" width="500" height="50" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Common Use Cases: Authentication • API Security • Session Management • Information Exchange
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

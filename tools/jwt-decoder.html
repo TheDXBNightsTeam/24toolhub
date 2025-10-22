@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instantly decode and inspect JSON Web Tokens (JWT). Our free online tool allows developers to quickly view the header, payload, and signature for debugging and verification.">
+    <meta name="keywords" content="jwt decoder, json web token, decode jwt, jwt tool, authentication, api security, developer tool">
+    <title>Online JWT Decoder | Decode & Inspect JSON Web Tokens | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+  <style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="JWT Decoder" data-ar="فك تشفير JWT">JWT Decoder</h1>
+          <p class="tool-description" data-en="Decode JSON Web Tokens and view their contents" data-ar="فك تشفير رموز JSON Web وعرض محتوياتها">Decode JSON Web Tokens and view their contents</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="JWT Token:" data-ar="رمز JWT:">JWT Token:</label>
+            <textarea id="inputText" class="input-textarea" placeholder="Paste your JWT token here..." data-en-placeholder="Paste your JWT token here..." data-ar-placeholder="الصق رمز JWT هنا..." rows="4"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button onclick="decodeJWT()" class="btn btn-primary" data-en="Decode JWT" data-ar="فك تشفير JWT">Decode JWT</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Decoded Header:" data-ar="الرأس المفكوك:">Decoded Header:</label>
+            <textarea id="headerText" class="input-textarea" readonly placeholder="Header will appear here..." data-en-placeholder="Header will appear here..." data-ar-placeholder="ستظهر الرأس هنا..." rows="4"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Decoded Payload:" data-ar="الحمولة المفكوكة:">Decoded Payload:</label>
+            <textarea id="payloadText" class="input-textarea" readonly placeholder="Payload will appear here..." data-en-placeholder="Payload will appear here..." data-ar-placeholder="ستظهر الحمولة هنا..." rows="6"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Signature:" data-ar="التوقيع:">Signature:</label>
+            <textarea id="signatureText" class="input-textarea" readonly placeholder="Signature will appear here..." data-en-placeholder="Signature will appear here..." data-ar-placeholder="ستظهر التوقيع هنا..." rows="2"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button onclick="copyHeader()" class="btn btn-secondary" data-en="Copy Header" data-ar="نسخ الرأس">Copy Header</button>
+            <button onclick="copyPayload()" class="btn btn-secondary" data-en="Copy Payload" data-ar="نسخ الحمولة">Copy Payload</button>
+            <button onclick="copySignature()" class="btn btn-secondary" data-en="Copy Signature" data-ar="نسخ التوقيع">Copy Signature</button>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <div class="content-header">
+              <h2 data-en="What is JWT?" data-ar="ما هو JWT؟">What is JWT?</h2>
+              <div class="content-image">
+                <img src="../images/jwt-diagram.svg" alt="JWT Decoder Diagram" class="diagram-image" 
+                     data-en-alt="JWT decoder shows token structure breakdown" 
+                     data-ar-alt="فك تشفير JWT يوضح تفكيك هيكل الرمز المميز">
+              </div>
+            </div>
+            <p data-en="JWT (JSON Web Token) is a compact, URL-safe means of representing claims to be transferred between two parties. It consists of three parts: Header, Payload, and Signature. JWTs are commonly used for authentication and information exchange in web applications and APIs." data-ar="JWT (JSON Web Token) هو وسيلة مدمجة وآمنة لـ URL لتمثيل المطالبات التي سيتم نقلها بين طرفين. يتكون من ثلاثة أجزاء: الرأس والحمولة والتوقيع. تُستخدم JWTs عادة للمصادقة وتبادل المعلومات في تطبيقات الويب وواجهات برمجة التطبيقات."></p>
+
+            <!-- JWT Structure Section -->
+            <div class="structure-section">
+              <h3 data-en="JWT Structure" data-ar="هيكل JWT">JWT Structure:</h3>
+              <div class="structure-grid">
+                <div class="structure-card">
+                  <div class="structure-icon">📋</div>
+                  <h4 data-en="Header" data-ar="الرأس">Header</h4>
+                  <p data-en="Contains token type and algorithm" data-ar="يحتوي على نوع الرمز المميز والخوارزمية"></p>
+                  <div class="structure-example">
+                    <div class="example-code">
+                      {<br/>
+                      &nbsp;&nbsp;"alg": "HS256",<br/>
+                      &nbsp;&nbsp;"typ": "JWT"<br/>
+                      }
+                    </div>
+                  </div>
+                </div>
+                <div class="structure-card">
+                  <div class="structure-icon">📦</div>
+                  <h4 data-en="Payload" data-ar="الحمولة">Payload</h4>
+                  <p data-en="Contains claims and user data" data-ar="يحتوي على المطالبات وبيانات المستخدم"></p>
+                  <div class="structure-example">
+                    <div class="example-code">
+                      {<br/>
+                      &nbsp;&nbsp;"sub": "1234567890",<br/>
+                      &nbsp;&nbsp;"name": "John Doe",<br/>
+                      &nbsp;&nbsp;"iat": 1516239022<br/>
+                      }
+                    </div>
+                  </div>
+                </div>
+                <div class="structure-card">
+                  <div class="structure-icon">🔐</div>
+                  <h4 data-en="Signature" data-ar="التوقيع">Signature</h4>
+                  <p data-en="Verifies token authenticity" data-ar="يتحقق من أصالة الرمز المميز"></p>
+                  <div class="structure-example">
+                    <div class="example-code">
+                      HMACSHA256(<br/>
+                      &nbsp;&nbsp;base64UrlEncode(header) + "." +<br/>
+                      &nbsp;&nbsp;base64UrlEncode(payload),<br/>
+                      &nbsp;&nbsp;secret<br/>
+                      )
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- How It Works Section -->
+            <div class="how-it-works">
+              <h3 data-en="How JWT Decoding Works" data-ar="كيف يعمل فك تشفير JWT">How JWT Decoding Works:</h3>
+              <div class="steps-container">
+                <div class="step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4 data-en="Split Token" data-ar="تقسيم الرمز المميز">Split Token</h4>
+                    <p data-en="Split JWT into header, payload, and signature parts" data-ar="تقسيم JWT إلى أجزاء الرأس والحمولة والتوقيع"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4 data-en="Decode Base64" data-ar="فك تشفير Base64">Decode Base64</h4>
+                    <p data-en="Decode Base64URL encoded header and payload" data-ar="فك تشفير الرأس والحمولة المشفرة بـ Base64URL"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4 data-en="Parse JSON" data-ar="تحليل JSON">Parse JSON</h4>
+                    <p data-en="Parse the decoded strings as JSON objects" data-ar="تحليل السلاسل المفكوكة ككائنات JSON"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h4 data-en="Display Results" data-ar="عرض النتائج">Display Results</h4>
+                    <p data-en="Show formatted header, payload, and signature" data-ar="عرض الرأس والحمولة والتوقيع المنسقين"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p><strong>Example:</strong></p>
+            <pre style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022
+}</pre>
+
+            <h4>Signature</h4>
+            <p>The signature is used to verify that the sender of the JWT is who it says it is and to ensure that the message wasn't changed along the way.</p>
+
+            <h3>How to Use the JWT Decoder</h3>
+            <ol>
+              <li>Paste your JWT token in the input field</li>
+              <li>Click "Decode JWT" to decode the token</li>
+              <li>View the decoded header, payload, and signature</li>
+              <li>Use the copy buttons to copy individual parts</li>
+              <li>Use "Clear" to reset all fields</li>
+            </ol>
+
+            <h3>JWT Claims</h3>
+            <h4>Registered Claims</h4>
+            <ul>
+              <li><strong>iss (issuer):</strong> Who issued the token</li>
+              <li><strong>sub (subject):</strong> Who the token is about</li>
+              <li><strong>aud (audience):</strong> Who the token is intended for</li>
+              <li><strong>exp (expiration time):</strong> When the token expires</li>
+              <li><strong>nbf (not before):</strong> When the token becomes valid</li>
+              <li><strong>iat (issued at):</strong> When the token was issued</li>
+              <li><strong>jti (JWT ID):</strong> Unique identifier for the token</li>
+            </ul>
+
+            <h4>Public Claims</h4>
+            <p>These can be defined at will by those using JWTs. However, to avoid collisions, they should be defined in the IANA JWT Registry or be defined as a URI that contains a collision resistant namespace.</p>
+
+            <h4>Private Claims</h4>
+            <p>These are the custom claims created to share information between parties that agree on using them and are neither registered nor public claims.</p>
+
+            <h3>Common JWT Use Cases</h3>
+            <ul>
+              <li><strong>Authentication:</strong> Stateless authentication for web applications</li>
+              <li><strong>Authorization:</strong> Access control and permissions</li>
+              <li><strong>Information Exchange:</strong> Secure information exchange between parties</li>
+              <li><strong>Single Sign-On (SSO):</strong> Cross-domain authentication</li>
+              <li><strong>API Security:</strong> Securing REST APIs and microservices</li>
+            </ul>
+
+            <h3>JWT Security Considerations</h3>
+            <div style="background: var(--warning, #f59e0b); color: white; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+              <strong>⚠️ Security Note:</strong> This tool only decodes JWT tokens for viewing purposes. It does not verify signatures or validate tokens. Never use this tool with sensitive or production tokens in untrusted environments.
+            </div>
+
+            <h3>JWT vs Other Token Formats</h3>
+            <h4>JWT vs Session Tokens</h4>
+            <ul>
+              <li><strong>JWT:</strong> Stateless, self-contained, larger size</li>
+              <li><strong>Session Tokens:</strong> Stateful, server-side storage, smaller size</li>
+            </ul>
+
+            <h4>JWT vs OAuth Tokens</h4>
+            <ul>
+              <li><strong>JWT:</strong> Token format and structure</li>
+              <li><strong>OAuth:</strong> Authorization framework that can use JWTs</li>
+            </ul>
+
+            <h3>JWT Best Practices</h3>
+            <ul>
+              <li>Keep tokens as small as possible</li>
+              <li>Use strong signing algorithms (RS256, ES256)</li>
+              <li>Set appropriate expiration times</li>
+              <li>Validate all claims on the server side</li>
+              <li>Use HTTPS for token transmission</li>
+              <li>Store tokens securely on the client side</li>
+              <li>Implement proper token refresh mechanisms</li>
+            </ul>
+
+            <h3>JWT Libraries</h3>
+            <ul>
+              <li><strong>JavaScript:</strong> jsonwebtoken, jose</li>
+              <li><strong>Python:</strong> PyJWT, python-jose</li>
+              <li><strong>Java:</strong> jjwt, java-jwt</li>
+              <li><strong>.NET:</strong> System.IdentityModel.Tokens.Jwt</li>
+              <li><strong>PHP:</strong> firebase/php-jwt</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Does this tool validate the JWT signature?" data-ar="هل تتحقق هذه الأداة من توقيع JWT؟">Does this tool validate the JWT signature?</summary>
+                        <p data-en="No, this tool only decodes the token for inspection. It does not validate the signature because that requires the secret key, which should always be kept private on your server." data-ar="لا، هذه الأداة تقوم فقط بفك تشفير الرمز المميز للفحص. لا تتحقق من التوقيع لأن ذلك يتطلب المفتاح السري، الذي يجب أن يظل دائمًا خاصًا على الخادم الخاص بك."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What does it mean for JWTs to be 'stateless'?" data-ar="ماذا يعني أن تكون JWTs 'عديمة الحالة'؟">What does it mean for JWTs to be 'stateless'?</summary>
+                        <p data-en="'Stateless' means the server does not need to store any information about the user's session. All necessary data (like user ID and permissions) is contained within the JWT payload, which is sent with every request." data-ar="'عديمة الحالة' تعني أن الخادم لا يحتاج إلى تخزين أي معلومات حول جلسة المستخدم. جميع البيانات الضرورية (مثل معرف المستخدم والأذونات) موجودة داخل حمولة JWT، والتي يتم إرسالها مع كل طلب."></p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/jwt-decoder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free online XML formatter. Format, beautify, minify and validate XML code online. Perfect for developers and web designers." />
+    <meta name="keywords" content="xml formatter, xml beautifier, xml minifier, xml validator, online tool, free tool" />
+    <title>XML Formatter - Free Online Tool | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="XML Formatter" data-ar="منسق XML">XML Formatter</h1>
+          <p class="tool-description" data-en="Format, beautify, minify and validate XML code online" data-ar="نسق وجمل وضغط وصحح كود XML عبر الإنترنت">Format, beautify, minify and validate XML code online</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="XML Input:" data-ar="إدخال XML:">XML Input:</label>
+            <textarea id="xmlInput" class="input-textarea" placeholder="Paste your XML code here..." data-en-placeholder="Paste your XML code here..." data-ar-placeholder="الصق كود XML هنا..." rows="10"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Formatting Options:" data-ar="خيارات التنسيق:">Formatting Options:</label>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="radio" name="formatType" value="beautify" checked>
+                <span data-en="Beautify (Pretty Print)" data-ar="تجميل (طباعة جميلة)">Beautify (Pretty Print)</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="radio" name="formatType" value="minify">
+                <span data-en="Minify (Compress)" data-ar="ضغط (ضغط)">Minify (Compress)</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="radio" name="formatType" value="validate">
+                <span data-en="Validate Only" data-ar="التحقق فقط">Validate Only</span>
+              </label>
+            </div>
+        </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Indentation:" data-ar="المسافات البادئة:">Indentation:</label>
+            <select id="indentation" class="input-field">
+                                <option value="2">2 spaces</option>
+                                <option value="4" selected>4 spaces</option>
+              <option value="8">8 spaces</option>
+                                <option value="tab">Tab</option>
+                            </select>
+                    </div>
+
+          <div class="button-group">
+            <button onclick="formatXML()" class="btn btn-primary" data-en="Format XML" data-ar="تنسيق XML">Format XML</button>
+            <button onclick="clearXML()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyXML()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+            <button onclick="downloadXML()" class="btn btn-secondary" data-en="Download" data-ar="تحميل">Download</button>
+                            </div>
+
+          <div id="xmlOutput" class="xml-output" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Formatted XML:" data-ar="XML المنسق:">Formatted XML:</h3>
+            <div id="xmlResult" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6); font-family: monospace; white-space: pre-wrap; overflow-x: auto; max-height: 400px; overflow-y: auto;"></div>
+                        </div>
+
+          <div id="xmlError" class="xml-error" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--error, #ef4444); margin-bottom: 1rem;" data-en="XML Error:" data-ar="خطأ XML:">XML Error:</h3>
+            <div id="errorMessage" style="background: var(--error, #ef4444); color: white; padding: 1rem; border-radius: 0.5rem;"></div>
+                    </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is an XML Formatter?</h2>
+            <p>An XML formatter is an essential online tool that helps developers format, beautify, minify, and validate XML (eXtensible Markup Language) code. XML is a markup language used for storing and transporting data, and proper formatting is crucial for readability, maintenance, and debugging. Our free XML formatter provides instant formatting with various options to suit different needs.</p>
+
+            <h3>How to Use the XML Formatter</h3>
+            <ol>
+              <li>Paste your XML code into the input area</li>
+              <li>Choose your formatting option (beautify, minify, or validate)</li>
+              <li>Select your preferred indentation style</li>
+              <li>Click "Format XML" to process your code</li>
+              <li>Copy the result or download it as a file</li>
+            </ol>
+
+            <h3>XML Formatting Options</h3>
+            <h4>Beautify (Pretty Print)</h4>
+            <ul>
+              <li>Adds proper indentation and line breaks</li>
+              <li>Makes XML code more readable</li>
+              <li>Preserves all original content</li>
+              <li>Ideal for development and debugging</li>
+            </ul>
+
+            <h4>Minify (Compress)</h4>
+            <ul>
+              <li>Removes unnecessary whitespace</li>
+              <li>Compresses XML to minimal size</li>
+              <li>Reduces file size for production</li>
+              <li>Maintains XML structure and content</li>
+            </ul>
+
+            <h4>Validate Only</h4>
+            <ul>
+              <li>Checks XML syntax and structure</li>
+              <li>Identifies errors and issues</li>
+              <li>Provides detailed error messages</li>
+              <li>Ensures XML is well-formed</li>
+            </ul>
+
+            <h3>Indentation Options</h3>
+            <ul>
+              <li><strong>2 Spaces:</strong> Compact indentation</li>
+              <li><strong>4 Spaces:</strong> Standard indentation (recommended)</li>
+              <li><strong>8 Spaces:</strong> Wide indentation</li>
+              <li><strong>Tab:</strong> Tab character indentation</li>
+            </ul>
+
+            <h3>What is XML?</h3>
+            <p>XML (eXtensible Markup Language) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. XML is widely used for:</p>
+            <ul>
+              <li><strong>Data Storage:</strong> Storing structured data</li>
+              <li><strong>Data Exchange:</strong> Sharing data between systems</li>
+              <li><strong>Configuration Files:</strong> Application and system settings</li>
+              <li><strong>Web Services:</strong> SOAP and REST API responses</li>
+              <li><strong>Documentation:</strong> Technical documentation and manuals</li>
+            </ul>
+
+            <h3>XML Structure and Syntax</h3>
+            <ul>
+              <li><strong>Elements:</strong> The building blocks of XML</li>
+              <li><strong>Attributes:</strong> Additional information about elements</li>
+              <li><strong>Root Element:</strong> The top-level element</li>
+              <li><strong>Nested Elements:</strong> Elements within other elements</li>
+              <li><strong>Self-closing Tags:</strong> Elements without content</li>
+            </ul>
+
+            <h3>Common XML Use Cases</h3>
+            <ul>
+              <li><strong>Web Development:</strong> Configuration files and data exchange</li>
+              <li><strong>API Development:</strong> Request and response formats</li>
+              <li><strong>Data Integration:</strong> ETL processes and data migration</li>
+              <li><strong>Content Management:</strong> Structured content storage</li>
+              <li><strong>Mobile Development:</strong> App configuration and data</li>
+              <li><strong>Enterprise Systems:</strong> System integration and data exchange</li>
+            </ul>
+
+            <h3>XML Best Practices</h3>
+            <ul>
+              <li>Use meaningful element and attribute names</li>
+              <li>Maintain consistent indentation and formatting</li>
+              <li>Validate XML against schemas when possible</li>
+              <li>Use proper encoding (UTF-8 recommended)</li>
+              <li>Avoid deep nesting levels</li>
+              <li>Comment complex or non-obvious elements</li>
+            </ul>
+
+            <h3>XML Validation</h3>
+            <p>XML validation ensures that your XML document is well-formed and follows the specified structure. Our formatter checks for:</p>
+            <ul>
+              <li>Proper opening and closing tags</li>
+              <li>Correct nesting of elements</li>
+              <li>Valid attribute syntax</li>
+              <li>Proper character encoding</li>
+              <li>Well-formed document structure</li>
+            </ul>
+
+            <h3>Common XML Errors</h3>
+            <ul>
+              <li><strong>Unclosed Tags:</strong> Missing closing tags</li>
+              <li><strong>Improper Nesting:</strong> Elements not properly nested</li>
+              <li><strong>Invalid Characters:</strong> Special characters not properly encoded</li>
+              <li><strong>Missing Root Element:</strong> No single root element</li>
+              <li><strong>Attribute Issues:</strong> Improper attribute syntax</li>
+            </ul>
+
+            <h3>Related Tools</h3>
+            <ul>
+              <li><strong>JSON Formatter:</strong> Format and validate JSON data</li>
+              <li><strong>HTML Formatter:</strong> Format HTML code</li>
+              <li><strong>CSS Formatter:</strong> Format CSS stylesheets</li>
+              <li><strong>JavaScript Formatter:</strong> Format JavaScript code</li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        <!-- Enhanced Professional Content -->
+        <div class="enhanced-content">
+            
+            <!-- Examples Section -->
+            <div class="examples-section">
+                <h3>🎯 Quick Examples - Try These!</h3>
+                <div class="example-buttons">
+                    <button class="example-btn" onclick="loadExample(0)">📝 Quick Example</button><button class="example-btn" onclick="loadExample(1)">💼 Professional</button><button class="example-btn" onclick="loadExample(2)">🚀 Advanced</button>
+                </div>
+            </div>
+            
+            <!-- Pro Tips -->
+            <div class="pro-tips">
+                <h3>💡 Pro Tips</h3>
+                <ul>
+                    <li>💡 Save time with keyboard shortcuts</li><li>⚡ Use our quick examples to get started</li><li>🔒 Your data stays private - processed locally</li>
+                </ul>
+            </div>
+            
+            <!-- Use Cases -->
+            <h2>📋 Perfect Use Cases</h2>
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h4>👨‍💼 Business</h4>
+                    <p>Streamline your professional workflow with instant results</p>
+                </div>
+                <div class="use-case-card">
+                    <h4>🎓 Education</h4>
+                    <p>Perfect for students and teachers alike</p>
+                </div>
+                <div class="use-case-card">
+                    <h4>💻 Development</h4>
+                    <p>Essential tool for developers and programmers</p>
+                </div>
+                <div class="use-case-card">
+                    <h4>✍️ Content Creation</h4>
+                    <p>Create better content faster</p>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <h2>📊 Why Users Love 24ToolHub</h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Happy Users</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Free</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comparison Table -->
+            <h2>🏆 Why Choose 24ToolHub?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>24ToolHub ✅</th>
+                        <th>Others ❌</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>✓ 100% Free Forever</td>
+                        <td>× Often Paid/Limited</td>
+                    </tr>
+                    <tr>
+                        <td>Registration</td>
+                        <td>✓ No Sign-up Required</td>
+                        <td>× Email Required</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>✓ Lightning Fast</td>
+                        <td>× Often Slow</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td>✓ 100% Private</td>
+                        <td>× Tracks Your Data</td>
+                    </tr>
+                    <tr>
+                        <td>Ads</td>
+                        <td>✓ Minimal & Clean</td>
+                        <td>× Overwhelming</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>❓ Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <details>
+                        <summary>Is this tool really free?</summary>
+                        <p>Yes! 24ToolHub is 100% free to use. No hidden fees, no premium plans, no credit card required.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Is my data safe and private?</summary>
+                        <p>Absolutely! All processing happens in your browser. We never store or transmit your data to any server.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Can I use this tool on mobile devices?</summary>
+                        <p>Yes! Our tools are fully responsive and work perfectly on all devices - desktop, tablet, and mobile.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/xml-formatter.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    Percentage Calculator Types
+  </text>
+  
+  <!-- Type 1: What is X% of Y? -->
+  <rect x="50" y="60" width="150" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="125" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    What is X% of Y?
+  </text>
+  <text x="125" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    Example: 20% of 150
+  </text>
+  <text x="125" y="115" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#1e40af">
+    20% × 150 = 30
+  </text>
+  <text x="125" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    Formula: (X/100) × Y
+  </text>
+  <text x="125" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#1e40af">
+    🔢
+  </text>
+  
+  <!-- Type 2: X is what % of Y? -->
+  <rect x="225" y="60" width="150" height="120" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="300" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">
+    X is what % of Y?
+  </text>
+  <text x="300" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    Example: 25 is what % of 200
+  </text>
+  <text x="300" y="115" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#166534">
+    25/200 × 100 = 12.5%
+  </text>
+  <text x="300" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    Formula: (X/Y) × 100
+  </text>
+  <text x="300" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#166534">
+    📊
+  </text>
+  
+  <!-- Type 3: Percentage Change -->
+  <rect x="400" y="60" width="150" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="475" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    Percentage Change
+  </text>
+  <text x="475" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    Example: 100 to 120
+  </text>
+  <text x="475" y="115" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#92400e">
+    (120-100)/100 × 100 = 20%
+  </text>
+  <text x="475" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    Formula: ((New-Old)/Old) × 100
+  </text>
+  <text x="475" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#92400e">
+    📈
+  </text>
+  
+  <!-- Use cases -->
+  <rect x="50" y="200" width="500" height="120" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+    Common Use Cases
+  </text>
+  
+  <!-- Use case icons and text -->
+  <circle cx="100" cy="250" r="15" fill="#3b82f6"/>
+  <text x="100" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🛒</text>
+  <text x="100" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Shopping
+  </text>
+  
+  <circle cx="200" cy="250" r="15" fill="#10b981"/>
+  <text x="200" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">💰</text>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Finance
+  </text>
+  
+  <circle cx="300" cy="250" r="15" fill="#f59e0b"/>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📊</text>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Business
+  </text>
+  
+  <circle cx="400" cy="250" r="15" fill="#8b5cf6"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📚</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Education
+  </text>
+  
+  <circle cx="500" cy="250" r="15" fill="#ef4444"/>
+  <text x="500" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🏥</text>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Health
+  </text>
+  
+  <!-- Examples -->
+  <text x="100" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Discounts
+  </text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Tax Rates
+  </text>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Growth
+  </text>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Grades
+  </text>
+  <text x="500" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Body Fat
+  </text>
+  
+  <!-- Benefits -->
+  <rect x="50" y="340" width="500" height="50" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Benefits: Instant Results • Multiple Calculation Types • Real-world Applications • Easy to Use
+  </text>
+</svg>

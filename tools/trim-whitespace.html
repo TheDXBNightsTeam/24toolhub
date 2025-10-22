@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Easily remove extra whitespace, leading/trailing spaces, and empty lines from your text. Our free online tool helps you clean and format text in one click.">
+  <meta name="keywords" content="trim whitespace, remove extra spaces, text cleaner, space remover, format text, clean text">
+  <title>Online Whitespace Remover | Trim & Clean Text | 24ToolHub</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../css/styles.css">
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-branding">
+        <a href="../index.html" class="logo-link">
+        <img src="../images/logo.png" alt="24ToolHub Logo" class="logo">
+        <h1 class="site-title">24ToolHub</h1>
+      </a>
+      <div class="header-actions">
+        <button id="langSwitcher" class="lang-switcher">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  <main class="main-content">
+    <div class="tool-container">
+      <div class="tool-header">
+        <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+        <h1 class="tool-title" data-en="Trim Whitespace" data-ar="تنظيف المسافات">Trim Whitespace</h1>
+        <p class="tool-description" data-en="Remove extra spaces and clean up text formatting" data-ar="أزل المسافات الزائدة ونظف تنسيق النص">Remove extra spaces and clean up text formatting</p>
+      </div>
+
+      <div class="tool-interface">
+        <div class="input-group">
+          <label class="input-label" data-en="Enter your text:" data-ar="أدخل النص:">Enter your text:</label>
+          <textarea id="inputText" class="input-textarea" placeholder="Type or paste your text here..." data-en-placeholder="Type or paste your text here..." data-ar-placeholder="اكتب أو الصق النص هنا..." rows="10"></textarea>
+        </div>
+
+        <div class="options-group">
+          <label class="option-label">
+            <input type="checkbox" id="trimStart" checked> <span data-en="Trim leading whitespace" data-ar="أزل المسافات في البداية">Trim leading whitespace</span>
+          </label>
+          <label class="option-label">
+            <input type="checkbox" id="trimEnd" checked> <span data-en="Trim trailing whitespace" data-ar="أزل المسافات في النهاية">Trim trailing whitespace</span>
+          </label>
+          <label class="option-label">
+            <input type="checkbox" id="removeExtraSpaces" checked> <span data-en="Remove extra spaces" data-ar="أزل المسافات الزائدة">Remove extra spaces</span>
+          </label>
+          <label class="option-label">
+            <input type="checkbox" id="removeEmptyLines"> <span data-en="Remove empty lines" data-ar="أزل الأسطر الفارغة">Remove empty lines</span>
+          </label>
+        </div>
+
+        <button onclick="trimText()" class="btn btn-primary" data-en="Trim Whitespace" data-ar="تنظيف المسافات">Trim Whitespace</button>
+
+        <div class="input-group mt-2">
+          <label class="input-label" data-en="Result:" data-ar="النتيجة:">Result:</label>
+          <textarea id="outputText" class="input-textarea" readonly rows="10"></textarea>
+        </div>
+
+        <div class="button-group">
+          <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          <button onclick="copyResult()" class="btn btn-primary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+        </div>
+      </div>
+
+      <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+      <div class="seo-content">
+        <div class="seo-section">
+          <h2 data-en="Why Clean Up Whitespace?" data-ar="لماذا يجب تنظيف المسافات البيضاء؟">Why Clean Up Whitespace?</h2>
+          <p data-en="Extra spaces, tabs, and empty lines can make text look messy and cause errors in data processing or code. Our Whitespace Remover cleans up your text with a single click, making it neat, readable, and ready for use." data-ar="يمكن للمسافات الزائدة وعلامات الجدولة والأسطر الفارغة أن تجعل النص يبدو غير مرتب وتتسبب في حدوث أخطاء في معالجة البيانات أو التعليمات البرمجية. يقوم مزيل المسافات البيضاء لدينا بتنظيف النص بنقرة واحدة، مما يجعله أنيقًا وقابلًا للقراءة وجاهزًا للاستخدام."></p>
+          
+          <h3 data-en="Common Scenarios" data-ar="سيناريوهات شائعة">Common Scenarios</h3>
+          <ul>
+              <li data-en="<strong>Cleaning Copied Text:</strong> Fix formatting issues when you copy text from PDFs, websites, or emails."><strong>تنظيف النص المنسوخ:</strong> أصلح مشكلات التنسيق عند نسخ نص من ملفات PDF أو مواقع الويب أو رسائل البريد الإلكتروني.</li>
+              <li data-en="<strong>Preparing Data:</strong> Ensure data consistency before importing it into a spreadsheet or database."><strong>إعداد البيانات:</strong> تأكد من تناسق البيانات قبل استيرادها إلى جدول بيانات أو قاعدة بيانات.</li>
+              <li data-en="<strong>Formatting Code:</strong> Remove unwanted trailing spaces or extra lines from your source code."><strong>تنسيق الكود:</strong> قم بإزالة المسافات الزائدة أو الأسطر الإضافية من كود المصدر الخاص بك.</li>
+          </ul>
+
+          <!-- FAQ Section -->
+          <div class="faq-section">
+              <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+              <div class="faq-item">
+                  <details>
+                      <summary data-en="Will this tool remove single spaces between words?" data-ar="هل ستزيل هذه الأداة المسافات الفردية بين الكلمات؟">Will this tool remove single spaces between words?</summary>
+                      <p data-en="No. The 'Remove extra spaces' option only targets two or more consecutive spaces, converting them into a single space. It will not affect normal spacing.">لا. يستهدف خيار 'إزالة المسافات الزائدة' فقط مسافتين متتاليتين أو أكثر، وتحويلها إلى مسافة واحدة. لن يؤثر على التباعد العادي.</p>
+                  </details>
+              </div>
+              <div class="faq-item">
+                  <details>
+                      <summary data-en="How can I keep the indentation in my code?" data-ar="كيف يمكنني الحفاظ على المسافة البادئة في الكود الخاص بي؟">How can I keep the indentation in my code?</summary>
+                      <p data-en="To preserve leading spaces (indentation), simply uncheck the 'Trim leading whitespace' option before cleaning your text.">للحفاظ على المسافات البادئة، ما عليك سوى إلغاء تحديد خيار 'إزالة المسافات البادئة' قبل تنظيف النص.</p>
+                  </details>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+  
+        <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo">
+        <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+  <script src="../js/trim-whitespace.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A free online checksum calculator to verify file integrity. Generate MD5, SHA-1, and SHA-256 hashes for any text or file to detect corruption or changes." />
+    <meta name="keywords" content="checksum calculator, md5 generator, sha1 generator, sha256 generator, file integrity, hash calculator" />
+    <title>Online Checksum Calculator (MD5, SHA-1, SHA-256) | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Checksum Calculator" data-ar="حاسبة المجموع الاختباري">Checksum Calculator</h1>
+          <p class="tool-description" data-en="Verify data integrity by generating MD5, SHA-1, and SHA-256 hashes." data-ar="تحقق من سلامة البيانات عن طريق إنشاء تجزئات MD5 و SHA-1 و SHA-256.">Verify data integrity by generating MD5, SHA-1, and SHA-256 hashes.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" for="inputText" data-en="Enter Text:" data-ar="أدخل النص:">Enter Text:</label>
+            <textarea id="inputText" class="input-textarea" placeholder="Type or paste your text here to generate checksums..." data-en-placeholder="Type or paste your text here to generate checksums..." data-ar-placeholder="اكتب أو الصق النص هنا لإنشاء المجاميع الاختبارية..." rows="8"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button id="calculateBtn" class="btn btn-primary" data-en="Calculate Hashes" data-ar="احسب التجزئات">Calculate Hashes</button>
+            <button id="clearBtn" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          </div>
+
+          <!-- Output Section -->
+          <div id="outputSection" class="output-section" style="display: none; margin-top: 1.5rem;">
+            <div class="output-group">
+                <label class="output-label">MD5</label>
+                <div class="output-field-container">
+                    <input type="text" id="md5Output" class="output-field" readonly>
+                    <button class="copy-btn" data-clipboard-target="#md5Output" aria-label="Copy MD5 Hash"></button>
+                </div>
+            </div>
+            <div class="output-group">
+                <label class="output-label">SHA-1</label>
+                <div class="output-field-container">
+                    <input type="text" id="sha1Output" class="output-field" readonly>
+                    <button class="copy-btn" data-clipboard-target="#sha1Output" aria-label="Copy SHA-1 Hash"></button>
+                </div>
+            </div>
+            <div class="output-group">
+                <label class="output-label">SHA-256</label>
+                <div class="output-field-container">
+                    <input type="text" id="sha256Output" class="output-field" readonly>
+                    <button class="copy-btn" data-clipboard-target="#sha256Output" aria-label="Copy SHA-256 Hash"></button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"></div>
+
+        <!-- SEO Content Placeholder -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="What is a Checksum?" data-ar="ما هو المجموع الاختباري؟">What is a Checksum?</h2>
+            <p data-en="A checksum is a small-sized block of data derived from another block of digital data for the purpose of detecting errors that may have been introduced during its transmission or storage. By recalculating the checksum of a received file and comparing it with the original one, you can verify its integrity." data-ar="المجموع الاختباري هو كتلة بيانات صغيرة الحجم مشتقة من كتلة أخرى من البيانات الرقمية لغرض اكتشاف الأخطاء التي قد تكون قد حدثت أثناء إرسالها أو تخزينها. من خلال إعادة حساب المجموع الاختباري لملف مستلم ومقارنته بالملف الأصلي، يمكنك التحقق من سلامته."></p>
+
+            <h3 data-en="How Does it Work?" data-ar="كيف يعمل؟">How Does it Work?</h3>
+            <p data-en="A checksum algorithm uses a cryptographic hash function to produce a unique, fixed-size string (the 'hash' or 'checksum') from the input data. Even a tiny change in the input data will result in a completely different checksum. This makes it an excellent tool for verifying data integrity." data-ar="تستخدم خوارزمية المجموع الاختباري دالة تجزئة تشفيرية لإنتاج سلسلة فريدة وثابتة الحجم ('التجزئة' أو 'المجموع الاختباري') من بيانات الإدخال. حتى التغيير الطفيف في بيانات الإدخال سيؤدي إلى مجموع اختباري مختلف تمامًا. وهذا يجعله أداة ممتازة للتحقق من سلامة البيانات."></p>
+
+            <h3 data-en="Common Hashing Algorithms" data-ar="خوارزميات التجزئة الشائعة">Common Hashing Algorithms</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th data-en="Algorithm" data-ar="الخوارزمية">Algorithm</th>
+                        <th data-en="Description" data-ar="الوصف">Description</th>
+                        <th data-en="Security" data-ar="الأمان">Security</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MD5</strong></td>
+                        <td data-en="A widely used hash function producing a 128-bit hash value. It is fast but no longer considered secure against collisions." data-ar="دالة تجزئة مستخدمة على نطاق واسع تنتج قيمة تجزئة 128 بت. إنها سريعة ولكنها لم تعد تعتبر آمنة ضد التصادمات.">A widely used hash function producing a 128-bit hash value. It is fast but no longer considered secure against collisions.</td>
+                        <td data-en="Insecure" data-ar="غير آمن">Insecure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHA-1</strong></td>
+                        <td data-en="Produces a 160-bit hash value. It is stronger than MD5 but is also considered insecure for most cryptographic purposes today." data-ar="تنتج قيمة تجزئة 160 بت. إنها أقوى من MD5 ولكنها تعتبر أيضًا غير آمنة لمعظم الأغراض التشفيرية اليوم.">Produces a 160-bit hash value. It is stronger than MD5 but is also considered insecure for most cryptographic purposes today.</td>
+                        <td data-en="Weak" data-ar="ضعيف">Weak</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHA-256</strong></td>
+                        <td data-en="Part of the SHA-2 family, it produces a 256-bit hash. It is the current industry standard for secure hashing." data-ar="جزء من عائلة SHA-2، وتنتج تجزئة 256 بت. وهو المعيار الصناعي الحالي للتجزئة الآمنة.">Part of the SHA-2 family, it produces a 256-bit hash. It is the current industry standard for secure hashing.</td>
+                        <td data-en="Secure" data-ar="آمن">Secure</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 data-en="Use Cases for Checksums" data-ar="حالات استخدام المجاميع الاختبارية">Use Cases for Checksums</h3>
+            <ul>
+                <li data-en="<strong>File Integrity Verification:</strong> Ensure a downloaded file has not been corrupted or tampered with." data-ar="<strong>التحقق من سلامة الملفات:</strong> تأكد من أن الملف الذي تم تنزيله لم يتعرض للتلف أو العبث."><strong>File Integrity Verification:</strong> Ensure a downloaded file has not been corrupted or tampered with.</li>
+                <li data-en="<strong>Password Storage:</strong> Storing hashes of passwords instead of the plain text passwords themselves to enhance security." data-ar="<strong>تخزين كلمات المرور:</strong> تخزين تجزئات كلمات المرور بدلاً من كلمات المرور النصية نفسها لتعزيز الأمان."><strong>Password Storage:</strong> Storing hashes of passwords instead of the plain text passwords themselves to enhance security.</li>
+                <li data-en="<strong>Digital Signatures:</strong> Verifying the authenticity and integrity of digital documents and messages." data-ar="<strong>التوقيعات الرقمية:</strong> التحقق من أصالة وسلامة المستندات والرسائل الرقمية."><strong>Digital Signatures:</strong> Verifying the authenticity and integrity of digital documents and messages.</li>
+                <li data-en="<strong>Data Deduplication:</strong> Identifying duplicate files in storage systems by comparing their checksums." data-ar="<strong>إلغاء البيانات المكررة:</strong> تحديد الملفات المكررة في أنظمة التخزين عن طريق مقارنة مجاميعها الاختبارية."><strong>Data Deduplication:</strong> Identifying duplicate files in storage systems by comparing their checksums.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is a 'hash collision'?" data-ar="ما هو 'تصادم التجزئة'؟">What is a 'hash collision'?</summary>
+                        <p data-en="A hash collision occurs when two different inputs produce the same hash output. For older algorithms like MD5, collisions can be intentionally created, making them insecure." data-ar="يحدث تصادم التجزئة عندما ينتج مدخلان مختلفان نفس ناتج التجزئة. بالنسبة للخوارزميات القديمة مثل MD5، يمكن إنشاء التصادمات عن قصد، مما يجعلها غير آمنة.">A hash collision occurs when two different inputs produce the same hash output. For older algorithms like MD5, collisions can be intentionally created, making them insecure.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can I reverse a hash to get the original text?" data-ar="هل يمكنني عكس التجزئة للحصول على النص الأصلي؟">Can I reverse a hash to get the original text?</summary>
+                        <p data-en="No, cryptographic hash functions are designed to be one-way. It is computationally infeasible to reverse the process and obtain the original input from the hash output." data-ar="لا، تم تصميم دوال التجزئة التشفيرية لتكون ذات اتجاه واحد. من غير الممكن حسابيًا عكس العملية والحصول على الإدخال الأصلي من ناتج التجزئة.">No, cryptographic hash functions are designed to be one-way. It is computationally infeasible to reverse the process and obtain the original input from the hash output.</p>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary data--en="Why should I use SHA-256 over MD5?" data-ar="لماذا يجب أن أستخدم SHA-256 بدلاً من MD5؟">Why should I use SHA-256 over MD5?</summary>
+                        <p data-en="SHA-256 is significantly more secure than MD5. MD5 is known to have vulnerabilities and is susceptible to collision attacks, meaning its integrity checks can be bypassed. SHA-256 is the current industry standard for secure applications." data-ar="SHA-256 أكثر أمانًا بشكل كبير من MD5. من المعروف أن MD5 به نقاط ضعف وهو عرضة لهجمات التصادم، مما يعني أنه يمكن تجاوز فحوصات السلامة الخاصة به. SHA-256 هو المعيار الصناعي الحالي للتطبيقات الآمنة.">SHA-256 is significantly more secure than MD5. MD5 is known to have vulnerabilities and is susceptible to collision attacks, meaning its integrity checks can be bypassed. SHA-256 is the current industry standard for secure applications.</p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/checksum-calculator.js"></script>
+</body>
+</html>

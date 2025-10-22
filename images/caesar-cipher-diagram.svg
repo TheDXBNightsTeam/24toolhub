@@ -1,0 +1,78 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    Caesar Cipher with Shift 3
+  </text>
+  
+  <!-- Alphabet rows -->
+  <rect x="50" y="60" width="500" height="120" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <!-- Original alphabet -->
+  <text x="300" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Original Alphabet
+  </text>
+  
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="14" fill="#1e40af" font-weight="bold">
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  </text>
+  
+  <!-- Shifted alphabet -->
+  <text x="300" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Shifted Alphabet (Shift +3)
+  </text>
+  
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" fill="#059669" font-weight="bold">
+    D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+  </text>
+  
+  <!-- Example transformation -->
+  <rect x="50" y="200" width="500" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    Example: "HELLO WORLD"
+  </text>
+  
+  <!-- Input text -->
+  <text x="100" y="245" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Input:
+  </text>
+  <text x="100" y="260" font-family="Arial, sans-serif" font-size="12" fill="#1e40af" font-weight="bold">
+    H E L L O   W O R L D
+  </text>
+  
+  <!-- Output text -->
+  <text x="350" y="245" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Output:
+  </text>
+  <text x="350" y="260" font-family="Arial, sans-serif" font-size="12" fill="#059669" font-weight="bold">
+    K H O O R   Z R U O G
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 250 250 L 300 250" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="275" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    Shift +3
+  </text>
+  
+  <!-- Letter mapping examples -->
+  <rect x="50" y="320" width="500" height="60" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">
+    Letter Mapping Examples
+  </text>
+  
+  <text x="100" y="360" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    H → K, E → H, L → O, O → R, W → Z
+  </text>
+  <text x="350" y="360" font-family="Arial, sans-serif" font-size="10" fill="#0c4a6e">
+    (Wrap around: X → A, Y → B, Z → C)
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

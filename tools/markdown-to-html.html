@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convert your Markdown text into clean and semantic HTML code instantly. Our free online converter provides a live preview and supports GitHub Flavored Markdown (GFM).">
+    <meta name="keywords" content="markdown to html, markdown converter, md to html, markdown editor, gfm converter, developer tool">
+    <title>Online Markdown to HTML Converter | Live Preview | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+            <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Markdown to HTML Converter" data-ar="محول Markdown إلى HTML">Markdown to HTML Converter</h1>
+          <p class="tool-description" data-en="Convert Markdown text to HTML code with live preview" data-ar="حول نص Markdown إلى كود HTML مع معاينة مباشرة">Convert Markdown text to HTML code with live preview</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Markdown Input:" data-ar="إدخال Markdown:">Markdown Input:</label>
+            <textarea id="markdownInput" class="input-field" placeholder="# Enter your Markdown here...&#10;&#10;## Features&#10;- Headers&#10;- **Bold text**&#10;- *Italic text*&#10;- [Links](https://example.com)&#10;- `Code blocks`" data-en-placeholder="# Enter your Markdown here...&#10;&#10;## Features&#10;- Headers&#10;- **Bold text**&#10;- *Italic text*&#10;- [Links](https://example.com)&#10;- `Code blocks`" data-ar-placeholder="# أدخل Markdown هنا...&#10;&#10;## الميزات&#10;- العناوين&#10;- **نص عريض**&#10;- *نص مائل*&#10;- [روابط](https://example.com)&#10;- `كتل كود`" rows="8"></textarea>
+        </div>
+
+          <div class="button-group">
+            <button onclick="convertMarkdown()" class="btn btn-primary" data-en="Convert to HTML" data-ar="تحويل إلى HTML">Convert to HTML</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+            <button onclick="copyOutput()" class="btn btn-secondary" data-en="Copy HTML" data-ar="نسخ HTML">Copy HTML</button>
+                    </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="HTML Output:" data-ar="إخراج HTML:">HTML Output:</label>
+            <textarea id="htmlOutput" class="input-field" placeholder="HTML output will appear here..." data-en-placeholder="HTML output will appear here..." data-ar-placeholder="ستظهر نتيجة HTML هنا..." rows="8" readonly></textarea>
+                        </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Live Preview:" data-ar="معاينة مباشرة:">Live Preview:</label>
+            <div id="preview" class="markdown-preview" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; min-height: 200px; border: 1px solid var(--border-color, #444);"></div>
+                        </div>
+                    </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="What is Markdown to HTML Conversion?" data-ar="ما هو تحويل Markdown إلى HTML؟">What is Markdown to HTML Conversion?</h2>
+            <p data-en="Markdown is a lightweight markup language designed for simplicity and readability. A Markdown to HTML converter takes your easy-to-write Markdown text and transforms it into the standard HTML code needed to display content on a webpage. This process allows you to focus on writing without worrying about complex HTML tags." data-ar="Markdown هي لغة ترميز خفيفة الوزن مصممة للبساطة وسهولة القراءة. يقوم محول Markdown إلى HTML بأخذ نص Markdown سهل الكتابة وتحويله إلى كود HTML القياسي اللازم لعرض المحتوى على صفحة ويب. تتيح لك هذه العملية التركيز على الكتابة دون القلق بشأن علامات HTML المعقدة."></p>
+            
+            <h3 data-en="Common Use Cases" data-ar="حالات الاستخدام الشائعة">Common Use Cases</h3>
+            <ul>
+                <li data-en="<strong>Blogging:</strong> Write articles in Markdown for your blog or static site generator (like Jekyll or Hugo)."><strong>التدوين:</strong> اكتب مقالات بـ Markdown لمدونتك أو مولد المواقع الثابتة (مثل Jekyll أو Hugo).</li>
+                <li data-en="<strong>Documentation:</strong> Quickly create formatted README files, wikis, and technical documentation."><strong>التوثيق:</strong> قم بإنشاء ملفات README ومنصات ويكي وتوثيق فني منسق بسرعة.</li>
+                <li data-en="<strong>Note-Taking:</strong> Use Markdown for taking notes in apps like Obsidian or Notion, then convert to HTML for sharing."><strong>تدوين الملاحظات:</strong> استخدم Markdown لتدوين الملاحظات في تطبيقات مثل Obsidian أو Notion، ثم قم بالتحويل إلى HTML للمشاركة.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can I use raw HTML in my Markdown?" data-ar="هل يمكنني استخدام HTML خام في Markdown الخاص بي؟">Can I use raw HTML in my Markdown?</summary>
+                        <p data-en="Yes, most Markdown parsers, including the one used by this tool, allow you to include raw HTML tags directly within your Markdown text. This is useful for complex elements that Markdown doesn't support natively." data-ar="نعم، تسمح معظم محللات Markdown، بما في ذلك تلك المستخدمة في هذه الأداة، بتضمين علامات HTML الخام مباشرة داخل نص Markdown الخاص بك. هذا مفيد للعناصر المعقدة التي لا يدعمها Markdown أصلاً."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is GitHub Flavored Markdown (GFM)?" data-ar="ما هو GitHub Flavored Markdown (GFM)؟">What is GitHub Flavored Markdown (GFM)?</summary>
+                        <p data-en="GitHub Flavored Markdown (GFM) is an extension of the standard Markdown syntax that adds features like tables, strikethrough text (~~text~~), and task lists (`- [x]`). Our converter supports GFM, so you can use these features.">GitHub Flavored Markdown (GFM) هو امتداد لبناء جملة Markdown القياسي يضيف ميزات مثل الجداول، والنص المشطوب (~~نص~~)، وقوائم المهام (`- [x]`). يدعم محولنا GFM، لذا يمكنك استخدام هذه الميزات."></p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/markdown-to-html.js"></script>
+</body>
+</html>

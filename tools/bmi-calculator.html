@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculate your Body Mass Index (BMI) with our accurate online tool. Get instant results for your health category, ideal weight, and personalized health insights." />
+    <meta name="keywords" content="bmi calculator, body mass index, calculate bmi, health assessment, weight management, fitness tool, healthy weight" />
+    <title>Accurate BMI Calculator - Check Your Body Mass Index | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+                <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Body Mass Index (BMI) Calculator" data-ar="حاسبة مؤشر كتلة الجسم (BMI)">Body Mass Index (BMI) Calculator</h1>
+          <p class="tool-description" data-en="An easy way to assess your weight status and understand your health." data-ar="طريقة سهلة لتقييم حالة وزنك وفهم صحتك.">An easy way to assess your weight status and understand your health.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Height:" data-ar="الطول:">Height:</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="number" id="height" class="input-field" placeholder="Enter height" data-en-placeholder="Enter height" data-ar-placeholder="أدخل الطول" value="170" min="50" max="300" style="flex: 1;" />
+              <select id="heightUnit" class="input-field" style="flex: 1;">
+                <option value="cm" selected>Centimeters (cm)</option>
+                <option value="ft">Feet & Inches</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Weight:" data-ar="الوزن:">Weight:</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="number" id="weight" class="input-field" placeholder="Enter weight" data-en-placeholder="Enter weight" data-ar-placeholder="أدخل الوزن" value="70" min="20" max="500" step="0.1" style="flex: 1;" />
+              <select id="weightUnit" class="input-field" style="flex: 1;">
+                <option value="kg" selected>Kilograms (kg)</option>
+                <option value="lbs">Pounds (lbs)</option>
+              </select>
+            </div>
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Age (Optional):" data-ar="العمر (اختياري):">Age (Optional):</label>
+            <input type="number" id="age" class="input-field" placeholder="Enter age" data-en-placeholder="Enter age" data-ar-placeholder="أدخل العمر" min="1" max="120" />
+                    </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Gender (Optional):" data-ar="الجنس (اختياري):">Gender (Optional):</label>
+            <select id="gender" class="input-field">
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+                    </div>
+
+          <div class="button-group">
+            <button onclick="calculateBMI()" class="btn btn-primary" data-en="Calculate BMI" data-ar="احسب مؤشر كتلة الجسم">Calculate BMI</button>
+            <button onclick="clearBMI()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyResults()" class="btn btn-secondary" data-en="Copy Results" data-ar="نسخ النتائج">Copy Results</button>
+                </div>
+
+          <div id="bmiResults" class="bmi-results" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="BMI Calculation Results:" data-ar="نتائج حساب مؤشر كتلة الجسم:">BMI Calculation Results:</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--accent-primary, #3b82f6);">
+                <div style="font-size: 2rem; font-weight: bold; color: var(--accent-primary, #3b82f6);" id="bmiValue">0</div>
+                <div style="color: var(--text-secondary, #888);">BMI Value</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--success, #10b981);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--success, #10b981);" id="bmiCategory">-</div>
+                <div style="color: var(--text-secondary, #888);">Category</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--warning, #f59e0b);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--warning, #f59e0b);" id="idealWeight">-</div>
+                <div style="color: var(--text-secondary, #888);">Ideal Weight Range</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--error, #ef4444);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--error, #ef4444);" id="weightToLose">-</div>
+                <div style="color: var(--text-secondary, #888);">Weight to Adjust</div>
+                        </div>
+                        </div>
+            
+            <div style="margin-top: 1rem; background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+              <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">BMI Categories:</h4>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; font-size: 0.875rem;">
+                <div><strong>Underweight:</strong> BMI < 18.5</div>
+                <div><strong>Normal weight:</strong> BMI 18.5-24.9</div>
+                <div><strong>Overweight:</strong> BMI 25-29.9</div>
+                <div><strong>Obesity:</strong> BMI ≥ 30</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is a BMI Calculator?</h2>
+            <p>A BMI (Body Mass Index) calculator is a health assessment tool that calculates your body mass index based on your height and weight. BMI is a widely used screening tool to identify potential weight problems in adults. Our free BMI calculator provides instant results and helps you understand your health category and ideal weight range.</p>
+
+            <h3>How to Use the BMI Calculator</h3>
+            <ol>
+              <li>Enter your height in centimeters or feet and inches</li>
+              <li>Enter your weight in kilograms or pounds</li>
+              <li>Optionally enter your age and gender for more accurate results</li>
+              <li>Click "Calculate BMI" to see your results</li>
+              <li>Review your BMI category and health recommendations</li>
+            </ol>
+
+            <h3>What is BMI?</h3>
+            <p>Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. It's calculated by dividing your weight in kilograms by your height in meters squared (kg/m²). BMI provides a simple numeric measure of a person's thickness or thinness.</p>
+
+            <h3>BMI Formula</h3>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace; font-size: 0.875rem;">
+              BMI = weight (kg) / height (m)²<br><br>
+              Or in imperial units:<br>
+              BMI = (weight (lbs) / height (in)²) × 703
+            </div>
+
+            <h3>BMI Categories</h3>
+            <h4>Adult BMI Categories (WHO Standard)</h4>
+            <ul>
+              <li><strong>Underweight:</strong> BMI less than 18.5</li>
+              <li><strong>Normal weight:</strong> BMI 18.5 to 24.9</li>
+              <li><strong>Overweight:</strong> BMI 25 to 29.9</li>
+              <li><strong>Obesity Class I:</strong> BMI 30 to 34.9</li>
+              <li><strong>Obesity Class II:</strong> BMI 35 to 39.9</li>
+              <li><strong>Obesity Class III:</strong> BMI 40 or higher</li>
+            </ul>
+
+            <h3>BMI Interpretation</h3>
+            <h4>Normal Weight (BMI 18.5-24.9)</h4>
+            <p>This range is associated with the lowest risk of health problems. People in this range generally have a healthy body weight relative to their height.</p>
+
+            <h4>Overweight (BMI 25-29.9)</h4>
+            <p>This range indicates excess body weight that may increase the risk of health problems such as heart disease, diabetes, and high blood pressure.</p>
+
+            <h4>Obesity (BMI 30+)</h4>
+            <p>This range significantly increases the risk of serious health conditions including heart disease, stroke, type 2 diabetes, and certain cancers.</p>
+
+            <h3>BMI Limitations</h3>
+            <p>While BMI is a useful screening tool, it has limitations:</p>
+            <ul>
+              <li><strong>Muscle Mass:</strong> Doesn't distinguish between muscle and fat</li>
+              <li><strong>Age:</strong> May not be accurate for older adults</li>
+              <li><strong>Gender:</strong> Doesn't account for different body compositions</li>
+              <li><strong>Ethnicity:</strong> May not be accurate for all ethnic groups</li>
+              <li><strong>Body Composition:</strong> Doesn't measure body fat percentage</li>
+            </ul>
+
+            <h3>Who Should Use BMI?</h3>
+            <ul>
+              <li><strong>Adults 20+ years:</strong> Primary screening tool</li>
+              <li><strong>General population:</strong> Health assessment</li>
+              <li><strong>Healthcare providers:</strong> Clinical assessment</li>
+              <li><strong>Fitness enthusiasts:</strong> Progress tracking</li>
+            </ul>
+
+            <h3>BMI and Health Risks</h3>
+            <h4>Health Risks Associated with High BMI</h4>
+            <ul>
+              <li>Heart disease and stroke</li>
+              <li>Type 2 diabetes</li>
+              <li>High blood pressure</li>
+              <li>Certain cancers</li>
+              <li>Sleep apnea</li>
+              <li>Osteoarthritis</li>
+            </ul>
+
+            <h4>Health Risks Associated with Low BMI</h4>
+            <ul>
+              <li>Malnutrition</li>
+              <li>Weakened immune system</li>
+              <li>Osteoporosis</li>
+              <li>Anemia</li>
+              <li>Fertility issues</li>
+            </ul>
+
+            <h3>Improving Your BMI</h3>
+            <h4>For Overweight/Obese Individuals</h4>
+            <ul>
+              <li>Create a calorie deficit through diet and exercise</li>
+              <li>Focus on whole, nutrient-dense foods</li>
+              <li>Engage in regular physical activity</li>
+              <li>Get adequate sleep</li>
+              <li>Manage stress levels</li>
+            </ul>
+
+            <h4>For Underweight Individuals</h4>
+            <ul>
+              <li>Increase calorie intake with healthy foods</li>
+              <li>Focus on nutrient-dense, high-calorie foods</li>
+              <li>Engage in strength training to build muscle</li>
+              <li>Consult with a healthcare provider</li>
+            </ul>
+
+            <h3>Alternative Health Measurements</h3>
+            <ul>
+              <li><strong>Waist Circumference:</strong> Measures abdominal fat</li>
+              <li><strong>Body Fat Percentage:</strong> More accurate than BMI</li>
+              <li><strong>Waist-to-Hip Ratio:</strong> Assesses fat distribution</li>
+              <li><strong>Skinfold Measurements:</strong> Estimates body fat</li>
+            </ul>
+
+            <!-- Related Tools Section -->
+            <div class="tools-resources">
+                <h3 data-en="Related Health Tools" data-ar="أدوات الصحة ذات الصلة">Related Health Tools:</h3>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4 data-en="Health Calculators" data-ar="حاسبات الصحة">Health Calculators</h4>
+                        <p data-en="Other health and fitness calculation tools on our platform" data-ar="أدوات حساب الصحة واللياقة الأخرى على منصتنا"></p>
+                        <div class="internal-links">
+                            <a href="loan-calculator.html" class="resource-link" data-en="Loan Calculator" data-ar="حاسبة القرض">Loan Calculator</a>
+                            <a href="percentage-calculator.html" class="resource-link" data-en="Percentage Calculator" data-ar="حاسبة النسب المئوية">Percentage Calculator</a>
+                            <a href="temperature-converter.html" class="resource-link" data-en="Temperature Converter" data-ar="محول درجة الحرارة">Temperature Converter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Conversion Tools" data-ar="أدوات التحويل">Conversion Tools</h4>
+                        <p data-en="More conversion and calculation tools" data-ar="المزيد من أدوات التحويل والحساب"></p>
+                        <div class="internal-links">
+                            <a href="weight-converter.html" class="resource-link" data-en="Weight Converter" data-ar="محول الوزن">Weight Converter</a>
+                            <a href="length-converter.html" class="resource-link" data-en="Length Converter" data-ar="محول الطول">Length Converter</a>
+                            <a href="currency-converter.html" class="resource-link" data-en="Currency Converter" data-ar="محول العملات">Currency Converter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Fitness Tools" data-ar="أدوات اللياقة">Fitness Tools</h4>
+                        <p data-en="Tools for fitness and health tracking" data-ar="أدوات تتبع اللياقة والصحة"></p>
+                        <div class="internal-links">
+                            <a href="calorie-calculator.html" class="resource-link" data-en="Calorie Calculator" data-ar="حاسبة السعرات">Calorie Calculator</a>
+                            <a href="body-fat-calculator.html" class="resource-link" data-en="Body Fat Calculator" data-ar="حاسبة دهون الجسم">Body Fat Calculator</a>
+                            <a href="workout-tracker.html" class="resource-link" data-en="Workout Tracker" data-ar="متتبع التمارين">Workout Tracker</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Health Resources" data-ar="موارد الصحة">Health Resources</h4>
+                        <p data-en="External health and fitness resources" data-ar="الموارد الخارجية للصحة واللياقة"></p>
+                        <a href="https://www.cdc.gov/healthyweight/assessing/bmi/" target="_blank" rel="noopener noreferrer" class="resource-link" data-en="CDC BMI Guide" data-ar="دليل CDC لـ BMI">CDC BMI Guide</a>
+                    </div>
+                </div>
+            </div>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/bmi-calculator.js"></script>
+</body>
+</html>

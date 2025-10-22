@@ -1,0 +1,117 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    QR Code Generation Process
+  </text>
+  
+  <!-- Input examples -->
+  <rect x="50" y="60" width="200" height="120" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="150" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Input Content Types
+  </text>
+  
+  <text x="60" y="100" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    🌐 URL: https://example.com
+  </text>
+  <text x="60" y="115" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    📝 Text: "Hello World!"
+  </text>
+  <text x="60" y="130" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    📧 Email: user@example.com
+  </text>
+  <text x="60" y="145" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    📱 Phone: +1234567890
+  </text>
+  <text x="60" y="160" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    📍 Location: 40.7128, -74.0060
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 270 120 L 310 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="290" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    Generate
+  </text>
+  
+  <!-- QR Code example -->
+  <rect x="330" y="60" width="120" height="120" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="390" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    QR Code Output
+  </text>
+  
+  <!-- Simple QR code representation -->
+  <rect x="350" y="100" width="80" height="80" fill="white" stroke="#000" stroke-width="1"/>
+  <!-- QR code pattern -->
+  <rect x="350" y="100" width="20" height="20" fill="#000"/>
+  <rect x="370" y="100" width="20" height="20" fill="#000"/>
+  <rect x="390" y="100" width="20" height="20" fill="#000"/>
+  <rect x="410" y="100" width="20" height="20" fill="#000"/>
+  
+  <rect x="350" y="120" width="20" height="20" fill="#000"/>
+  <rect x="390" y="120" width="20" height="20" fill="#000"/>
+  
+  <rect x="350" y="140" width="20" height="20" fill="#000"/>
+  <rect x="370" y="140" width="20" height="20" fill="#000"/>
+  <rect x="390" y="140" width="20" height="20" fill="#000"/>
+  <rect x="410" y="140" width="20" height="20" fill="#000"/>
+  
+  <rect x="350" y="160" width="20" height="20" fill="#000"/>
+  <rect x="390" y="160" width="20" height="20" fill="#000"/>
+  
+  <rect x="350" y="180" width="20" height="20" fill="#000"/>
+  <rect x="370" y="180" width="20" height="20" fill="#000"/>
+  <rect x="390" y="180" width="20" height="20" fill="#000"/>
+  <rect x="410" y="180" width="20" height="20" fill="#000"/>
+  
+  <!-- Features section -->
+  <rect x="50" y="200" width="500" height="120" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+    QR Code Features
+  </text>
+  
+  <!-- Feature icons -->
+  <circle cx="100" cy="250" r="15" fill="#3b82f6"/>
+  <text x="100" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📏</text>
+  <text x="100" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Custom Size
+  </text>
+  
+  <circle cx="200" cy="250" r="15" fill="#10b981"/>
+  <text x="200" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🛡️</text>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Error Correction
+  </text>
+  
+  <circle cx="300" cy="250" r="15" fill="#f59e0b"/>
+  <text x="300" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📱</text>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Mobile Friendly
+  </text>
+  
+  <circle cx="400" cy="250" r="15" fill="#8b5cf6"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">💾</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Download PNG
+  </text>
+  
+  <circle cx="500" cy="250" r="15" fill="#ef4444"/>
+  <text x="500" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">⚡</text>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Instant Generate
+  </text>
+  
+  <!-- Use cases -->
+  <rect x="50" y="340" width="500" height="50" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Perfect for: Marketing • Contact Sharing • Digital Menus • Event Tickets • Product Information
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

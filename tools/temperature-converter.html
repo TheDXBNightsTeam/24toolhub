@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instantly convert temperatures between Celsius (°C), Fahrenheit (°F), and Kelvin (K). Our free online temperature converter is a fast and accurate tool for everyday use, cooking, and scientific calculations.">
+    <meta name="keywords" content="temperature converter, convert temperature, celsius to fahrenheit, fahrenheit to celsius, kelvin to celsius, C to F, F to C">
+    <title>Online Temperature Converter | °C, °F, K | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Temperature Converter" data-ar="محول الحرارة">Temperature Converter</h1>
+          <p class="tool-description" data-en="Convert between Celsius, Fahrenheit, and Kelvin instantly" data-ar="تحويل بين سيلسيوس وفهرنهايت وكلفن فوراً">Convert between Celsius, Fahrenheit, and Kelvin instantly</p>
+    </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Celsius (°C)" data-ar="سيلسيوس (°C)">Celsius (°C)</label>
+            <input type="number" id="celsius" class="input-field" placeholder="0" data-en-placeholder="0" data-ar-placeholder="0" step="0.01" />
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Fahrenheit (°F)" data-ar="فهرنهايت (°F)">Fahrenheit (°F)</label>
+            <input type="number" id="fahrenheit" class="input-field" placeholder="32" data-en-placeholder="32" data-ar-placeholder="32" step="0.01" />
+                        </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Kelvin (K)" data-ar="كلفن (K)">Kelvin (K)</label>
+            <input type="number" id="kelvin" class="input-field" placeholder="273.15" data-en-placeholder="273.15" data-ar-placeholder="273.15" step="0.01" />
+                    </div>
+
+                    <div class="button-group">
+            <button onclick="clearTemperature()" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+            <button onclick="copyResults()" class="btn btn-primary" data-en="Copy Results" data-ar="نسخ النتائج">Copy Results</button>
+                    </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="How to Use the Temperature Converter" data-ar="كيفية استخدام محول درجة الحرارة">How to Use the Temperature Converter</h2>
+            <p data-en="Our temperature converter allows you to instantly switch between Celsius, Fahrenheit, and Kelvin. Simply enter a value in any of the fields, and the other two will update automatically. It's an essential tool for cooking, travel, and scientific work.">يتيح لك محول درجة الحرارة الخاص بنا التبديل الفوري بين درجات مئوية وفهرنهايت وكلفن. ما عليك سوى إدخال قيمة في أي من الحقول، وسيتم تحديث الحقلين الآخرين تلقائيًا. إنها أداة أساسية للطبخ والسفر والعمل العلمي.</p>
+            
+            <h3 data-en="Understanding the Temperature Scales" data-ar="فهم مقاييس درجة الحرارة">Understanding the Temperature Scales</h3>
+            <ul>
+                <li data-en="<strong>Celsius (°C):</strong> The most common scale worldwide, used in everyday life and science."><strong>درجة مئوية (°C):</strong> المقياس الأكثر شيوعًا في جميع أنحاء العالم، ويستخدم في الحياة اليومية والعلوم.</li>
+                <li data-en="<strong>Fahrenheit (°F):</strong> Primarily used in the United States. Water freezes at 32°F and boils at 212°F."><strong>فهرنهايت (°F):</strong> يستخدم في المقام الأول في الولايات المتحدة. يتجمد الماء عند 32 درجة فهرنهايت ويغلي عند 212 درجة فهرنهايت.</li>
+                <li data-en="<strong>Kelvin (K):</strong> The base unit of temperature in the International System of Units (SI), used in scientific contexts. 0K is absolute zero."><strong>كلفن (K):</strong> الوحدة الأساسية لدرجة الحرارة في النظام الدولي للوحدات (SI)، وتستخدم في السياقات العلمية. 0K هو الصفر المطلق.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is absolute zero?" data-ar="ما هو الصفر المطلق؟">What is absolute zero?</summary>
+                        <p data-en="Absolute zero (0K) is the lowest possible temperature where nothing could be colder and no heat energy remains in a substance. It is equivalent to -273.15°C or -459.67°F.">الصفر المطلق (0K) هو أدنى درجة حرارة ممكنة حيث لا يمكن أن يكون أي شيء أبرد ولا تتبقى طاقة حرارية في المادة. وهو ما يعادل -273.15 درجة مئوية أو -459.67 درجة فهرنهايت.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Why is body temperature 98.6°F and not a round number?" data-ar="لماذا تبلغ درجة حرارة الجسم 98.6 درجة فهرنهايت وليست رقمًا صحيحًا؟">Why is body temperature 98.6°F and not a round number?</summary>
+                        <p data-en="The 98.6°F standard was based on a 19th-century study. More recent research shows that the average body temperature is closer to 97.9°F (36.6°C), but 98.6°F remains the conventional value.">استند معيار 98.6 درجة فهرنهايت إلى دراسة من القرن التاسع عشر. تظهر الأبحاث الحديثة أن متوسط درجة حرارة الجسم أقرب إلى 97.9 درجة فهرنهايت (36.6 درجة مئوية)، لكن 98.6 درجة فهرنهايت تظل القيمة التقليدية.</p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/temperature-converter.js"></script>
+</body>
+</html>

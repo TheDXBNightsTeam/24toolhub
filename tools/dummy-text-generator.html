@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generate customizable Lorem Ipsum placeholder text for your designs. Create paragraphs, words, or sentences instantly to fill your mockups and layouts." />
+    <meta name="keywords" content="lorem ipsum generator, dummy text generator, placeholder text, mockup text, design tool" />
+    <title>Custom Lorem Ipsum & Dummy Text Generator | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+            <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Dummy Text Generator" data-ar="مولد النصوص الوهمية">Dummy Text Generator</h1>
+          <p class="tool-description" data-en="Quickly create placeholder text for your designs and layouts." data-ar="أنشئ نصوصًا مؤقتة لتصاميمك وتخطيطاتك بسرعة.">Quickly create placeholder text for your designs and layouts.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Text Type:" data-ar="نوع النص:">Text Type:</label>
+            <select id="textType" class="input-field">
+                                <option value="paragraphs">Paragraphs</option>
+                                <option value="words">Words</option>
+                                <option value="sentences">Sentences</option>
+              <option value="characters">Characters</option>
+                            </select>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Count:" data-ar="العدد:">Count:</label>
+            <input type="number" id="textCount" class="input-field" value="3" min="1" max="100" />
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Options:" data-ar="الخيارات:">Options:</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+              <div>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="checkbox" id="startWithLorem" checked />
+                  <span data-en="Start with \"Lorem ipsum\"" data-ar="ابدأ بـ \"Lorem ipsum\"">Start with "Lorem ipsum"</span>
+                        </label>
+              </div>
+              <div>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="checkbox" id="includeHTML" />
+                  <span data-en="Include HTML tags" data-ar="تضمين علامات HTML">Include HTML tags</span>
+                        </label>
+                    </div>
+                    </div>
+                </div>
+
+          <div class="button-group">
+            <button onclick="generateText()" class="btn btn-primary" data-en="Generate Text" data-ar="إنشاء نص">Generate Text</button>
+            <button onclick="clearText()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyText()" class="btn btn-secondary" data-en="Copy Text" data-ar="نسخ النص">Copy Text</button>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Generated Text:" data-ar="النص المُنشأ:">Generated Text:</label>
+            <textarea id="generatedText" class="input-field" placeholder="Generated Lorem Ipsum text will appear here..." data-en-placeholder="Generated Lorem Ipsum text will appear here..." data-ar-placeholder="ستظهر النص الوهمي المُنشأ هنا..." rows="8" readonly></textarea>
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Statistics:" data-ar="الإحصائيات:">Statistics:</label>
+            <div id="textStats" class="text-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--accent-primary, #3b82f6);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--accent-primary, #3b82f6);" id="wordCount">0</div>
+                <div style="color: var(--text-secondary, #888);">Words</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--success, #10b981);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--success, #10b981);" id="charCount">0</div>
+                <div style="color: var(--text-secondary, #888);">Characters</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--warning, #f59e0b);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--warning, #f59e0b);" id="sentenceCount">0</div>
+                <div style="color: var(--text-secondary, #888);">Sentences</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--error, #ef4444);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--error, #ef4444);" id="paragraphCount">0</div>
+                <div style="color: var(--text-secondary, #888);">Paragraphs</div>
+                </div>
+            </div>
+                </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <div class="content-header">
+                <h2 data-en="What is a Lorem Ipsum Generator?" data-ar="ما هو مولد Lorem Ipsum؟">What is a Lorem Ipsum Generator?</h2>
+                <div class="content-image">
+                    <img src="../images/dummy-text-generator-diagram.svg" alt="Dummy Text Generator Diagram" class="diagram-image" 
+                         data-en-alt="Dummy text generator shows placeholder text creation" 
+                         data-ar-alt="مولد النص الوهمي يوضح إنشاء النص المؤقت">
+                </div>
+            </div>
+            <p data-en="A Lorem Ipsum generator is an essential tool for designers, developers, and content creators who need placeholder text for mockups, prototypes, and design layouts. Lorem Ipsum has been the industry standard dummy text since the 1500s, providing realistic-looking text that doesn't distract from the visual design. Our generator creates customizable amounts of Lorem Ipsum text in paragraphs, words, or sentences, making it perfect for testing layouts, typography, and content flow before final copy is available." data-ar="مولد Lorem Ipsum هو أداة أساسية للمصممين والمطورين ومنشئي المحتوى الذين يحتاجون إلى نص مؤقت للنماذج الأولية والنماذج وتخطيطات التصميم. Lorem Ipsum كان النص الوهمي المعياري في الصناعة منذ القرن السادس عشر، مما يوفر نصاً يبدو واقعياً ولا يصرف الانتباه عن التصميم البصري. ينشئ مولدنا كميات قابلة للتخصيص من نص Lorem Ipsum في فقرات أو كلمات أو جمل، مما يجعله مثالياً لاختبار التخطيطات والطباعة وتدفق المحتوى قبل توفر النسخة النهائية."></p>
+
+            <!-- Text Types Section -->
+            <div class="text-types-section">
+                <h3 data-en="Text Generation Types" data-ar="أنواع توليد النص">Text Generation Types:</h3>
+                <div class="text-types-grid">
+                    <div class="text-type-card">
+                        <div class="text-type-icon">📄</div>
+                        <h4 data-en="Paragraphs" data-ar="فقرات">Paragraphs</h4>
+                        <p data-en="Generate complete paragraphs of Lorem Ipsum text" data-ar="توليد فقرات كاملة من نص Lorem Ipsum"></p>
+                        <div class="text-type-example">3-5 sentences per paragraph</div>
+                    </div>
+                    <div class="text-type-card">
+                        <div class="text-type-icon">📝</div>
+                        <h4 data-en="Words" data-ar="كلمات">Words</h4>
+                        <p data-en="Generate a specific number of words" data-ar="توليد عدد محدد من الكلمات"></p>
+                        <div class="text-type-example">Exact word count control</div>
+                    </div>
+                    <div class="text-type-card">
+                        <div class="text-type-icon">💬</div>
+                        <h4 data-en="Sentences" data-ar="جمل">Sentences</h4>
+                        <p data-en="Generate individual sentences" data-ar="توليد جمل فردية"></p>
+                        <div class="text-type-example">Perfect for short descriptions</div>
+                    </div>
+                    <div class="text-type-card">
+                        <div class="text-type-icon">🔤</div>
+                        <h4 data-en="Characters" data-ar="أحرف">Characters</h4>
+                        <p data-en="Generate text with specific character count" data-ar="توليد نص بعدد أحرف محدد"></p>
+                        <div class="text-type-example">Character limit compliance</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-section">
+                <h3 data-en="Why Use Lorem Ipsum?" data-ar="لماذا نستخدم Lorem Ipsum؟">Why Use Lorem Ipsum?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎨</div>
+                        <h4 data-en="Focus on Design" data-ar="التركيز على التصميم">Focus on Design</h4>
+                        <p data-en="Allows designers to focus on layout without being distracted by readable content" data-ar="يسمح للمصممين بالتركيز على التخطيط دون تشتيت الانتباه بالمحتوى القابل للقراءة"></p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
+                        <h4 data-en="Realistic Text" data-ar="نص واقعي">Realistic Text</h4>
+                        <p data-en="Provides realistic word and character distribution" data-ar="يوفر توزيعاً واقعياً للكلمات والأحرف"></p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h4 data-en="Industry Standard" data-ar="معيار الصناعة">Industry Standard</h4>
+                        <p data-en="Widely recognized and accepted placeholder text" data-ar="نص مؤقت معترف به ومقبول على نطاق واسع"></p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">✨</div>
+                        <h4 data-en="Professional Look" data-ar="مظهر مهني">Professional Look</h4>
+                        <p data-en="Makes mockups look more professional and polished" data-ar="يجعل النماذج تبدو أكثر مهنية وأناقة"></p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔤</div>
+                        <h4 data-en="Typography Testing" data-ar="اختبار الطباعة">Typography Testing</h4>
+                        <p data-en="Perfect for testing fonts, spacing, and readability" data-ar="مثالي لاختبار الخطوط والمسافات وقابلية القراءة"></p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h4 data-en="Quick Generation" data-ar="توليد سريع">Quick Generation</h4>
+                        <p data-en="Generate placeholder text instantly for any project" data-ar="توليد نص مؤقت فوراً لأي مشروع"></p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 data-en="Characters" data-ar="أحرف">Characters</h4>
+            <p data-en="Generate text up to a specific character count. Ideal for testing character limits in forms, social media posts, or other constrained spaces." data-ar="توليد نص حتى عدد أحرف محدد. مثالي لاختبار حدود الأحرف في النماذج أو منشورات وسائل التواصل الاجتماعي أو المساحات المحدودة الأخرى."></p>
+
+            <h3 data-en="Advanced Features" data-ar="الميزات المتقدمة">Advanced Features</h3>
+            <h4 data-en="Start with \"Lorem ipsum\"" data-ar="ابدأ بـ \"Lorem ipsum\"">Start with "Lorem ipsum"</h4>
+            <p data-en="When enabled, the generated text will begin with the traditional \"Lorem ipsum dolor sit amet\" opening. This is useful for maintaining consistency with standard Lorem Ipsum format." data-ar="عند التفعيل، سيبدأ النص المُنشأ بالافتتاحية التقليدية \"Lorem ipsum dolor sit amet\". هذا مفيد للحفاظ على الاتساق مع تنسيق Lorem Ipsum القياسي."></p>
+
+            <h4 data-en="Include HTML Tags" data-ar="تضمين علامات HTML">Include HTML Tags</h4>
+            <p data-en="When enabled, the generator will include HTML paragraph tags (&lt;p&gt;) around each paragraph, making it ready for use in HTML documents." data-ar="عند التفعيل، سيتضمن المولد علامات فقرة HTML (&lt;p&gt;) حول كل فقرة، مما يجعلها جاهزة للاستخدام في مستندات HTML."></p>
+
+            <h3 data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</h3>
+            <h4 data-en="Web Design" data-ar="تصميم الويب">Web Design</h4>
+            <ul>
+              <li data-en="Website mockups and prototypes" data-ar="نماذج المواقع والنماذج الأولية">Website mockups and prototypes</li>
+              <li data-en="Testing responsive layouts" data-ar="اختبار التخطيطات المتجاوبة">Testing responsive layouts</li>
+              <li data-en="Typography and font selection" data-ar="الطباعة واختيار الخطوط">Typography and font selection</li>
+              <li data-en="Content area sizing" data-ar="تحديد حجم منطقة المحتوى">Content area sizing</li>
+            </ul>
+
+            <h4 data-en="Print Design" data-ar="التصميم المطبوع">Print Design</h4>
+            <ul>
+              <li data-en="Brochure and flyer layouts" data-ar="تخطيطات الكتيبات والنشرات">Brochure and flyer layouts</li>
+              <li data-en="Magazine and newspaper designs" data-ar="تصميمات المجلات والصحف">Magazine and newspaper designs</li>
+              <li data-en="Book and document formatting" data-ar="تنسيق الكتب والمستندات">Book and document formatting</li>
+              <li data-en="Poster and banner designs" data-ar="تصميمات الملصقات واللافتات">Poster and banner designs</li>
+            </ul>
+
+            <h4 data-en="Development" data-ar="التطوير">Development</h4>
+            <ul>
+              <li data-en="Testing database fields" data-ar="اختبار حقول قاعدة البيانات">Testing database fields</li>
+              <li data-en="Form validation testing" data-ar="اختبار التحقق من النماذج">Form validation testing</li>
+              <li data-en="API response testing" data-ar="اختبار استجابة API">API response testing</li>
+              <li data-en="User interface development" data-ar="تطوير واجهة المستخدم">User interface development</li>
+            </ul>
+
+            <h4 data-en="Content Creation" data-ar="إنشاء المحتوى">Content Creation</h4>
+            <ul>
+              <li data-en="Template creation" data-ar="إنشاء القوالب">Template creation</li>
+              <li data-en="Content management system testing" data-ar="اختبار نظام إدارة المحتوى">Content management system testing</li>
+              <li data-en="Email template design" data-ar="تصميم قوالب البريد الإلكتروني">Email template design</li>
+              <li data-en="Social media post templates" data-ar="قوالب منشورات وسائل التواصل الاجتماعي">Social media post templates</li>
+            </ul>
+
+            <!-- Best Practices Section -->
+            <div class="best-practices">
+                <h3 data-en="Lorem Ipsum Best Practices" data-ar="أفضل ممارسات Lorem Ipsum">Lorem Ipsum Best Practices:</h3>
+                
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <div class="practice-icon">📝</div>
+                        <h4 data-en="Use for Design" data-ar="استخدم للتصميم">Use for Design</h4>
+                        <p data-en="Perfect for testing layouts, typography, and visual design" data-ar="مثالي لاختبار التخطيطات والطباعة والتصميم البصري"></p>
+                    </div>
+                    
+                    <div class="practice-card">
+                        <div class="practice-icon">🎯</div>
+                        <h4 data-en="Focus on Layout" data-ar="ركز على التخطيط">Focus on Layout</h4>
+                        <p data-en="Use Lorem Ipsum to focus on design rather than content" data-ar="استخدم Lorem Ipsum للتركيز على التصميم بدلاً من المحتوى"></p>
+                    </div>
+                    
+                    <div class="practice-card">
+                        <div class="practice-icon">📱</div>
+                        <h4 data-en="Responsive Testing" data-ar="اختبار الاستجابة">Responsive Testing</h4>
+                        <p data-en="Test how your design adapts to different screen sizes" data-ar="اختبر كيف يتكيف تصميمك مع أحجام الشاشات المختلفة"></p>
+                    </div>
+                    
+                    <div class="practice-card">
+                        <div class="practice-icon">⚡</div>
+                        <h4 data-en="Quick Prototyping" data-ar="النماذج الأولية السريعة">Quick Prototyping</h4>
+                        <p data-en="Speed up your design process with placeholder text" data-ar="أسرع عملية التصميم مع نص مؤقت"></p>
+                    </div>
+                    
+                    <div class="practice-card">
+                        <div class="practice-icon">🎨</div>
+                        <h4 data-en="Typography Testing" data-ar="اختبار الطباعة">Typography Testing</h4>
+                        <p data-en="Test different fonts, sizes, and spacing combinations" data-ar="اختبر تركيبات الخطوط والأحجام والمسافات المختلفة"></p>
+                    </div>
+                    
+                    <div class="practice-card">
+                        <div class="practice-icon">✅</div>
+                        <h4 data-en="Client Presentations" data-ar="عروض العملاء">Client Presentations</h4>
+                        <p data-en="Present designs without distracting content" data-ar="اعرض التصاميم بدون محتوى مشتت"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools and Resources Section -->
+            <div class="tools-resources">
+                <h3 data-en="Helpful Tools and Resources" data-ar="أدوات وموارد مفيدة">Helpful Tools and Resources:</h3>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4 data-en="Related Text Tools" data-ar="أدوات النصوص ذات الصلة">Related Text Tools</h4>
+                        <p data-en="Other text generation and processing tools on our platform" data-ar="أدوات إنشاء ومعالجة النصوص الأخرى على منصتنا"></p>
+                        <div class="internal-links">
+                            <a href="word-counter.html" class="resource-link" data-en="Word Counter" data-ar="عداد الكلمات">Word Counter</a>
+                            <a href="character-counter.html" class="resource-link" data-en="Character Counter" data-ar="عداد الأحرف">Character Counter</a>
+                            <a href="line-counter.html" class="resource-link" data-en="Line Counter" data-ar="عداد الأسطر">Line Counter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Text Processing Tools" data-ar="أدوات معالجة النصوص">Text Processing Tools</h4>
+                        <p data-en="More tools for text manipulation and analysis" data-ar="المزيد من أدوات معالجة وتحليل النصوص"></p>
+                        <div class="internal-links">
+                            <a href="text-case-converter.html" class="resource-link" data-en="Text Case Converter" data-ar="محول حالة النص">Text Case Converter</a>
+                            <a href="string-reverser.html" class="resource-link" data-en="String Reverser" data-ar="عكس النص">String Reverser</a>
+                            <a href="slug-generator.html" class="resource-link" data-en="Slug Generator" data-ar="مولد الرابط">Slug Generator</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="External Generators" data-ar="المولدات الخارجية">External Generators</h4>
+                        <p data-en="Professional Lorem Ipsum generators and design tools" data-ar="مولدات Lorem Ipsum المهنية وأدوات التصميم"></p>
+                        <a href="https://www.lipsum.com/" target="_blank" rel="noopener noreferrer" class="resource-link" data-en="Lorem Ipsum" data-ar="Lorem Ipsum">Lorem Ipsum</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Design Tools" data-ar="أدوات التصميم">Design Tools</h4>
+                        <p data-en="Popular design tools for creating mockups and prototypes" data-ar="أدوات التصميم الشائعة لإنشاء النماذج والنماذج الأولية"></p>
+                        <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="resource-link" data-en="Figma" data-ar="Figma">Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is Lorem Ipsum?" data-ar="ما هو Lorem Ipsum؟">What is Lorem Ipsum?</summary>
+                        <p data-en="Lorem Ipsum is dummy text used in the printing and typesetting industry. It has a realistic word distribution, which helps designers focus on the visual layout without being distracted by readable content." data-ar="Lorem Ipsum هو نص وهمي يستخدم في صناعة الطباعة والتنضيد. يتميز بتوزيع كلمات واقعي، مما يساعد المصممين على التركيز على التخطيط البصري دون تشتيت انتباههم بمحتوى قابل للقراءة."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can I generate text with HTML tags?" data-ar="هل يمكنني إنشاء نص بعلامات HTML؟">Can I generate text with HTML tags?</summary>
+                        <p data-en="Yes, by checking the 'Include HTML tags' option, the generator will wrap the generated paragraphs in `<p>` tags, making it easy to copy and paste directly into your HTML code." data-ar="نعم، عن طريق تحديد خيار 'تضمين علامات HTML'، سيقوم المولد بتغليف الفقرات التي تم إنشاؤها بعلامات `<p>`، مما يسهل نسخها ولصقها مباشرة في كود HTML الخاص بك."></p>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary data-en="Is the generated text completely random?" data-ar="هل النص الذي تم إنشاؤه عشوائي تمامًا؟">Is the generated text completely random?</summary>
+                        <p data-en="The text is generated from the standard 'Lorem Ipsum' passage, but the sequence of words and sentences is randomized to create unique-looking paragraphs every time." data-ar="يتم إنشاء النص من مقطع 'Lorem Ipsum' القياسي، ولكن يتم ترتيب تسلسل الكلمات والجمل بشكل عشوائي لإنشاء فقرات تبدو فريدة في كل مرة."></p>
+                    </details>
+                </div>
+            </div>
+
+            <h3>Lorem Ipsum Variations</h3>
+            <p>While traditional Lorem Ipsum is the most common, there are several variations:</p>
+            <ul>
+              <li><strong>Classic Lorem Ipsum:</strong> The original Latin text</li>
+              <li><strong>Modern Lorem Ipsum:</strong> Updated versions with contemporary words</li>
+              <li><strong>Custom Lorem Ipsum:</strong> Text in specific languages or themes</li>
+              <li><strong>Technical Lorem Ipsum:</strong> Placeholder text with technical terms</li>
+            </ul>
+
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Use appropriate amounts of text for your design context</li>
+              <li>Consider your target audience when choosing text length</li>
+              <li>Test with different text lengths to ensure responsive design</li>
+              <li>Replace Lorem Ipsum with real content before final delivery</li>
+              <li>Use consistent text generation settings across your project</li>
+            </ul>
+
+            <h3>Common Lorem Ipsum Text</h3>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-style: italic;">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            </div>
+
+            <h3>Related Tools</h3>
+            <ul>
+              <li><strong>Text Generator:</strong> Generate random text in different languages</li>
+              <li><strong>Word Counter:</strong> Count words, characters, and sentences</li>
+              <li><strong>Text Case Converter:</strong> Convert text to different cases</li>
+              <li><strong>Password Generator:</strong> Generate secure passwords</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/dummy-text-generator.js"></script>
+</body>
+</html>

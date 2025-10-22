@@ -1,0 +1,137 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    UUID Structure Breakdown
+  </text>
+  
+  <!-- Complete UUID example -->
+  <rect x="50" y="60" width="500" height="40" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="80" text-anchor="middle" font-family="Monaco, monospace" font-size="14" fill="#374151">
+    12345678-1234-5678-9abc-def012345678
+  </text>
+  
+  <!-- UUID groups breakdown -->
+  <rect x="50" y="120" width="500" height="200" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">
+    UUID Groups Breakdown
+  </text>
+  
+  <!-- Group 1 -->
+  <rect x="70" y="160" width="100" height="60" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    Group 1
+  </text>
+  <text x="120" y="200" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#1e40af">
+    12345678
+  </text>
+  <text x="120" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1e40af">
+    8 chars
+  </text>
+  
+  <!-- Group 2 -->
+  <rect x="180" y="160" width="80" height="60" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="220" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#166534">
+    Group 2
+  </text>
+  <text x="220" y="200" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#166534">
+    1234
+  </text>
+  <text x="220" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#166534">
+    4 chars
+  </text>
+  
+  <!-- Group 3 -->
+  <rect x="270" y="160" width="80" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="310" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e">
+    Group 3
+  </text>
+  <text x="310" y="200" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#92400e">
+    5678
+  </text>
+  <text x="310" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#92400e">
+    4 chars
+  </text>
+  
+  <!-- Group 4 -->
+  <rect x="360" y="160" width="80" height="60" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4338ca">
+    Group 4
+  </text>
+  <text x="400" y="200" text-anchor="middle" font-family="Monaco, monospace" font-size="12" fill="#4338ca">
+    9abc
+  </text>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4338ca">
+    4 chars
+  </text>
+  
+  <!-- Group 5 -->
+  <rect x="450" y="160" width="80" height="60" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="490" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#be185d">
+    Group 5
+  </text>
+  <text x="490" y="200" text-anchor="middle" font-family="Monaco, monospace" font-size="10" fill="#be185d">
+    def012345678
+  </text>
+  <text x="490" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#be185d">
+    12 chars
+  </text>
+  
+  <!-- Arrows pointing to groups -->
+  <path d="M 120 100 L 120 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 220 100 L 220 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 310 100 L 310 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 400 100 L 400 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 490 100 L 490 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Use cases -->
+  <rect x="50" y="340" width="500" height="50" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0c4a6e">
+    Perfect for: Database Keys • API Endpoints • File Names • Session IDs • Distributed Systems • Microservices
+  </text>
+  
+  <!-- UUID properties -->
+  <rect x="50" y="240" width="500" height="80" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    UUID Properties
+  </text>
+  
+  <text x="100" y="280" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • 128-bit identifier
+  </text>
+  <text x="100" y="295" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • Globally unique
+  </text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • No central authority
+  </text>
+  
+  <text x="300" y="280" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • 36 characters total
+  </text>
+  <text x="300" y="295" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • 32 hex digits + 4 hyphens
+  </text>
+  <text x="300" y="310" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • Version 4 (random)
+  </text>
+  
+  <text x="500" y="280" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • Cryptographically secure
+  </text>
+  <text x="500" y="295" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • Collision resistant
+  </text>
+  <text x="500" y="310" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    • RFC 4122 compliant
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

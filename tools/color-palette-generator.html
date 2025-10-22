@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator for Designers | 24ToolHub</title>
+    <meta name="description" content="Instantly generate beautiful color palettes based on color theory. Perfect for UI/UX designers, artists, and developers. Export your schemes to CSS, JSON, and more.">
+    <meta name="keywords" content="color palette generator, color scheme generator, color harmony, design tool, ui colors, color theory, palette creator">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Color Palette Generator for Designers | 24ToolHub">
+    <meta property="og:description" content="Instantly generate beautiful color palettes based on color theory. Perfect for UI/UX designers, artists, and developers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/color-palette-generator">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Color Palette Generator for Designers | 24ToolHub">
+    <meta name="twitter:description" content="Instantly generate beautiful color palettes based on color theory. Perfect for UI/UX designers, artists, and developers.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+            <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+        <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Color Palette Generator" data-ar="مولد لوحة الألوان">Color Palette Generator</h1>
+                <p class="tool-description" data-en="Generate beautiful color palettes for your designs. Create harmonious color schemes using color theory and export them for your projects" data-ar="أنشئ لوحات ألوان جميلة لتصاميمك. أنشئ أنظمة ألوان متناغمة باستخدام نظرية الألوان وصدرها لمشاريعك">Generate beautiful color palettes for your designs. Create harmonious color schemes using color theory and export them for your projects</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Base Color Selection -->
+                <div class="base-color-section">
+                    <h4 class="section-heading" data-en="Base Color" data-ar="اللون الأساسي">Base Color</h4>
+                    <div class="color-picker-container">
+                        <input type="color" id="baseColor" class="color-picker" value="#3498db">
+                        <div class="color-info">
+                            <div class="color-preview" id="colorPreview"></div>
+                            <div class="color-values">
+                                <div class="color-value">
+                                    <label data-en="HEX:" data-ar="HEX:">HEX:</label>
+                                    <input type="text" id="hexValue" class="color-input" value="#3498db" readonly>
+                                </div>
+                                <div class="color-value">
+                                    <label data-en="RGB:" data-ar="RGB:">RGB:</label>
+                                    <input type="text" id="rgbValue" class="color-input" value="rgb(52, 152, 219)" readonly>
+                                </div>
+                                <div class="color-value">
+                                    <label data-en="HSL:" data-ar="HSL:">HSL:</label>
+                                    <input type="text" id="hslValue" class="color-input" value="hsl(204, 70%, 53%)" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Palette Settings -->
+                <div class="palette-settings">
+                    <h4 class="section-heading" data-en="Palette Settings" data-ar="إعدادات اللوحة">Palette Settings</h4>
+                    <div class="settings-grid">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Harmony Type:" data-ar="نوع التناغم:">Harmony Type:</label>
+                            <select id="harmonyType" class="input-field">
+                                <option value="complementary" data-en="Complementary" data-ar="مكمل">Complementary</option>
+                                <option value="triadic" data-en="Triadic" data-ar="ثلاثي">Triadic</option>
+                                <option value="analogous" data-en="Analogous" data-ar="متشابه">Analogous</option>
+                                <option value="split-complementary" data-en="Split Complementary" data-ar="مكمل منقسم">Split Complementary</option>
+                                <option value="tetradic" data-en="Tetradic" data-ar="رباعي">Tetradic</option>
+                                <option value="monochromatic" data-en="Monochromatic" data-ar="أحادي اللون">Monochromatic</option>
+                                <option value="random" data-en="Random" data-ar="عشوائي">Random</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-label" data-en="Number of Colors:" data-ar="عدد الألوان:">Number of Colors:</label>
+                            <input type="range" id="colorCount" class="range-input" min="3" max="8" value="5">
+                            <span id="colorCountValue">5</span>
+        </div>
+
+                        <div class="input-group">
+                            <label class="input-label" data-en="Saturation:" data-ar="التشبع:">Saturation:</label>
+                            <input type="range" id="saturation" class="range-input" min="0" max="100" value="70">
+                            <span id="saturationValue">70%</span>
+        </div>
+
+                        <div class="input-group">
+                            <label class="input-label" data-en="Lightness:" data-ar="السطوع:">Lightness:</label>
+                            <input type="range" id="lightness" class="range-input" min="0" max="100" value="50">
+                            <span id="lightnessValue">50%</span>
+                        </div>
+                    </div>
+                    </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+                    <button id="generatePalette" class="btn btn-primary" data-en="Generate Palette" data-ar="إنشاء اللوحة">Generate Palette</button>
+                    <button id="randomPalette" class="btn btn-secondary" data-en="Random Palette" data-ar="لوحة عشوائية">Random Palette</button>
+                    <button id="clearPalette" class="btn btn-secondary" data-en="Clear Palette" data-ar="مسح اللوحة">Clear Palette</button>
+                </div>
+
+                <!-- Generated Palette -->
+                <div id="paletteSection" class="palette-section" style="display: none;">
+                    <h4 class="section-heading" data-en="Generated Palette" data-ar="اللوحة المُنشأة">Generated Palette</h4>
+                    <div id="paletteColors" class="palette-colors"></div>
+                    <div class="palette-info">
+                        <div class="palette-name">
+                            <label class="input-label" data-en="Palette Name:" data-ar="اسم اللوحة:">Palette Name:</label>
+                            <input type="text" id="paletteName" class="input-field" placeholder="My Color Palette" data-en-placeholder="My Color Palette" data-ar-placeholder="لوحة ألواني">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Export Options -->
+                <div id="exportSection" class="export-section" style="display: none;">
+                    <h4 class="section-heading" data-en="Export Options" data-ar="خيارات التصدير">Export Options</h4>
+                    <div class="export-options">
+                        <button id="copyPalette" class="btn btn-primary" data-en="Copy Palette" data-ar="نسخ اللوحة">Copy Palette</button>
+                        <button id="downloadPalette" class="btn btn-secondary" data-en="Download Palette" data-ar="تحميل اللوحة">Download Palette</button>
+                        <button id="exportCSS" class="btn btn-secondary" data-en="Export CSS" data-ar="تصدير CSS">Export CSS</button>
+                        <button id="exportJSON" class="btn btn-secondary" data-en="Export JSON" data-ar="تصدير JSON">Export JSON</button>
+                    </div>
+                </div>
+
+                <!-- Color Theory Information -->
+                <div class="color-theory-section">
+                    <h4 class="section-heading" data-en="Color Theory" data-ar="نظرية الألوان">Color Theory</h4>
+                    <div id="colorTheoryInfo" class="color-theory-info">
+                        <div class="theory-card">
+                            <h5 data-en="Complementary Colors" data-ar="الألوان المكملة">Complementary Colors</h5>
+                            <p data-en="Colors that are opposite each other on the color wheel. They create high contrast and vibrant combinations." data-ar="الألوان المتقابلة على عجلة الألوان. تخلق تبايناً عالياً وتركيبات حيوية.">Colors that are opposite each other on the color wheel. They create high contrast and vibrant combinations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Presets -->
+                <div class="presets-section">
+                    <h4 class="section-heading" data-en="Quick Presets:" data-ar="إعدادات سريعة:">Quick Presets:</h4>
+                    <div class="presets-grid">
+                        <button class="preset-btn" data-preset="ocean" data-en="Ocean" data-ar="المحيط">Ocean</button>
+                        <button class="preset-btn" data-preset="sunset" data-en="Sunset" data-ar="الغروب">Sunset</button>
+                        <button class="preset-btn" data-preset="forest" data-en="Forest" data-ar="الغابة">Forest</button>
+                        <button class="preset-btn" data-preset="autumn" data-en="Autumn" data-ar="الخريف">Autumn</button>
+                        <button class="preset-btn" data-preset="spring" data-en="Spring" data-ar="الربيع">Spring</button>
+                        <button class="preset-btn" data-preset="winter" data-en="Winter" data-ar="الشتاء">Winter</button>
+                        <button class="preset-btn" data-preset="neon" data-en="Neon" data-ar="النيون">Neon</button>
+                        <button class="preset-btn" data-preset="pastel" data-en="Pastel" data-ar="الباستيل">Pastel</button>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="What is Color Theory?" data-ar="ما هي نظرية الألوان؟">What is Color Theory?</h2>
+                <p data-en="Color theory is a set of principles used to create harmonious color combinations. It involves understanding how colors interact with each other and how they can be used to create effective designs. Our color palette generator uses these principles to create beautiful, harmonious color schemes that work well together in any design project." data-ar="نظرية الألوان هي مجموعة من المبادئ المستخدمة لإنشاء تركيبات ألوان متناغمة. تتضمن فهم كيفية تفاعل الألوان مع بعضها البعض وكيفية استخدامها لإنشاء تصاميم فعالة. يستخدم مولد لوحة الألوان هذه المبادئ لإنشاء أنظمة ألوان جميلة ومتناغمة تعمل بشكل جيد معاً في أي مشروع تصميم.">Color theory is a set of principles used to create harmonious color combinations. It involves understanding how colors interact with each other and how they can be used to create effective designs. Our color palette generator uses these principles to create beautiful, harmonious color schemes that work well together in any design project.</p>
+                
+                <h3 data-en="Color Harmony Types" data-ar="أنواع تناغم الألوان">Color Harmony Types</h3>
+                <ul>
+                    <li data-en="<strong>Complementary:</strong> Colors opposite on the color wheel for high contrast" data-ar="<strong>مكمل:</strong> ألوان متقابلة على عجلة الألوان للتباين العالي"><strong>Complementary:</strong> Colors opposite on the color wheel for high contrast</li>
+                    <li data-en="<strong>Triadic:</strong> Three colors evenly spaced on the color wheel" data-ar="<strong>ثلاثي:</strong> ثلاثة ألوان متباعدة بالتساوي على عجلة الألوان"><strong>Triadic:</strong> Three colors evenly spaced on the color wheel</li>
+                    <li data-en="<strong>Analogous:</strong> Colors next to each other for harmonious blends" data-ar="<strong>متشابه:</strong> ألوان متجاورة لخلطات متناغمة"><strong>Analogous:</strong> Colors next to each other for harmonious blends</li>
+                    <li data-en="<strong>Split Complementary:</strong> A base color and two adjacent to its complement" data-ar="<strong>مكمل منقسم:</strong> لون أساسي واثنان مجاوران لمكمله"><strong>Split Complementary:</strong> A base color and two adjacent to its complement</li>
+                    <li data-en="<strong>Tetradic:</strong> Four colors forming a rectangle on the color wheel" data-ar="<strong>رباعي:</strong> أربعة ألوان تشكل مستطيلاً على عجلة الألوان"><strong>Tetradic:</strong> Four colors forming a rectangle on the color wheel</li>
+                    <li data-en="<strong>Monochromatic:</strong> Variations of a single color for subtle harmony" data-ar="<strong>أحادي اللون:</strong> تباينات لون واحد للتناغم الدقيق"><strong>Monochromatic:</strong> Variations of a single color for subtle harmony</li>
+                </ul>
+
+                <h3 data-en="Color Properties" data-ar="خصائص الألوان">Color Properties</h3>
+                <ul>
+                    <li data-en="<strong>Hue:</strong> The color itself (red, blue, green, etc.)" data-ar="<strong>الصبغة:</strong> اللون نفسه (أحمر، أزرق، أخضر، إلخ)"><strong>Hue:</strong> The color itself (red, blue, green, etc.)</li>
+                    <li data-en="<strong>Saturation:</strong> The intensity or purity of the color" data-ar="<strong>التشبع:</strong> شدة أو نقاء اللون"><strong>Saturation:</strong> The intensity or purity of the color</li>
+                    <li data-en="<strong>Lightness:</strong> How light or dark the color appears" data-ar="<strong>السطوع:</strong> مدى سطوع أو قتامة اللون"><strong>Lightness:</strong> How light or dark the color appears</li>
+                    <li data-en="<strong>Temperature:</strong> Warm or cool feeling of the color" data-ar="<strong>درجة الحرارة:</strong> الشعور الدافئ أو البارد للون"><strong>Temperature:</strong> Warm or cool feeling of the color</li>
+                </ul>
+
+                <h3 data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</h3>
+                <ul>
+                    <li data-en="Web design and user interface development" data-ar="تصميم الويب وتطوير واجهة المستخدم">Web design and user interface development</li>
+                    <li data-en="Graphic design and branding projects" data-ar="مشاريع التصميم الجرافيكي والعلامة التجارية">Graphic design and branding projects</li>
+                    <li data-en="Interior design and home decoration" data-ar="التصميم الداخلي وتزيين المنزل">Interior design and home decoration</li>
+                    <li data-en="Fashion design and clothing coordination" data-ar="تصميم الأزياء وتنسيق الملابس">Fashion design and clothing coordination</li>
+                    <li data-en="Art and creative projects" data-ar="المشاريع الفنية والإبداعية">Art and creative projects</li>
+                    <li data-en="Marketing and advertising materials" data-ar="مواد التسويق والإعلان">Marketing and advertising materials</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="What does 'Color Harmony' mean?" data-ar="ماذا يعني 'تناغم الألوان'؟">What does 'Color Harmony' mean?</summary>
+                            <p data-en="Color harmony refers to the theory of combining colors in a way that is pleasing to the eye. Our tool uses standard harmony rules (like complementary, triadic, etc.) to generate palettes that are balanced and visually appealing." data-ar="يشير تناغم الألوان إلى نظرية دمج الألوان بطريقة ممتعة للعين. تستخدم أداتنا قواعد التناغم القياسية (مثل المكملة، الثلاثية، إلخ) لإنشاء لوحات متوازنة وجذابة بصريًا.">Color harmony refers to the theory of combining colors in a way that is pleasing to the eye. Our tool uses standard harmony rules (like complementary, triadic, etc.) to generate palettes that are balanced and visually appealing.</p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="How can I use the exported CSS?" data-ar="كيف يمكنني استخدام ملف CSS الذي تم تصديره؟">How can I use the exported CSS?</summary>
+                            <p data-en="When you export to CSS, the tool generates custom properties (variables) for each color in the palette. You can copy and paste this code into your stylesheet and use these variables (e.g., `var(--color-1)`) throughout your project for a consistent theme." data-ar="عند التصدير إلى CSS، تقوم الأداة بإنشاء خصائص مخصصة (متغيرات) لكل لون في اللوحة. يمكنك نسخ هذا الكود ولصقه في ملف الأنماط الخاص بك واستخدام هذه المتغيرات (على سبيل المثال، `var(--color-1)`) في جميع أنحاء مشروعك للحصول على نسق متسق.">When you export to CSS, the tool generates custom properties (variables) for each color in the palette. You can copy and paste this code into your stylesheet and use these variables (e.g., `var(--color-1)`) throughout your project for a consistent theme.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/color-palette-generator.js"></script>
+</body>
+</html>

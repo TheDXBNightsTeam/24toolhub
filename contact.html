@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تواصل مع فريق 24ToolHub للحصول على دعم، تغذية، أو اقتراحات. نحن هنا لمساعدتك." />
+    <!-- Added theme color and manifest link for PWA support -->
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>اتصل بنا - 24ToolHub | دعم وتغذية</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="./index.html" class="logo-link">
+          <img src="./images/logo.png" alt="24ToolHub Logo" class="logo-img" />
+          <span class="logo-text">24ToolHub</span>
+        </a>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <div class="tool-header">
+          <a href="./index.html" class="back-link">← Back to Home</a>
+          <h1 class="tool-title">Contact Us</h1>
+          <p class="tool-description">We'd love to hear from you</p>
+        </div>
+
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>Get in Touch</h2>
+            <p>Have a question, suggestion, or feedback? We're here to help! Please use the contact form below to reach out to us, and we'll get back to you as soon as possible.</p>
+
+            <div class="tool-interface">
+              <!-- Form action API Endpoint -->
+              <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <!-- Your Access key here. Don't worry this can be public -->
+                <input type="hidden" name="access_key" value="f9d97f15-d841-4052-872e-eedc19fd41e5">
+
+                <!-- Optional: Can be type="hidden" or type="text" for subject -->
+                <input type="hidden" name="subject" value="New Contact Form Submission from 24ToolHub">
+
+                <!-- Optional: From Name you want to see in the email -->
+                <input type="hidden" name="from_name" value="24ToolHub Contact Form">
+
+                <!-- Optional: Redirect URL after form submission -->
+                <input type="hidden" name="redirect" value="https://24toolhub.com/contact.html?success=true">
+
+                <!-- Optional: Add botcheck for basic spam protection -->
+                <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
+                <div class="input-group">
+                  <label for="name" class="input-label">Name *</label>
+                  <input type="text" id="name" name="name" class="input-field" placeholder="Your name" required />
+                </div>
+
+                <div class="input-group">
+                  <label for="email" class="input-label">Email *</label>
+                  <input type="email" id="email" name="email" class="input-field" placeholder="your.email@example.com" required />
+                </div>
+
+                <div class="input-group">
+                  <label for="subject" class="input-label">Subject *</label>
+                  <input type="text" id="subject" name="subject" class="input-field" placeholder="What is this about?" required />
+                </div>
+
+                <div class="input-group">
+                  <label for="message" class="input-label">Message *</label>
+                  <textarea id="message" name="message" class="input-textarea" placeholder="Tell us more..." required style="min-height: 200px;"></textarea>
+                </div>
+
+                <div class="button-group">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+              </form>
+
+              <div id="formStatus" class="mt-2" style="display: none;"></div>
+            </div>
+
+            <!-- Success message (shown when redirected from Web3Forms) -->
+            <script>
+              (function() {
+                // Check if redirected from successful form submission
+                if (window.location.search.includes('success=true')) {
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const statusDiv = document.getElementById('formStatus');
+                    if (statusDiv) {
+                      statusDiv.style.display = 'block';
+                      statusDiv.style.backgroundColor = 'var(--success, #10b981)';
+                      statusDiv.style.color = 'white';
+                      statusDiv.style.padding = '1rem';
+                      statusDiv.style.borderRadius = '0.5rem';
+                      statusDiv.style.marginTop = '1rem';
+                      statusDiv.innerHTML = '<strong>✅ شكراً لك! تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.</strong>';
+                      
+                      // Clear the URL parameter
+                      window.history.replaceState({}, document.title, window.location.pathname);
+                    }
+                  });
+                }
+              })();
+            </script>
+
+            <!-- Setup instructions for contact form -->
+            <div class="seo-section" style="background: var(--card-bg, #2a2a2a); padding: 1.5rem; border-radius: 0.5rem; margin-top: 2rem; border-left: 4px solid var(--accent-primary, #3b82f6);">
+              <h3 style="margin-top: 0; color: var(--accent-primary, #3b82f6);">📧 إعداد نموذج الاتصال</h3>
+              <p><strong>لتفعيل نموذج الاتصال، اتبع هذه الخطوات:</strong></p>
+              
+              <h4>الخطوة 1: احصل على مفتاح Web3Forms</h4>
+              <ol>
+                <li>اذهب إلى <a href="https://web3forms.com" target="_blank" rel="noopener" style="color: var(--accent-primary);">web3forms.com</a></li>
+                <li>أدخل بريدك الإلكتروني</li>
+                <li>احصل على المفتاح المجاني (سيتم إرساله لبريدك)</li>
+              </ol>
+
+              <h4>الخطوة 2: أضف المفتاح للنموذج</h4>
+              <ol>
+                <li>افتح ملف <code>contact.html</code></li>
+                <li>ابحث عن السطر: <code>&lt;input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"&gt;</code></li>
+                <li>استبدل <code>YOUR_ACCESS_KEY_HERE</code> بالمفتاح الذي حصلت عليه</li>
+                <li>احفظ الملف</li>
+              </ol>
+
+              <h4>الخطوة 3: اختبر النموذج</h4>
+              <ol>
+                <li>ارفع الملفات إلى خادم الويب</li>
+                <li>اختبر النموذج بإرسال رسالة تجريبية</li>
+                <li>تحقق من وصول الرسالة لبريدك الإلكتروني</li>
+              </ol>
+
+              <p><strong>ملاحظة:</strong> بدون إضافة المفتاح، النموذج لن يعمل وسيظهر خطأ عند الإرسال.</p>
+            </div>
+
+            <h2>What Can We Help You With?</h2>
+            <p>Here are some common reasons people contact us:</p>
+            <ul>
+              <li><strong>Tool Suggestions:</strong> Have an idea for a new tool? We'd love to hear it!</li>
+              <li><strong>Bug Reports:</strong> Found something that's not working correctly? Let us know so we can fix it.</li>
+              <li><strong>Feature Requests:</strong> Want to see a new feature in an existing tool? Tell us about it.</li>
+              <li><strong>General Feedback:</strong> We appreciate all feedback, positive or constructive.</li>
+              <li><strong>Business Inquiries:</strong> Interested in partnerships or collaborations? Reach out!</li>
+              <li><strong>Technical Support:</strong> Having trouble using a tool? We're here to help.</li>
+            </ul>
+
+            <h2>Response Time</h2>
+            <p>We typically respond to all inquiries within 24-48 hours during business days. For urgent matters, please indicate this in your subject line.</p>
+
+            <h2>Alternative Contact Methods</h2>
+            <p>While the contact form is the best way to reach us, you can also:</p>
+            <ul>
+              <li>Follow us on social media for updates and announcements</li>
+              <li>Check our <a href="./about.html" style="color: var(--accent-primary);">About page</a> for more information about our team</li>
+              <li>Review our <a href="./privacy.html" style="color: var(--accent-primary);">Privacy Policy</a> and <a href="./terms.html" style="color: var(--accent-primary);">Terms of Service</a></li>
+            </ul>
+
+            <h2>Built by NNH - AI Studio</h2>
+            <p>24ToolHub is proudly built and maintained by NNH - AI Studio. We're passionate about creating tools that make people's lives easier.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Tools</h3>
+            <ul class="footer-links">
+              <li><a href="./index.html#text">Text & String Tools</a></li>
+              <li><a href="./index.html#conversion">Conversion & Calculator</a></li>
+              <li><a href="./index.html#generator">Generator & Formatter</a></li>
+              <li><a href="./index.html#encoder">Encoder & Crypto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="./terms.html">Terms of Service</a></li>
+              <li><a href="./cookie-policy.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-branding">
+          <img src="./images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <!-- Replaced inline script with external contact-form.js -->
+    <script src="./js/contact-form.js"></script>
+  </body>
+</html>

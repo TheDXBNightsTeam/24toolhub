@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fast and free ASCII to Hex converter. Instantly translate any text into its hexadecimal representation for programming, data analysis, and debugging." />
+    <meta name="keywords" content="ascii to hex, text to hex, string to hex, ascii hex converter, developer tools, encoding" />
+    <title>Instant ASCII to Hex Converter | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+  <style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="ASCII to Hexadecimal Converter" data-ar="محول ASCII إلى النظام الست عشري">ASCII to Hexadecimal Converter</h1>
+          <p class="tool-description" data-en="Instantly see the hexadecimal representation of any ASCII text." data-ar="شاهد على الفور التمثيل الست عشري لأي نص ASCII.">Instantly see the hexadecimal representation of any ASCII text.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="ASCII Text:" data-ar="نص ASCII:">ASCII Text:</label>
+            <textarea id="inputText" class="input-textarea" placeholder="Enter ASCII text to convert..." data-en-placeholder="Enter ASCII text to convert..." data-ar-placeholder="أدخل نص ASCII للتحويل..." rows="6"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Hexadecimal Output:" data-ar="إخراج Hexadecimal:">Hexadecimal Output:</label>
+            <textarea id="outputText" class="input-textarea" readonly placeholder="Hexadecimal output will appear here..." data-en-placeholder="Hexadecimal output will appear here..." data-ar-placeholder="ستظهر النتيجة hexadecimal هنا..." rows="6"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button onclick="convertAsciiToHex()" class="btn btn-primary" data-en="Convert to Hex" data-ar="تحويل إلى Hex">Convert to Hex</button>
+            <button onclick="copyOutput()" class="btn btn-secondary" data-en="Copy Hex" data-ar="نسخ Hex">Copy Hex</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="Understanding ASCII to Hex Conversion" data-ar="فهم التحويل من ASCII إلى Hex">Understanding ASCII to Hex Conversion</h2>
+            <p data-en="ASCII to Hex conversion is the process of taking standard text (ASCII) and transforming each character into its hexadecimal (base-16) equivalent. Every character on your keyboard, from 'A' to 'z' and '0' to '9', has a unique numerical value. This tool simply displays that value in hex format, which is commonly used in programming and data transfer." data-ar="التحويل من ASCII إلى Hex هو عملية أخذ نص قياسي (ASCII) وتحويل كل حرف إلى مكافئه في النظام الست عشري (base-16). كل حرف على لوحة المفاتيح، من 'A' إلى 'z' ومن '0' إلى '9'، له قيمة رقمية فريدة. هذه الأداة تعرض ببساطة تلك القيمة بتنسيق Hex، والذي يستخدم بشكل شائع في البرمجة ونقل البيانات.">ASCII to Hex conversion is the process of taking standard text (ASCII) and transforming each character into its hexadecimal (base-16) equivalent. Every character on your keyboard, from 'A' to 'z' and '0' to '9', has a unique numerical value. This tool simply displays that value in hex format, which is commonly used in programming and data transfer.</p>
+
+            <h3 data-en="How It Works: A Simple Example" data-ar="كيف يعمل: مثال بسيط">How It Works: A Simple Example</h3>
+            <p data-en="Let's convert the word 'Hi':<br>1. The character 'H' has an ASCII decimal value of 72. In hex, 72 is represented as '48'.<br>2. The character 'i' has an ASCII decimal value of 105. In hex, 105 is represented as '69'.<br>Therefore, 'Hi' becomes '4869' in hexadecimal." data-ar="لنحول كلمة 'Hi':<br>1. الحرف 'H' له قيمة ASCII عشرية 72. في النظام الست عشري، يتم تمثيل 72 بـ '48'.<br>2. الحرف 'i' له قيمة ASCII عشرية 105. في النظام الست عشري، يتم تمثيل 105 بـ '69'.<br>لذلك، تصبح 'Hi' هي '4869' في النظام الست عشري.">Let's convert the word 'Hi':<br>1. The character 'H' has an ASCII decimal value of 72. In hex, 72 is represented as '48'.<br>2. The character 'i' has an ASCII decimal value of 105. In hex, 105 is represented as '69'.<br>Therefore, 'Hi' becomes '4869' in hexadecimal.</p>
+
+            <h3 data-en="Why Convert from ASCII to Hex?" data-ar="لماذا التحويل من ASCII إلى Hex؟">Why Convert from ASCII to Hex?</h3>
+            <ul>
+              <li data-en="<strong>Data Representation:</strong> Hex is a more compact and human-readable way to represent binary data compared to long strings of 1s and 0s." data-ar="<strong>تمثيل البيانات:</strong> النظام الست عشري هو طريقة أكثر إيجازًا وقابلية للقراءة لتمثيل البيانات الثنائية مقارنة بسلاسل طويلة من 1 و 0."><strong>Data Representation:</strong> Hex is a more compact and human-readable way to represent binary data compared to long strings of 1s and 0s.</li>
+              <li data-en="<strong>Debugging:</strong> Developers often use hex viewers to inspect memory dumps or file contents. Understanding this format is crucial for debugging." data-ar="<strong>تصحيح الأخطاء:</strong> غالبًا ما يستخدم المطورون عارضي Hex لفحص تفريغات الذاكرة أو محتويات الملفات. فهم هذا التنسيق أمر حاسم لتصحيح الأخطاء."><strong>Debugging:</strong> Developers often use hex viewers to inspect memory dumps or file contents. Understanding this format is crucial for debugging.</li>
+              <li data-en="<strong>Network Protocols:</strong> Many network protocols transmit data in a format that is best understood when viewed in hexadecimal." data-ar="<strong>بروتوكولات الشبكة:</strong> تنقل العديد من بروتوكولات الشبكة البيانات بتنسيق يسهل فهمه عند عرضه بالنظام الست عشري."><strong>Network Protocols:</strong> Many network protocols transmit data in a format that is best understood when viewed in hexadecimal.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        <!-- Enhanced Professional Content -->
+        <div class="enhanced-content">
+            
+            <!-- Examples Section -->
+            <div class="examples-section">
+                <h3>🎯 Quick Examples - Try These!</h3>
+                <div class="example-buttons">
+                    <button class="example-btn" onclick="loadExample(0)">📝 Quick Example</button><button class="example-btn" onclick="loadExample(1)">💼 Professional</button><button class="example-btn" onclick="loadExample(2)">🚀 Advanced</button>
+                </div>
+            </div>
+            
+            <!-- Pro Tips -->
+            <div class="pro-tips">
+                <h3 data-en="💡 Pro Tips for Conversion" data-ar="💡 نصائح احترافية للتحويل">💡 Pro Tips for Conversion</h3>
+                <ul>
+                    <li data-en="You can add spaces between the output hex pairs for better readability in the settings." data-ar="يمكنك إضافة مسافات بين أزواج Hex الناتجة لتحسين القراءة في الإعدادات.">You can add spaces between the output hex pairs for better readability in the settings.</li>
+                    <li data-en="Remember that case matters! 'A' (41) and 'a' (61) have different hex values." data-ar="تذكر أن حالة الأحرف مهمة! 'A' (41) و 'a' (61) لهما قيم Hex مختلفة.">Remember that case matters! 'A' (41) and 'a' (61) have different hex values.</li>
+                    <li data-en="Use the 'Clear' button to quickly start a new conversion without refreshing the page." data-ar="استخدم زر 'مسح' لبدء تحويل جديد بسرعة دون تحديث الصفحة.">Use the 'Clear' button to quickly start a new conversion without refreshing the page.</li>
+                </ul>
+            </div>
+            
+            <!-- Use Cases -->
+            <h2 data-en="📋 ASCII to Hex Use Cases" data-ar="📋 حالات استخدام ASCII إلى Hex">📋 ASCII to Hex Use Cases</h2>
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h4 data-en="Software Development" data-ar="تطوير البرمجيات">Software Development</h4>
+                    <p data-en="For encoding string literals or debugging character encoding issues in your code." data-ar="لتشفير السلاسل النصية أو تصحيح مشكلات تشفير الأحرف في التعليمات البرمجية الخاصة بك.">For encoding string literals or debugging character encoding issues in your code.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</h4>
+                    <p data-en="When examining binary files or network packets, converting segments to hex helps identify patterns or text strings." data-ar="عند فحص الملفات الثنائية أو حزم الشبكة، يساعد تحويل الأجزاء إلى Hex في تحديد الأنماط أو السلاسل النصية.">When examining binary files or network packets, converting segments to hex helps identify patterns or text strings.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="Computer Science Education" data-ar="تعليم علوم الحاسوب">Computer Science Education</h4>
+                    <p data-en="A great way for students to visualize how text is represented at a lower level in computer systems." data-ar="طريقة رائعة للطلاب لتصور كيفية تمثيل النص على مستوى أدنى في أنظمة الكمبيوتر.">A great way for students to visualize how text is represented at a lower level in computer systems.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="CTF Challenges" data-ar="تحديات التقاط العلم (CTF)">CTF Challenges</h4>
+                    <p data-en="In cybersecurity challenges, text is often hidden in hex format. This tool helps you quickly decode it." data-ar="في تحديات الأمن السيبراني، غالبًا ما يتم إخفاء النص بتنسيق Hex. تساعدك هذه الأداة على فك تشفيره بسرعة.">In cybersecurity challenges, text is often hidden in hex format. This tool helps you quickly decode it.</p>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <h2>📊 Why Users Love 24ToolHub</h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Happy Users</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Free</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comparison Table -->
+            <h2>🏆 Why Choose 24ToolHub?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>24ToolHub ✅</th>
+                        <th>Others ❌</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>✓ 100% Free Forever</td>
+                        <td>× Often Paid/Limited</td>
+                    </tr>
+                    <tr>
+                        <td>Registration</td>
+                        <td>✓ No Sign-up Required</td>
+                        <td>× Email Required</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>✓ Lightning Fast</td>
+                        <td>× Often Slow</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td>✓ 100% Private</td>
+                        <td>× Tracks Your Data</td>
+                    </tr>
+                    <tr>
+                        <td>Ads</td>
+                        <td>✓ Minimal & Clean</td>
+                        <td>× Overwhelming</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2 data-en="❓ Frequently Asked Questions (ASCII to Hex)" data-ar="❓ الأسئلة الشائعة (ASCII إلى Hex)">❓ Frequently Asked Questions (ASCII to Hex)</h2>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What's the difference between ASCII and UTF-8?" data-ar="ما الفرق بين ASCII و UTF-8؟">What's the difference between ASCII and UTF-8?</summary>
+                        <p data-en="ASCII is a 7-bit character set for English characters. UTF-8 is a variable-width encoding that is backward-compatible with ASCII but also supports all international characters (like emojis and Arabic letters). For standard English text, the hex output will be the same." data-ar="ASCII هو مجموعة أحرف 7 بت للأحرف الإنجليزية. UTF-8 هو ترميز متغير العرض متوافق مع ASCII ولكنه يدعم أيضًا جميع الأحرف الدولية (مثل الرموز التعبيرية والحروف العربية). بالنسبة للنص الإنجليزي القياسي، سيكون إخراج Hex هو نفسه.">ASCII is a 7-bit character set for English characters. UTF-8 is a variable-width encoding that is backward-compatible with ASCII but also supports all international characters (like emojis and Arabic letters). For standard English text, the hex output will be the same.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Does this tool support extended ASCII characters?" data-ar="هل تدعم هذه الأداة أحرف ASCII الموسعة؟">Does this tool support extended ASCII characters?</summary>
+                        <p data-en="Yes, this tool handles characters based on your system's default encoding, which typically includes the extended ASCII set (values 128-255). However, for full international support, using a UTF-8 to Hex converter is recommended." data-ar="نعم، تتعامل هذه الأداة مع الأحرف بناءً على الترميز الافتراضي لنظامك، والذي يتضمن عادةً مجموعة ASCII الموسعة (القيم 128-255). ومع ذلك، للحصول على دعم دولي كامل، يوصى باستخدام محول UTF-8 إلى Hex.">Yes, this tool handles characters based on your system's default encoding, which typically includes the extended ASCII set (values 128-255). However, for full international support, using a UTF-8 to Hex converter is recommended.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How do I convert Hex back to ASCII?" data-ar="كيف يمكنني تحويل Hex مرة أخرى إلى ASCII؟">How do I convert Hex back to ASCII?</summary>
+                        <p data-en="You can use our companion tool, the Hex to ASCII Converter, to easily reverse the process. Just paste the hex string and get the original text back." data-ar="يمكنك استخدام أداتنا المرافقة، محول Hex إلى ASCII، لعكس العملية بسهولة. فقط الصق سلسلة Hex واسترجع النص الأصلي.">You can use our companion tool, the Hex to ASCII Converter, to easily reverse the process. Just paste the hex string and get the original text back.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/ascii-to-hex.js"></script>
+  </body>
+</html>

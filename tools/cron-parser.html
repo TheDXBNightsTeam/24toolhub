@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instantly parse, validate, and explain cron expressions. A free online tool for developers and sysadmins to easily understand and debug cron schedules." />
+    <meta name="keywords" content="cron parser, cron validator, cron explainer, cron schedule, crontab, cron job tool" />
+    <title>Cron Expression Parser & Explainer | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Cron Expression Parser" data-ar="محلل تعبيرات Cron">Cron Expression Parser</h1>
+          <p class="tool-description" data-en="Validate and get a human-readable explanation of any cron schedule." data-ar="تحقق من صحة أي جدول cron واحصل على شرح سهل القراءة له.">Validate and get a human-readable explanation of any cron schedule.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Cron Expression:" data-ar="تعبير Cron:">Cron Expression:</label>
+            <input type="text" id="cronExpression" class="input-field" placeholder="Enter cron expression (e.g., 0 9 * * 1-5)" data-en-placeholder="Enter cron expression (e.g., 0 9 * * 1-5)" data-ar-placeholder="أدخل تعبير cron (مثل 0 9 * * 1-5)" />
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Quick Examples:" data-ar="أمثلة سريعة:">Quick Examples:</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+              <button onclick="setCronExample('0 9 * * 1-5')" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Daily at 9 AM (weekdays)" data-ar="يومياً في 9 صباحاً (أيام العمل)">Daily at 9 AM (weekdays)</button>
+              <button onclick="setCronExample('0 0 1 * *')" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Monthly on 1st" data-ar="شهرياً في الأول">Monthly on 1st</button>
+              <button onclick="setCronExample('*/15 * * * *')" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Every 15 minutes" data-ar="كل 15 دقيقة">Every 15 minutes</button>
+              <button onclick="setCronExample('0 0 * * 0')" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Weekly on Sunday" data-ar="أسبوعياً يوم الأحد">Weekly on Sunday</button>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button onclick="parseCron()" class="btn btn-primary" data-en="Parse Expression" data-ar="تحليل التعبير">Parse Expression</button>
+            <button onclick="clearCron()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyCron()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+                </div>
+
+          <div id="cronOutput" class="cron-output" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Cron Expression Analysis:" data-ar="تحليل تعبير Cron:">Cron Expression Analysis:</h3>
+            <div id="cronResult" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6);"></div>
+                    </div>
+
+          <div id="cronError" class="cron-error" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--error, #ef4444); margin-bottom: 1rem;">Error:</h3>
+            <div id="errorMessage" style="background: var(--error, #ef4444); color: white; padding: 1rem; border-radius: 0.5rem;"></div>
+                    </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is a Cron Expression Parser?</h2>
+            <p>A cron expression parser is an essential online tool that helps developers and system administrators understand and validate cron expressions. Cron expressions are used to schedule tasks in Unix-like operating systems and many other systems. Our free cron parser provides detailed explanations of cron expressions, making it easier to understand when and how often scheduled tasks will run.</p>
+
+            <h3>How to Use the Cron Expression Parser</h3>
+            <ol>
+              <li>Enter a cron expression in the input field</li>
+              <li>Click "Parse Expression" to analyze the expression</li>
+              <li>View the detailed explanation of when the task will run</li>
+              <li>Use quick examples to learn common patterns</li>
+              <li>Copy the result for documentation or reference</li>
+            </ol>
+
+            <h3>What is a Cron Expression?</h3>
+            <p>A cron expression is a string consisting of five or six fields separated by spaces, representing a set of times. The format is:</p>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace;">
+              * * * * * *<br>
+              | | | | | |<br>
+              | | | | | +-- Day of week (0-7, 0 or 7 is Sunday)<br>
+              | | | | +---- Month (1-12)<br>
+              | | | +------ Day of month (1-31)<br>
+              | | +-------- Hour (0-23)<br>
+              | +---------- Minute (0-59)<br>
+              +------------ Second (0-59, optional)
+            </div>
+
+            <h3>Cron Expression Fields</h3>
+            <h4>Standard 5-Field Format</h4>
+            <ul>
+              <li><strong>Minute (0-59):</strong> The minute of the hour</li>
+              <li><strong>Hour (0-23):</strong> The hour of the day</li>
+              <li><strong>Day of Month (1-31):</strong> The day of the month</li>
+              <li><strong>Month (1-12):</strong> The month of the year</li>
+              <li><strong>Day of Week (0-7):</strong> The day of the week (0 or 7 = Sunday)</li>
+            </ul>
+
+            <h4>Extended 6-Field Format</h4>
+            <ul>
+              <li><strong>Second (0-59):</strong> The second of the minute</li>
+              <li><strong>Minute (0-59):</strong> The minute of the hour</li>
+              <li><strong>Hour (0-23):</strong> The hour of the day</li>
+              <li><strong>Day of Month (1-31):</strong> The day of the month</li>
+              <li><strong>Month (1-12):</strong> The month of the year</li>
+              <li><strong>Day of Week (0-7):</strong> The day of the week</li>
+            </ul>
+
+            <h3>Special Characters</h3>
+            <ul>
+              <li><strong>* (Asterisk):</strong> Matches any value</li>
+              <li><strong>, (Comma):</strong> Separates multiple values</li>
+              <li><strong>- (Hyphen):</strong> Specifies a range of values</li>
+              <li><strong>/ (Slash):</strong> Specifies step values</li>
+              <li><strong>? (Question Mark):</strong> No specific value (used in day fields)</li>
+              <li><strong>L (Last):</strong> Last day of month or week</li>
+              <li><strong>W (Weekday):</strong> Nearest weekday to given day</li>
+              <li><strong># (Hash):</strong> Nth occurrence of a weekday</li>
+            </ul>
+
+            <h3>Common Cron Expression Examples</h3>
+            <h4>Basic Examples</h4>
+            <ul>
+              <li><strong>0 9 * * 1-5:</strong> Every weekday at 9:00 AM</li>
+              <li><strong>*/15 * * * *:</strong> Every 15 minutes</li>
+              <li><strong>0 0 1 * *:</strong> First day of every month at midnight</li>
+              <li><strong>0 0 * * 0:</strong> Every Sunday at midnight</li>
+              <li><strong>30 14 * * *:</strong> Every day at 2:30 PM</li>
+            </ul>
+
+            <h4>Advanced Examples</h4>
+            <ul>
+              <li><strong>0 9-17 * * 1-5:</strong> Every hour from 9 AM to 5 PM, weekdays</li>
+              <li><strong>0 0 1,15 * *:</strong> First and 15th of every month</li>
+              <li><strong>0 0 * * 1#2:</strong> Second Monday of every month</li>
+              <li><strong>0 0 L * *:</strong> Last day of every month</li>
+              <li><strong>0 0 * * 6L:</strong> Last Saturday of every month</li>
+            </ul>
+
+            <h3>Applications of Cron Expressions</h3>
+            <ul>
+              <li><strong>System Administration:</strong> Automated system maintenance tasks</li>
+              <li><strong>Backup Systems:</strong> Scheduled data backups</li>
+              <li><strong>Log Rotation:</strong> Regular log file management</li>
+              <li><strong>Database Maintenance:</strong> Scheduled database operations</li>
+              <li><strong>Web Applications:</strong> Background job scheduling</li>
+              <li><strong>Monitoring Systems:</strong> Regular health checks</li>
+              <li><strong>Data Processing:</strong> Batch job scheduling</li>
+            </ul>
+
+            <h3>Cron Expression Best Practices</h3>
+            <ul>
+              <li>Use specific times to avoid conflicts</li>
+              <li>Test expressions before deploying</li>
+              <li>Document the purpose of each cron job</li>
+              <li>Use absolute paths in cron jobs</li>
+              <li>Set proper environment variables</li>
+              <li>Redirect output to log files</li>
+              <li>Consider timezone implications</li>
+            </ul>
+
+            <h3>Common Cron Expression Mistakes</h3>
+            <ul>
+              <li>Using incorrect field order</li>
+              <li>Mixing day of month and day of week incorrectly</li>
+              <li>Using invalid ranges or values</li>
+              <li>Forgetting about daylight saving time</li>
+              <li>Not considering system load</li>
+              <li>Using relative paths instead of absolute paths</li>
+            </ul>
+
+            <h3>Timezone Considerations</h3>
+            <p>Cron expressions are typically interpreted in the system's local timezone. When scheduling tasks, consider:</p>
+            <ul>
+              <li>Server timezone settings</li>
+              <li>Daylight saving time changes</li>
+              <li>International deployments</li>
+              <li>User timezone preferences</li>
+            </ul>
+
+            <h3>Related Tools</h3>
+            <ul>
+              <li><strong>Unix Timestamp Converter:</strong> Convert between timestamps and dates</li>
+              <li><strong>Time Converter:</strong> Convert between different time zones</li>
+              <li><strong>Date Calculator:</strong> Calculate date differences</li>
+              <li><strong>Regex Tester:</strong> Test regular expressions</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What does the '?' character do?" data-ar="ماذا يفعل الحرف '؟'">What does the '?' character do?</summary>
+                        <p data-en="The '?' (question mark) is allowed in the Day-of-Month and Day-of-Week fields. It is used to specify 'no specific value', which is useful when you need to specify a value in one of those fields but not the other." data-ar="يُسمح باستخدام '؟' (علامة الاستفهام) في حقلي يوم الشهر ويوم الأسبوع. يتم استخدامه لتحديد 'لا توجد قيمة محددة'، وهو أمر مفيد عندما تحتاج إلى تحديد قيمة في أحد هذين الحقلين وليس الآخر.">The '?' (question mark) is allowed in the Day-of-Month and Day-of-Week fields. It is used to specify 'no specific value', which is useful when you need to specify a value in one of those fields but not the other.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Is a 6-field cron expression (with seconds) supported?" data-ar="هل يتم دعم تعبير cron المكون من 6 حقول (مع الثواني)؟">Is a 6-field cron expression (with seconds) supported?</summary>
+                        <p data-en="Yes, our parser supports both the standard 5-field format and the extended 6-field format that includes a value for seconds at the beginning of the expression." data-ar="نعم، يدعم المحلل الخاص بنا كلاً من التنسيق القياسي المكون من 5 حقول والتنسيق الموسع المكون من 6 حقول والذي يتضمن قيمة للثواني في بداية التعبير.">Yes, our parser supports both the standard 5-field format and the extended 6-field format that includes a value for seconds at the beginning of the expression.</p>
+                    </details>
+                </div>
+            </div>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/cron-parser.js"></script>
+</body>
+</html>

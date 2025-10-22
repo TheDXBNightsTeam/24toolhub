@@ -1,0 +1,132 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b">
+    Line Counter Analysis
+  </text>
+  
+  <!-- Input text example -->
+  <rect x="50" y="60" width="200" height="140" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="150" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Sample Text
+  </text>
+  
+  <text x="60" y="100" font-family="Monaco, monospace" font-size="10" fill="#374151">
+    Line 1: Hello World
+  </text>
+  <text x="60" y="115" font-family="Monaco, monospace" font-size="10" fill="#374151">
+    Line 2: This is a test
+  </text>
+  <text x="60" y="130" font-family="Monaco, monospace" font-size="10" fill="#64748b">
+    (empty line)
+  </text>
+  <text x="60" y="145" font-family="Monaco, monospace" font-size="10" fill="#374151">
+    Line 3: Short
+  </text>
+  <text x="60" y="160" font-family="Monaco, monospace" font-size="10" fill="#374151">
+    Line 4: This is a very long line
+  </text>
+  <text x="60" y="175" font-family="Monaco, monospace" font-size="10" fill="#64748b">
+    (empty line)
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 270 130 L 310 130" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="290" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    Analyze
+  </text>
+  
+  <!-- Statistics -->
+  <rect x="330" y="60" width="220" height="140" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="440" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">
+    Line Statistics
+  </text>
+  
+  <text x="340" y="100" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    📊 Total Lines: 6
+  </text>
+  <text x="340" y="115" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    📝 Non-Empty: 4
+  </text>
+  <text x="340" y="130" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    ⚪ Empty Lines: 2
+  </text>
+  <text x="340" y="145" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    📏 Avg Length: 12.5
+  </text>
+  <text x="340" y="160" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    📈 Longest: 25 chars
+  </text>
+  <text x="340" y="175" font-family="Arial, sans-serif" font-size="10" fill="#166534">
+    📉 Shortest: 5 chars
+  </text>
+  
+  <!-- Line types -->
+  <rect x="50" y="220" width="500" height="120" rx="8" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
+  <text x="300" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">
+    Line Analysis Types
+  </text>
+  
+  <!-- Analysis type icons -->
+  <circle cx="100" cy="270" r="15" fill="#3b82f6"/>
+  <text x="100" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📊</text>
+  <text x="100" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Total Lines
+  </text>
+  
+  <circle cx="200" cy="270" r="15" fill="#10b981"/>
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📝</text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Non-Empty
+  </text>
+  
+  <circle cx="300" cy="270" r="15" fill="#f59e0b"/>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">⚪</text>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Empty Lines
+  </text>
+  
+  <circle cx="400" cy="270" r="15" fill="#8b5cf6"/>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📏</text>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Avg Length
+  </text>
+  
+  <circle cx="500" cy="270" r="15" fill="#ef4444"/>
+  <text x="500" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">📈</text>
+  <text x="500" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">
+    Longest
+  </text>
+  
+  <!-- Examples -->
+  <text x="100" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    All lines
+  </text>
+  <text x="200" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    With content
+  </text>
+  <text x="300" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Whitespace
+  </text>
+  <text x="400" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Mean chars
+  </text>
+  <text x="500" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    Max chars
+  </text>
+  
+  <!-- Benefits -->
+  <rect x="50" y="360" width="500" height="30" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e293b">
+    Benefits: Code Analysis • Document Structure • Content Management • Quality Assurance • Text Formatting
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

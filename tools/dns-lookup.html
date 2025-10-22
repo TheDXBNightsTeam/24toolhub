@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online DNS Lookup Tool | Check Domain Records | 24ToolHub</title>
+    <meta name="description" content="Instantly check DNS records for any domain. Our free online DNS lookup tool retrieves A, AAAA, CNAME, MX, TXT, NS records, and more for troubleshooting and verification.">
+    <meta name="keywords" content="dns lookup, check dns records, domain checker, dns tool, network tools, what is my dns">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Online DNS Lookup Tool | Check Domain Records | 24ToolHub">
+    <meta property="og:description" content="Instantly check DNS records for any domain. Our free online DNS lookup tool retrieves A, AAAA, CNAME, MX, TXT, NS records, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/dns-lookup">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online DNS Lookup Tool | Check Domain Records | 24ToolHub">
+    <meta name="twitter:description" content="Instantly check DNS records for any domain. Our free online DNS lookup tool retrieves A, AAAA, CNAME, MX, TXT, NS records, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="DNS Lookup" data-ar="البحث في DNS">DNS Lookup</h1>
+                <p class="tool-description" data-en="Look up DNS records for any domain. Check A, AAAA, CNAME, MX, TXT, NS, and other DNS records with detailed information" data-ar="ابحث في سجلات DNS لأي نطاق. تحقق من سجلات A و AAAA و CNAME و MX و TXT و NS وسجلات DNS أخرى مع معلومات مفصلة">Look up DNS records for any domain. Check A, AAAA, CNAME, MX, TXT, NS, and other DNS records with detailed information</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Domain Input -->
+                <div class="domain-input-section">
+                    <div class="input-group">
+                        <label class="input-label" data-en="Domain Name:" data-ar="اسم النطاق:">Domain Name:</label>
+                        <input type="text" id="domainInput" class="input-field" placeholder="example.com" data-en-placeholder="example.com" data-ar-placeholder="example.com" value="google.com">
+                    </div>
+                </div>
+
+                <!-- Record Type Selection -->
+                <div class="record-type-section">
+                    <h4 class="section-heading" data-en="DNS Record Types" data-ar="أنواع سجلات DNS">DNS Record Types</h4>
+                    <div class="record-types-grid">
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordA" checked>
+                            <span class="record-type-label">
+                                <strong>A</strong>
+                                <span class="record-description" data-en="IPv4 Address" data-ar="عنوان IPv4">IPv4 Address</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordAAAA" checked>
+                            <span class="record-type-label">
+                                <strong>AAAA</strong>
+                                <span class="record-description" data-en="IPv6 Address" data-ar="عنوان IPv6">IPv6 Address</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordCNAME" checked>
+                            <span class="record-type-label">
+                                <strong>CNAME</strong>
+                                <span class="record-description" data-en="Canonical Name" data-ar="الاسم الأساسي">Canonical Name</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordMX" checked>
+                            <span class="record-type-label">
+                                <strong>MX</strong>
+                                <span class="record-description" data-en="Mail Exchange" data-ar="تبادل البريد">Mail Exchange</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordTXT" checked>
+                            <span class="record-type-label">
+                                <strong>TXT</strong>
+                                <span class="record-description" data-en="Text Record" data-ar="سجل نصي">Text Record</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordNS" checked>
+                            <span class="record-type-label">
+                                <strong>NS</strong>
+                                <span class="record-description" data-en="Name Server" data-ar="خادم الأسماء">Name Server</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordSOA">
+                            <span class="record-type-label">
+                                <strong>SOA</strong>
+                                <span class="record-description" data-en="Start of Authority" data-ar="بداية السلطة">Start of Authority</span>
+                            </span>
+                        </label>
+                        <label class="record-type-option">
+                            <input type="checkbox" id="recordPTR">
+                            <span class="record-type-label">
+                                <strong>PTR</strong>
+                                <span class="record-description" data-en="Pointer Record" data-ar="سجل المؤشر">Pointer Record</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+                    <button id="lookupDNS" class="btn btn-primary" data-en="Lookup DNS Records" data-ar="البحث في سجلات DNS">Lookup DNS Records</button>
+                    <button id="clearResults" class="btn btn-secondary" data-en="Clear Results" data-ar="مسح النتائج">Clear Results</button>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p data-en="Looking up DNS records..." data-ar="جاري البحث في سجلات DNS...">Looking up DNS records...</p>
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultsSection" class="results-section" style="display: none;">
+                    <h3 class="results-heading" data-en="DNS Lookup Results" data-ar="نتائج البحث في DNS">DNS Lookup Results</h3>
+                    
+                    <!-- Domain Information -->
+                    <div class="domain-info">
+                        <h4 class="subsection-heading" data-en="Domain Information" data-ar="معلومات النطاق">Domain Information</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label" data-en="Domain:" data-ar="النطاق:">Domain:</span>
+                                <span class="info-value" id="domainName">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-en="Lookup Time:" data-ar="وقت البحث:">Lookup Time:</span>
+                                <span class="info-value" id="lookupTime">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-en="Records Found:" data-ar="السجلات الموجودة:">Records Found:</span>
+                                <span class="info-value" id="recordsCount">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DNS Records -->
+                    <div class="dns-records">
+                        <h4 class="subsection-heading" data-en="DNS Records" data-ar="سجلات DNS">DNS Records</h4>
+                        <div id="dnsRecordsList" class="records-list"></div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="results-actions">
+                        <button id="copyResults" class="btn btn-primary" data-en="Copy Results" data-ar="نسخ النتائج">Copy Results</button>
+                        <button id="downloadResults" class="btn btn-secondary" data-en="Download Results" data-ar="تحميل النتائج">Download Results</button>
+                    </div>
+                </div>
+
+                <!-- Quick Examples -->
+                <div class="examples-section">
+                    <h4 class="section-heading" data-en="Quick Examples:" data-ar="أمثلة سريعة:">Quick Examples:</h4>
+                    <div class="examples-grid">
+                        <button class="example-btn" data-domain="google.com" data-en="Google" data-ar="Google">Google</button>
+                        <button class="example-btn" data-domain="github.com" data-en="GitHub" data-ar="GitHub">GitHub</button>
+                        <button class="example-btn" data-domain="cloudflare.com" data-en="Cloudflare" data-ar="Cloudflare">Cloudflare</button>
+                        <button class="example-btn" data-domain="microsoft.com" data-en="Microsoft" data-ar="Microsoft">Microsoft</button>
+                        <button class="example-btn" data-domain="amazon.com" data-en="Amazon" data-ar="Amazon">Amazon</button>
+                        <button class="example-btn" data-domain="facebook.com" data-en="Facebook" data-ar="Facebook">Facebook</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="What is DNS Lookup?" data-ar="ما هو البحث في DNS؟">What is DNS Lookup?</h2>
+                <p data-en="DNS (Domain Name System) lookup is the process of querying DNS servers to retrieve information about domain names and their associated records. It translates human-readable domain names into IP addresses and provides various types of DNS records that control how domains function. Our DNS lookup tool allows you to query multiple record types and get detailed information about any domain's DNS configuration." data-ar="البحث في DNS (نظام أسماء النطاقات) هو عملية الاستعلام من خوادم DNS لاسترجاع معلومات حول أسماء النطاقات والسجلات المرتبطة بها. يحول أسماء النطاقات القابلة للقراءة البشرية إلى عناوين IP ويوفر أنواع مختلفة من سجلات DNS التي تتحكم في كيفية عمل النطاقات. تسمح أداة البحث في DNS بالاستعلام عن أنواع سجلات متعددة والحصول على معلومات مفصلة حول تكوين DNS لأي نطاق.">DNS (Domain Name System) lookup is the process of querying DNS servers to retrieve information about domain names and their associated records. It translates human-readable domain names into IP addresses and provides various types of DNS records that control how domains function. Our DNS lookup tool allows you to query multiple record types and get detailed information about any domain's DNS configuration.</p>
+                
+                <h3 data-en="DNS Record Types" data-ar="أنواع سجلات DNS">DNS Record Types</h3>
+                <ul>
+                    <li data-en="<strong>A Record:</strong> Maps domain names to IPv4 addresses" data-ar="<strong>سجل A:</strong> يربط أسماء النطاقات بعناوين IPv4"><strong>A Record:</strong> Maps domain names to IPv4 addresses</li>
+                    <li data-en="<strong>AAAA Record:</strong> Maps domain names to IPv6 addresses" data-ar="<strong>سجل AAAA:</strong> يربط أسماء النطاقات بعناوين IPv6"><strong>AAAA Record:</strong> Maps domain names to IPv6 addresses</li>
+                    <li data-en="<strong>CNAME Record:</strong> Creates aliases for domain names" data-ar="<strong>سجل CNAME:</strong> ينشئ أسماء مستعارة لأسماء النطاقات"><strong>CNAME Record:</strong> Creates aliases for domain names</li>
+                    <li data-en="<strong>MX Record:</strong> Specifies mail servers for the domain" data-ar="<strong>سجل MX:</strong> يحدد خوادم البريد للنطاق"><strong>MX Record:</strong> Specifies mail servers for the domain</li>
+                    <li data-en="<strong>TXT Record:</strong> Stores text information and verification data" data-ar="<strong>سجل TXT:</strong> يخزن المعلومات النصية وبيانات التحقق"><strong>TXT Record:</strong> Stores text information and verification data</li>
+                    <li data-en="<strong>NS Record:</strong> Specifies authoritative name servers" data-ar="<strong>سجل NS:</strong> يحدد خوادم الأسماء المعتمدة"><strong>NS Record:</strong> Specifies authoritative name servers</li>
+                    <li data-en="<strong>SOA Record:</strong> Contains administrative information about the zone" data-ar="<strong>سجل SOA:</strong> يحتوي على معلومات إدارية حول المنطقة"><strong>SOA Record:</strong> Contains administrative information about the zone</li>
+                    <li data-en="<strong>PTR Record:</strong> Maps IP addresses to domain names (reverse DNS)" data-ar="<strong>سجل PTR:</strong> يربط عناوين IP بأسماء النطاقات (DNS عكسي)"><strong>PTR Record:</strong> Maps IP addresses to domain names (reverse DNS)</li>
+                </ul>
+
+                <h3 data-en="Common Use Cases" data-ar="حالات الاستخدام الشائعة">Common Use Cases</h3>
+                <ul>
+                    <li data-en="Website troubleshooting and debugging" data-ar="استكشاف أخطاء المواقع والتشخيص">Website troubleshooting and debugging</li>
+                    <li data-en="Email server configuration verification" data-ar="التحقق من تكوين خادم البريد الإلكتروني">Email server configuration verification</li>
+                    <li data-en="Domain migration and DNS changes" data-ar="هجرة النطاق وتغييرات DNS">Domain migration and DNS changes</li>
+                    <li data-en="Security analysis and monitoring" data-ar="تحليل الأمان والمراقبة">Security analysis and monitoring</li>
+                    <li data-en="Network administration and management" data-ar="إدارة الشبكة والإدارة">Network administration and management</li>
+                    <li data-en="Domain verification and validation" data-ar="التحقق من النطاق والتحقق">Domain verification and validation</li>
+                </ul>
+
+                <h3 data-en="DNS Lookup Benefits" data-ar="فوائد البحث في DNS">DNS Lookup Benefits</h3>
+                <ul>
+                    <li data-en="Quick domain information retrieval" data-ar="استرجاع سريع لمعلومات النطاق">Quick domain information retrieval</li>
+                    <li data-en="Multiple record type support" data-ar="دعم أنواع سجلات متعددة">Multiple record type support</li>
+                    <li data-en="Real-time DNS data access" data-ar="الوصول إلى بيانات DNS في الوقت الفعلي">Real-time DNS data access</li>
+                    <li data-en="Network troubleshooting assistance" data-ar="مساعدة في استكشاف أخطاء الشبكة">Network troubleshooting assistance</li>
+                    <li data-en="Domain configuration verification" data-ar="التحقق من تكوين النطاق">Domain configuration verification</li>
+                    <li data-en="Security and monitoring insights" data-ar="رؤى الأمان والمراقبة">Security and monitoring insights</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="What does TTL mean in DNS records?" data-ar="ماذا يعني TTL في سجلات DNS؟">What does TTL mean in DNS records?</summary>
+                            <p data-en="TTL stands for 'Time To Live'. It's a value in a DNS record that tells DNS resolvers how long to cache (store) the record before querying the authoritative name server again. A lower TTL means changes propagate faster." data-ar="TTL تعني 'Time To Live' (مدة البقاء). إنها قيمة في سجل DNS تخبر محللات DNS بمدة تخزين السجل مؤقتًا قبل الاستعلام عن خادم الأسماء المعتمد مرة أخرى. TTL أقل يعني أن التغييرات تنتشر بشكل أسرع.">TTL stands for 'Time To Live'. It's a value in a DNS record that tells DNS resolvers how long to cache (store) the record before querying the authoritative name server again. A lower TTL means changes propagate faster.</p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="How can I use this tool to troubleshoot email problems?" data-ar="كيف يمكنني استخدام هذه الأداة لاستكشاف مشكلات البريد الإلكتروني وإصلاحها؟">How can I use this tool to troubleshoot email problems?</summary>
+                            <p data-en="You can check the MX (Mail Exchange) records for your domain. These records tell mail servers where to deliver your email. If they are missing or incorrect, you will have problems receiving email. You can also check TXT records for SPF, DKIM, and DMARC settings, which are important for email authentication." data-ar="يمكنك التحقق من سجلات MX (تبادل البريد) لنطاقك. تخبر هذه السجلات خوادم البريد بمكان تسليم بريدك الإلكتروني. إذا كانت مفقودة أو غير صحيحة، فستواجه مشكلات في تلقي البريد الإلكتروني. يمكنك أيضًا التحقق من سجلات TXT لإعدادات SPF و DKIM و DMARC، والتي تعتبر مهمة لمصادقة البريد الإلكتروني.">You can check the MX (Mail Exchange) records for your domain. These records tell mail servers where to deliver your email. If they are missing or incorrect, you will have problems receiving email. You can also check TXT records for SPF, DKIM, and DMARC settings, which are important for email authentication.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/dns-lookup.js"></script>
+</body>
+</html>

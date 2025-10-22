@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Easily convert your CSV files to JSON format online. Our free tool supports custom delimiters, headers, and provides clean, well-structured JSON output for developers and data analysts." />
+    <meta name="keywords" content="csv to json, convert csv, data transformation, json converter, developer tool, api data" />
+    <title>Fast CSV to JSON Converter | Online Tool | 24ToolHub</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+                <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Instant CSV to JSON Converter" data-ar="محول CSV إلى JSON الفوري">Instant CSV to JSON Converter</h1>
+          <p class="tool-description" data-en="Transform your spreadsheet data into a web-friendly JSON format in seconds." data-ar="حوّل بيانات جداولك إلى تنسيق JSON مناسب للويب في ثوانٍ.">Transform your spreadsheet data into a web-friendly JSON format in seconds.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="CSV Data:" data-ar="بيانات CSV:">CSV Data:</label>
+            <textarea id="csvInput" class="input-field" placeholder="Paste your CSV data here..." data-en-placeholder="Paste your CSV data here..." data-ar-placeholder="الصق بيانات CSV هنا..." rows="8"></textarea>
+        </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Options:" data-ar="الخيارات:">Options:</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+              <div>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="checkbox" id="hasHeaders" checked />
+                  <span data-en="First row is header" data-ar="الصف الأول هو رأس">First row is header</span>
+                        </label>
+              </div>
+              <div>
+                <label class="input-label" data-en="Delimiter:" data-ar="الفاصل:">Delimiter:</label>
+                <select id="delimiter" class="input-field">
+                                <option value=",">Comma (,)</option>
+                                <option value=";">Semicolon (;)</option>
+                                <option value="\t">Tab</option>
+                                <option value="|">Pipe (|)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+          <div class="button-group">
+            <button onclick="convertCSVToJSON()" class="btn btn-primary" data-en="Convert to JSON" data-ar="تحويل إلى JSON">Convert to JSON</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+            <button onclick="copyOutput()" class="btn btn-secondary" data-en="Copy JSON" data-ar="نسخ JSON">Copy JSON</button>
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="JSON Output:" data-ar="إخراج JSON:">JSON Output:</label>
+            <textarea id="jsonOutput" class="input-field" placeholder="JSON output will appear here..." data-en-placeholder="JSON output will appear here..." data-ar-placeholder="ستظهر نتيجة JSON هنا..." rows="8" readonly></textarea>
+                </div>
+            </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is a CSV to JSON Converter?</h2>
+            <p>A CSV to JSON converter is an essential online tool that transforms CSV (Comma-Separated Values) data into JSON (JavaScript Object Notation) format. CSV is commonly used for data export from spreadsheets and databases, while JSON is the preferred format for web APIs and modern applications. Our converter handles the transformation seamlessly, supporting custom delimiters, header rows, and proper data type detection to ensure accurate conversion.</p>
+
+            <h3>How to Use the CSV to JSON Converter</h3>
+            <ol>
+              <li>Paste your CSV data into the input field</li>
+              <li>Choose whether the first row contains headers</li>
+              <li>Select the appropriate delimiter (comma, semicolon, tab, or pipe)</li>
+              <li>Click "Convert to JSON" to transform your data</li>
+              <li>Copy the resulting JSON output</li>
+            </ol>
+
+            <h3>CSV Format</h3>
+            <p>CSV (Comma-Separated Values) is a simple file format used to store tabular data. Each line represents a row, and values are separated by delimiters (commas, semicolons, etc.). CSV files are widely supported and can be opened in spreadsheet applications like Excel, Google Sheets, and LibreOffice Calc.</p>
+
+            <h3>JSON Format</h3>
+            <p>JSON (JavaScript Object Notation) is a lightweight data interchange format that's easy for humans to read and write, and easy for machines to parse and generate. JSON is built on two structures: a collection of name/value pairs and an ordered list of values.</p>
+
+            <h3>Supported Delimiters</h3>
+            <ul>
+              <li><strong>Comma (,):</strong> Most common CSV delimiter</li>
+              <li><strong>Semicolon (;):</strong> Common in European locales</li>
+              <li><strong>Tab:</strong> Tab-separated values (TSV)</li>
+              <li><strong>Pipe (|):</strong> Alternative delimiter for special cases</li>
+            </ul>
+
+            <h3>Header Row Handling</h3>
+            <p>When "First row is header" is enabled, the converter uses the first row as property names in the JSON objects. This creates more meaningful and structured JSON output where each row becomes an object with named properties.</p>
+
+            <h3>Data Type Detection</h3>
+            <p>Our converter automatically detects and converts data types:</p>
+            <ul>
+              <li><strong>Numbers:</strong> Integers and decimals are converted to numeric values</li>
+              <li><strong>Booleans:</strong> "true"/"false" strings are converted to boolean values</li>
+              <li><strong>Null Values:</strong> Empty cells or "null" strings become null values</li>
+              <li><strong>Strings:</strong> All other values remain as strings</li>
+            </ul>
+
+            <h3>Use Cases</h3>
+            <h4>Web Development</h4>
+            <ul>
+              <li>Converting spreadsheet data for web applications</li>
+              <li>Preparing data for API endpoints</li>
+              <li>Creating configuration files</li>
+              <li>Data migration between systems</li>
+            </ul>
+
+            <h4>Data Analysis</h4>
+            <ul>
+              <li>Preparing data for JavaScript analysis</li>
+              <li>Converting survey results</li>
+              <li>Processing export files from databases</li>
+              <li>Creating data visualizations</li>
+            </ul>
+
+            <h4>Content Management</h4>
+            <ul>
+              <li>Converting product catalogs</li>
+              <li>Processing user data exports</li>
+              <li>Creating static site data</li>
+              <li>Generating configuration files</li>
+            </ul>
+
+            <h3>CSV to JSON Conversion Process</h3>
+            <ol>
+              <li><strong>Parse CSV:</strong> Split rows and columns based on delimiter</li>
+              <li><strong>Detect Headers:</strong> Use first row as property names if enabled</li>
+              <li><strong>Type Detection:</strong> Analyze each value to determine data type</li>
+              <li><strong>Object Creation:</strong> Convert each row to a JSON object</li>
+              <li><strong>Array Formation:</strong> Combine all objects into a JSON array</li>
+              <li><strong>Formatting:</strong> Pretty-print the JSON with proper indentation</li>
+            </ol>
+
+            <h3>Example Conversion</h3>
+            <h4>Input CSV:</h4>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace; font-size: 0.875rem;">
+              Name,Age,City,Active<br>
+              John Doe,30,New York,true<br>
+              Jane Smith,25,Los Angeles,false<br>
+              Bob Johnson,35,Chicago,true
+                </div>
+
+            <h4>Output JSON:</h4>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace; font-size: 0.875rem;">
+              [<br>
+              &nbsp;&nbsp;{<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Name": "John Doe",<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Age": 30,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"City": "New York",<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Active": true<br>
+              &nbsp;&nbsp;},<br>
+              &nbsp;&nbsp;{<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Name": "Jane Smith",<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Age": 25,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"City": "Los Angeles",<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;"Active": false<br>
+              &nbsp;&nbsp;}<br>
+              ]
+        </div>
+
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Ensure consistent delimiter usage throughout your CSV</li>
+              <li>Use headers for better JSON structure</li>
+              <li>Handle special characters and quotes properly</li>
+              <li>Validate your JSON output before using it</li>
+              <li>Consider data size limits for large files</li>
+            </ul>
+
+            <h3>Common Issues and Solutions</h3>
+            <h4>Malformed CSV</h4>
+            <p>If your CSV has inconsistent delimiters or quotes, the conversion may fail. Ensure your CSV follows standard formatting rules.</p>
+
+            <h4>Large Files</h4>
+            <p>For very large CSV files, consider splitting them into smaller chunks or using specialized tools for bulk processing.</p>
+
+            <h4>Special Characters</h4>
+            <p>CSV files with special characters or Unicode should be properly encoded (UTF-8) for best results.</p>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What if my CSV uses a semicolon (;) instead of a comma?" data-ar="ماذا لو كان ملف CSV الخاص بي يستخدم فاصلة منقوطة (؛) بدلاً من الفاصلة؟">What if my CSV uses a semicolon (;) instead of a comma?</summary>
+                        <p data-en="Our tool allows you to specify the delimiter. Simply select 'Semicolon (;)' from the 'Delimiter' dropdown in the options section before converting." data-ar="تتيح لك أداتنا تحديد الفاصل. ما عليك سوى تحديد 'فاصلة منقوطة (؛)' من القائمة المنسدلة 'الفاصل' في قسم الخيارات قبل التحويل.">Our tool allows you to specify the delimiter. Simply select 'Semicolon (;)' from the 'Delimiter' dropdown in the options section before converting.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Does the converter handle numbers and booleans correctly?" data-ar="هل يتعامل المحول مع الأرقام والقيم المنطقية بشكل صحيح؟">Does the converter handle numbers and booleans correctly?</summary>
+                        <p data-en="Yes, our converter automatically detects numeric and boolean (true/false) values and converts them to the correct JSON data types, so you don't have to manually edit them later." data-ar="نعم، يكتشف المحول الخاص بنا تلقائيًا القيم الرقمية والمنطقية (true/false) ويحولها إلى أنواع بيانات JSON الصحيحة، لذلك لا يتعين عليك تحريرها يدويًا لاحقًا.">Yes, our converter automatically detects numeric and boolean (true/false) values and converts them to the correct JSON data types, so you don't have to manually edit them later.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Related Tools Section -->
+            <div class="tools-resources">
+                <h3 data-en="Related Data Tools" data-ar="أدوات البيانات ذات الصلة">Related Data Tools:</h3>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4 data-en="Data Conversion Tools" data-ar="أدوات تحويل البيانات">Data Conversion Tools</h4>
+                        <p data-en="Other data format conversion tools on our platform" data-ar="أدوات تحويل تنسيق البيانات الأخرى على منصتنا"></p>
+                        <div class="internal-links">
+                            <a href="json-formatter.html" class="resource-link" data-en="JSON Formatter" data-ar="منسق JSON">JSON Formatter</a>
+                            <a href="xml-to-json.html" class="resource-link" data-en="XML to JSON" data-ar="XML إلى JSON">XML to JSON</a>
+                            <a href="excel-to-json.html" class="resource-link" data-en="Excel to JSON" data-ar="Excel إلى JSON">Excel to JSON</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Text Processing Tools" data-ar="أدوات معالجة النصوص">Text Processing Tools</h4>
+                        <p data-en="More tools for text manipulation and formatting" data-ar="المزيد من أدوات معالجة وتنسيق النصوص"></p>
+                        <div class="internal-links">
+                            <a href="text-case-converter.html" class="resource-link" data-en="Text Case Converter" data-ar="محول حالة النص">Text Case Converter</a>
+                            <a href="find-replace.html" class="resource-link" data-en="Find & Replace" data-ar="البحث والاستبدال">Find & Replace</a>
+                            <a href="remove-duplicates.html" class="resource-link" data-en="Remove Duplicates" data-ar="إزالة التكرارات">Remove Duplicates</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Data Analysis Tools" data-ar="أدوات تحليل البيانات">Data Analysis Tools</h4>
+                        <p data-en="Tools for data analysis and processing" data-ar="أدوات تحليل ومعالجة البيانات"></p>
+                        <div class="internal-links">
+                            <a href="data-visualizer.html" class="resource-link" data-en="Data Visualizer" data-ar="مصور البيانات">Data Visualizer</a>
+                            <a href="statistics-calculator.html" class="resource-link" data-en="Statistics Calculator" data-ar="حاسبة الإحصائيات">Statistics Calculator</a>
+                            <a href="chart-generator.html" class="resource-link" data-en="Chart Generator" data-ar="مولد الرسوم البيانية">Chart Generator</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Programming Tools" data-ar="أدوات البرمجة">Programming Tools</h4>
+                        <p data-en="Tools for developers and programmers" data-ar="أدوات للمطورين والمبرمجين"></p>
+                        <div class="internal-links">
+                            <a href="code-formatter.html" class="resource-link" data-en="Code Formatter" data-ar="منسق الكود">Code Formatter</a>
+                            <a href="base64-encoder.html" class="resource-link" data-en="Base64 Encoder" data-ar="مشفر Base64">Base64 Encoder</a>
+                            <a href="url-encoder.html" class="resource-link" data-en="URL Encoder" data-ar="مشفر URL">URL Encoder</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/csv-to-json.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Data Visualizer | Create Charts & Graphs | 24ToolHub</title>
+    <meta name="description" content="Turn your raw data into beautiful, interactive charts and graphs. Our free online data visualizer supports bar, line, pie charts, and more. Import from CSV or JSON.">
+    <meta name="keywords" content="data visualization, chart maker, graph generator, create charts online, data analysis tool, visualize data">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Online Data Visualizer | Create Charts & Graphs | 24ToolHub">
+    <meta property="og:description" content="Turn your raw data into beautiful, interactive charts and graphs. Supports bar, line, pie charts, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/data-visualizer">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Data Visualizer | Create Charts & Graphs | 24ToolHub">
+    <meta name="twitter:description" content="Turn your raw data into beautiful, interactive charts and graphs. Supports bar, line, pie charts, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Data Visualizer" data-ar="مصور البيانات">Data Visualizer</h1>
+                <p class="tool-description" data-en="Create beautiful charts and graphs from your data. Support for bar charts, line charts, pie charts, and more with interactive features" data-ar="أنشئ مخططات ورسوم بيانية جميلة من بياناتك. دعم للمخططات الشريطية والخطية والدائرية والمزيد مع ميزات تفاعلية">Create beautiful charts and graphs from your data. Support for bar charts, line charts, pie charts, and more with interactive features</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Data Input Section -->
+                <div class="data-input-section">
+                    <div class="input-group">
+                        <label class="input-label" data-en="Chart Type:" data-ar="نوع المخطط:">Chart Type:</label>
+                        <select id="chartType" class="input-field">
+                            <option value="bar" data-en="Bar Chart" data-ar="مخطط شريطي">Bar Chart</option>
+                            <option value="line" data-en="Line Chart" data-ar="مخطط خطي">Line Chart</option>
+                            <option value="pie" data-en="Pie Chart" data-ar="مخطط دائري">Pie Chart</option>
+                            <option value="doughnut" data-en="Doughnut Chart" data-ar="مخطط حلقي">Doughnut Chart</option>
+                            <option value="scatter" data-en="Scatter Plot" data-ar="مخطط مبعثر">Scatter Plot</option>
+                            <option value="radar" data-en="Radar Chart" data-ar="مخطط راداري">Radar Chart</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label" data-en="Chart Title:" data-ar="عنوان المخطط:">Chart Title:</label>
+                        <input type="text" id="chartTitle" class="input-field" placeholder="My Chart" data-en-placeholder="My Chart" data-ar-placeholder="مخططي">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label" data-en="Data Input:" data-ar="إدخال البيانات:">Data Input:</label>
+                        <div class="data-input-tabs">
+                            <button class="tab-btn active" data-tab="manual" data-en="Manual Entry" data-ar="إدخال يدوي">Manual Entry</button>
+                            <button class="tab-btn" data-tab="csv" data-en="CSV Import" data-ar="استيراد CSV">CSV Import</button>
+                            <button class="tab-btn" data-tab="json" data-en="JSON Import" data-ar="استيراد JSON">JSON Import</button>
+                        </div>
+                    </div>
+
+                    <!-- Manual Data Entry -->
+                    <div id="manualTab" class="tab-content active">
+                        <div class="data-entry-grid">
+                            <div class="data-column">
+                                <h4 class="column-title" data-en="Labels" data-ar="التسميات">Labels</h4>
+                                <textarea id="labelsInput" class="data-textarea" placeholder="Label 1&#10;Label 2&#10;Label 3" data-en-placeholder="Label 1&#10;Label 2&#10;Label 3" data-ar-placeholder="تسمية 1&#10;تسمية 2&#10;تسمية 3" rows="6"></textarea>
+                            </div>
+                            <div class="data-column">
+                                <h4 class="column-title" data-en="Values" data-ar="القيم">Values</h4>
+                                <textarea id="valuesInput" class="data-textarea" placeholder="10&#10;20&#10;30" data-en-placeholder="10&#10;20&#10;30" data-ar-placeholder="10&#10;20&#10;30" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSV Import -->
+                    <div id="csvTab" class="tab-content">
+                        <div class="input-group">
+                            <label class="input-label" data-en="CSV Data:" data-ar="بيانات CSV:">CSV Data:</label>
+                            <textarea id="csvInput" class="input-textarea" placeholder="Label,Value&#10;Category A,25&#10;Category B,40&#10;Category C,35" data-en-placeholder="Label,Value&#10;Category A,25&#10;Category B,40&#10;Category C,35" data-ar-placeholder="التسمية,القيمة&#10;فئة أ,25&#10;فئة ب,40&#10;فئة ج,35" rows="8"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- JSON Import -->
+                    <div id="jsonTab" class="tab-content">
+                        <div class="input-group">
+                            <label class="input-label" data-en="JSON Data:" data-ar="بيانات JSON:">JSON Data:</label>
+                            <textarea id="jsonInput" class="input-textarea" placeholder='{"labels": ["A", "B", "C"], "datasets": [{"label": "Values", "data": [10, 20, 30]}]}' data-en-placeholder='{"labels": ["A", "B", "C"], "datasets": [{"label": "Values", "data": [10, 20, 30]}]}' data-ar-placeholder='{"labels": ["أ", "ب", "ج"], "datasets": [{"label": "القيم", "data": [10, 20, 30]}]}' rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart Options -->
+                <div class="chart-options">
+                    <h4 class="section-heading" data-en="Chart Options" data-ar="خيارات المخطط">Chart Options</h4>
+                    <div class="options-grid">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Background Color:" data-ar="لون الخلفية:">Background Color:</label>
+                            <input type="color" id="backgroundColor" class="color-input" value="#ffffff">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label" data-en="Border Color:" data-ar="لون الحدود:">Border Color:</label>
+                            <input type="color" id="borderColor" class="color-input" value="#000000">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label" data-en="Border Width:" data-ar="عرض الحدود:">Border Width:</label>
+                            <input type="range" id="borderWidth" class="range-input" min="0" max="10" value="2">
+                            <span id="borderWidthValue">2</span>
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label" data-en="Show Legend:" data-ar="إظهار المفتاح:">Show Legend:</label>
+                            <input type="checkbox" id="showLegend" class="checkbox-input" checked>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+                    <button id="generateChart" class="btn btn-primary" data-en="Generate Chart" data-ar="إنشاء المخطط">Generate Chart</button>
+                    <button id="clearData" class="btn btn-secondary" data-en="Clear Data" data-ar="مسح البيانات">Clear Data</button>
+                    <button id="downloadChart" class="btn btn-secondary" data-en="Download Chart" data-ar="تحميل المخطط" style="display: none;">Download Chart</button>
+                </div>
+
+                <!-- Chart Display -->
+                <div id="chartSection" class="chart-section" style="display: none;">
+                    <h3 class="chart-heading" data-en="Generated Chart" data-ar="المخطط المُولد">Generated Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="chartCanvas" width="800" height="400"></canvas>
+                    </div>
+                </div>
+
+                <!-- Quick Examples -->
+                <div class="examples-section">
+                    <h4 class="section-heading" data-en="Quick Examples:" data-ar="أمثلة سريعة:">Quick Examples:</h4>
+                    <div class="examples-grid">
+                        <button class="example-btn" data-example="sales" data-en="Sales Data" data-ar="بيانات المبيعات">Sales Data</button>
+                        <button class="example-btn" data-example="population" data-en="Population" data-ar="التعداد السكاني">Population</button>
+                        <button class="example-btn" data-example="expenses" data-en="Expenses" data-ar="المصروفات">Expenses</button>
+                        <button class="example-btn" data-example="performance" data-en="Performance" data-ar="الأداء">Performance</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="What is Data Visualization?" data-ar="ما هو تصوير البيانات؟">What is Data Visualization?</h2>
+                <p data-en="Data visualization is the graphical representation of information and data using visual elements like charts, graphs, and maps. It helps people understand complex data patterns, trends, and insights more easily. Our data visualizer tool allows you to create professional charts from your data with just a few clicks." data-ar="تصوير البيانات هو التمثيل الرسومي للمعلومات والبيانات باستخدام عناصر بصرية مثل المخططات والرسوم البيانية والخرائط. يساعد الناس على فهم أنماط البيانات المعقدة والاتجاهات والرؤى بسهولة أكبر. تسمح أداة تصوير البيانات الخاصة بنا بإنشاء مخططات احترافية من بياناتك بنقرة واحدة فقط.">Data visualization is the graphical representation of information and data using visual elements like charts, graphs, and maps. It helps people understand complex data patterns, trends, and insights more easily. Our data visualizer tool allows you to create professional charts from your data with just a few clicks.</p>
+                
+                <h3 data-en="Supported Chart Types" data-ar="أنواع المخططات المدعومة">Supported Chart Types</h3>
+                <ul>
+                    <li data-en="<strong>Bar Chart:</strong> Compare values across categories" data-ar="<strong>مخطط شريطي:</strong> مقارنة القيم عبر الفئات"><strong>Bar Chart:</strong> Compare values across categories</li>
+                    <li data-en="<strong>Line Chart:</strong> Show trends over time" data-ar="<strong>مخطط خطي:</strong> إظهار الاتجاهات عبر الوقت"><strong>Line Chart:</strong> Show trends over time</li>
+                    <li data-en="<strong>Pie Chart:</strong> Display parts of a whole" data-ar="<strong>مخطط دائري:</strong> عرض أجزاء من الكل"><strong>Pie Chart:</strong> Display parts of a whole</li>
+                    <li data-en="<strong>Doughnut Chart:</strong> Pie chart with center cutout" data-ar="<strong>مخطط حلقي:</strong> مخطط دائري مع قطع في الوسط"><strong>Doughnut Chart:</strong> Pie chart with center cutout</li>
+                    <li data-en="<strong>Scatter Plot:</strong> Show correlation between variables" data-ar="<strong>مخطط مبعثر:</strong> إظهار الارتباط بين المتغيرات"><strong>Scatter Plot:</strong> Show correlation between variables</li>
+                    <li data-en="<strong>Radar Chart:</strong> Display multivariate data" data-ar="<strong>مخطط راداري:</strong> عرض البيانات متعددة المتغيرات"><strong>Radar Chart:</strong> Display multivariate data</li>
+                </ul>
+
+                <h3 data-en="Features" data-ar="المميزات">Features</h3>
+                <ul>
+                    <li data-en="Multiple chart types and styles" data-ar="أنواع وأنماط مخططات متعددة">Multiple chart types and styles</li>
+                    <li data-en="Interactive charts with hover effects" data-ar="مخططات تفاعلية مع تأثيرات التمرير">Interactive charts with hover effects</li>
+                    <li data-en="Customizable colors and styling" data-ar="ألوان وتنسيق قابل للتخصيص">Customizable colors and styling</li>
+                    <li data-en="Data import from CSV and JSON" data-ar="استيراد البيانات من CSV و JSON">Data import from CSV and JSON</li>
+                    <li data-en="Chart download in PNG format" data-ar="تحميل المخطط بصيغة PNG">Chart download in PNG format</li>
+                    <li data-en="Responsive design for all devices" data-ar="تصميم متجاوب لجميع الأجهزة">Responsive design for all devices</li>
+                </ul>
+
+                <h3 data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</h3>
+                <ul>
+                    <li data-en="Business presentations and reports" data-ar="العروض التقديمية والتقارير التجارية">Business presentations and reports</li>
+                    <li data-en="Academic research and analysis" data-ar="البحث الأكاديمي والتحليل">Academic research and analysis</li>
+                    <li data-en="Data journalism and storytelling" data-ar="صحافة البيانات وسرد القصص">Data journalism and storytelling</li>
+                    <li data-en="Marketing analytics and insights" data-ar="تحليلات التسويق والرؤى">Marketing analytics and insights</li>
+                    <li data-en="Financial data visualization" data-ar="تصوير البيانات المالية">Financial data visualization</li>
+                    <li data-en="Scientific data representation" data-ar="تمثيل البيانات العلمية">Scientific data representation</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="What format should my CSV file be in?" data-ar="ما هو التنسيق الذي يجب أن يكون عليه ملف CSV الخاص بي؟">What format should my CSV file be in?</summary>
+                            <p data-en="For best results, your CSV should have a header row. The first column will be used for labels, and the second column will be used for values. For example: `Category,Value` followed by your data rows." data-ar="للحصول على أفضل النتائج، يجب أن يحتوي ملف CSV الخاص بك على صف رأس. سيتم استخدام العمود الأول للتسميات، وسيتم استخدام العمود الثاني للقيم. على سبيل المثال: `Category,Value` متبوعًا بصفوف البيانات الخاصة بك.">For best results, your CSV should have a header row. The first column will be used for labels, and the second column will be used for values. For example: `Category,Value` followed by your data rows.</p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="Can I download the chart I create?" data-ar="هل يمكنني تنزيل المخطط الذي أقوم بإنشائه؟">Can I download the chart I create?</summary>
+                            <p data-en="Yes, once you generate a chart, a 'Download Chart' button will appear. You can click it to save your visualization as a PNG image file, which is perfect for presentations and reports." data-ar="نعم، بمجرد إنشاء مخطط، سيظهر زر 'تنزيل المخطط'. يمكنك النقر عليه لحفظ التصور الخاص بك كملف صورة PNG، وهو مثالي للعروض التقديمية والتقارير.">Yes, once you generate a chart, a 'Download Chart' button will appear. You can click it to save your visualization as a PNG image file, which is perfect for presentations and reports.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/data-visualizer.js"></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quickly compare two text files or code snippets to find the differences. Our online diff checker highlights additions and deletions for easy review." />
+    <meta name="keywords" content="diff checker, text comparison, file compare, code diff, text difference tool, online diff" />
+    <title>Online Text & File Diff Checker | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+  <style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Text Difference Checker" data-ar="مدقق فروقات النصوص">Text Difference Checker</h1>
+          <p class="tool-description" data-en="Instantly see the difference between two pieces of text, code, or documents." data-ar="شاهد على الفور الفرق بين قطعتين من النص أو الكود أو المستندات.">Instantly see the difference between two pieces of text, code, or documents.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Original Text:" data-ar="النص الأصلي:">Original Text:</label>
+            <textarea id="text1" class="input-textarea" placeholder="Enter the original text..." data-en-placeholder="Enter the original text..." data-ar-placeholder="أدخل النص الأصلي..." rows="8"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Modified Text:" data-ar="النص المعدل:">Modified Text:</label>
+            <textarea id="text2" class="input-textarea" placeholder="Enter the modified text..." data-en-placeholder="Enter the modified text..." data-ar-placeholder="أدخل النص المعدل..." rows="8"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button onclick="compareDiff()" class="btn btn-primary" data-en="Compare Texts" data-ar="قارن النصوص">Compare Texts</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+          </div>
+
+          <div id="diffOutput" class="diff-output" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Differences Found:" data-ar="الاختلافات الموجودة:">Differences Found:</h3>
+            <div id="diffResult" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6); font-family: monospace; white-space: pre-wrap; overflow-x: auto;"></div>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is a Text Diff Checker?</h2>
+            <p>A text diff checker is an essential online tool that compares two text documents and highlights the differences between them. This tool is invaluable for developers, writers, editors, and anyone who needs to track changes, review modifications, or identify discrepancies between different versions of text content.</p>
+
+            <h3>How to Use the Text Diff Checker</h3>
+            <ol>
+              <li>Enter the original text in the first textarea</li>
+              <li>Enter the modified text in the second textarea</li>
+              <li>Click "Compare Texts" to analyze the differences</li>
+              <li>View the highlighted differences in the result area</li>
+              <li>Use "Clear" to reset all fields</li>
+            </ol>
+
+            <h3>Features of Our Diff Checker</h3>
+            <ul>
+              <li><strong>Line-by-line Comparison:</strong> Compares text line by line</li>
+              <li><strong>Character-level Analysis:</strong> Identifies exact character differences</li>
+              <li><strong>Visual Highlighting:</strong> Clearly shows added, removed, and modified content</li>
+              <li><strong>Real-time Processing:</strong> Instant comparison results</li>
+              <li><strong>Large Text Support:</strong> Handles large documents efficiently</li>
+            </ul>
+
+            <h3>Applications of Text Diff Checking</h3>
+            <ul>
+              <li><strong>Code Review:</strong> Comparing different versions of code</li>
+              <li><strong>Document Editing:</strong> Tracking changes in documents</li>
+              <li><strong>Content Management:</strong> Verifying content updates</li>
+              <li><strong>Version Control:</strong> Understanding changes between versions</li>
+              <li><strong>Quality Assurance:</strong> Ensuring accuracy of modifications</li>
+              <li><strong>Collaborative Writing:</strong> Reviewing contributions from multiple authors</li>
+              <li><strong>Translation Review:</strong> Comparing original and translated text</li>
+              <li><strong>Data Validation:</strong> Verifying data integrity</li>
+            </ul>
+
+            <h3>Types of Differences Detected</h3>
+            <ul>
+              <li><strong>Added Content:</strong> New text that wasn't in the original</li>
+              <li><strong>Removed Content:</strong> Text that was deleted from the original</li>
+              <li><strong>Modified Content:</strong> Text that was changed or replaced</li>
+              <li><strong>Whitespace Changes:</strong> Differences in spaces, tabs, and line breaks</li>
+              <li><strong>Case Changes:</strong> Differences in capitalization</li>
+            </ul>
+
+            <h3>Best Practices for Text Comparison</h3>
+            <ul>
+              <li>Ensure both texts are properly formatted</li>
+              <li>Remove unnecessary whitespace before comparison</li>
+              <li>Use consistent line endings (CRLF vs LF)</li>
+              <li>Consider case sensitivity for your use case</li>
+              <li>Save important comparisons for future reference</li>
+            </ul>
+
+            <h3>Common Use Cases</h3>
+            <h4>Software Development</h4>
+            <ul>
+              <li>Code review and pull request analysis</li>
+              <li>Comparing configuration files</li>
+              <li>Tracking changes in documentation</li>
+              <li>Verifying bug fixes and feature implementations</li>
+            </ul>
+
+            <h4>Content Management</h4>
+            <ul>
+              <li>Reviewing article edits and updates</li>
+              <li>Comparing different versions of web content</li>
+              <li>Verifying translation accuracy</li>
+              <li>Tracking changes in legal documents</li>
+            </ul>
+
+            <h4>Data Analysis</h4>
+            <ul>
+              <li>Comparing datasets for changes</li>
+              <li>Verifying data migration results</li>
+              <li>Identifying discrepancies in reports</li>
+              <li>Validating data cleaning processes</li>
+            </ul>
+
+            <h3>Tips for Effective Text Comparison</h3>
+            <ul>
+              <li>Use consistent formatting in both texts</li>
+              <li>Pay attention to whitespace and formatting differences</li>
+              <li>Consider the context of changes</li>
+              <li>Review changes systematically</li>
+              <li>Document significant changes for future reference</li>
+            </ul>
+
+            <h3>Limitations and Considerations</h3>
+            <ul>
+              <li>Large texts may take longer to process</li>
+              <li>Complex formatting changes may not be perfectly detected</li>
+              <li>Binary files cannot be compared</li>
+              <li>Context of changes may require manual review</li>
+            </ul>
+
+            <h3>Related Tools</h3>
+            <ul>
+              <li><strong>Text Case Converter:</strong> Convert text between different cases</li>
+              <li><strong>String Reverser:</strong> Reverse text strings</li>
+              <li><strong>Find and Replace:</strong> Find and replace text patterns</li>
+              <li><strong>Text Splitter:</strong> Split text based on delimiters</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How do I interpret the highlighted results?" data-ar="كيف أفسر النتائج المظللة؟">How do I interpret the highlighted results?</summary>
+                        <p data-en="Our tool highlights the differences to make them easy to spot. Text highlighted in green indicates content that was added, while text highlighted in red indicates content that was removed. Unchanged lines are not highlighted." data-ar="تقوم أداتنا بتظليل الاختلافات لتسهيل اكتشافها. يشير النص المظلل باللون الأخضر إلى المحتوى الذي تمت إضافته، بينما يشير النص المظلل باللون الأحمر إلى المحتوى الذي تمت إزالته. لا يتم تظليل الأسطر التي لم تتغير.">Our tool highlights the differences to make them easy to spot. Text highlighted in green indicates content that was added, while text highlighted in red indicates content that was removed. Unchanged lines are not highlighted.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can I compare files instead of just pasting text?" data-ar="هل يمكنني مقارنة الملفات بدلاً من لصق النص فقط؟">Can I compare files instead of just pasting text?</summary>
+                        <p data-en="Currently, our tool is designed for comparing text pasted directly into the input fields. For comparing entire files, you would need to open them, copy the content, and then paste it into the respective text areas." data-ar="حاليًا، تم تصميم أداتنا لمقارنة النص الذي يتم لصقه مباشرة في حقول الإدخال. لمقارنة ملفات كاملة، ستحتاج إلى فتحها ونسخ المحتوى ثم لصقه في مناطق النص المعنية.">Currently, our tool is designed for comparing text pasted directly into the input fields. For comparing entire files, you would need to open them, copy the content, and then paste it into the respective text areas.</p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/diff-checker.js"></script>
+  </body>
+</html>

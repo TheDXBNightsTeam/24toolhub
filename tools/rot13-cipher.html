@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instantly translate text to and from the ROT13 cipher. A simple and fast online tool for encoding or decoding ROT13, perfect for puzzles and basic text obfuscation.">
+    <meta name="keywords" content="rot13, rot13 cipher, rot13 translator, rot13 decoder, caesar cipher, text obfuscation">
+    <title>ROT13 Cipher Translator | Online ROT13 Encoder & Decoder | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+  <style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="ROT13 Cipher" data-ar="تشفير ROT13">ROT13 Cipher</h1>
+          <p class="tool-description" data-en="Encode and decode text using ROT13 cipher" data-ar="شفر وفك تشفير النص باستخدام تشفير ROT13">Encode and decode text using ROT13 cipher</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Input Text:" data-ar="النص المدخل:">Input Text:</label>
+            <textarea id="inputText" class="input-textarea" placeholder="Enter text to encode/decode..." data-en-placeholder="Enter text to encode/decode..." data-ar-placeholder="أدخل النص للتشفير/فك التشفير..." rows="6"></textarea>
+          </div>
+
+          <div class="button-group">
+            <button onclick="encodeROT13()" class="btn btn-primary" data-en="Encode ROT13" data-ar="تشفير ROT13">Encode ROT13</button>
+            <button onclick="decodeROT13()" class="btn btn-primary" data-en="Decode ROT13" data-ar="فك تشفير ROT13">Decode ROT13</button>
+            <button onclick="clearROT13()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyResult()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+          </div>
+
+          <div id="outputSection" class="output-section" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Result:" data-ar="النتيجة:">Result:</h3>
+            <div id="outputText" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6); font-family: monospace; white-space: pre-wrap; min-height: 100px;"></div>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="What is the ROT13 Cipher?" data-ar="ما هو تشفير ROT13؟">What is the ROT13 Cipher?</h2>
+            <p data-en="ROT13 ('rotate by 13 places') is a simple substitution cipher that replaces a letter with the 13th letter after it in the alphabet. It's a special case of the Caesar cipher. Applying ROT13 twice on a piece of text will restore the original text, making it its own inverse. It is not used for security, but for simple text obfuscation." data-ar="ROT13 ('التدوير بمقدار 13 مكانًا') هو تشفير استبدال بسيط يستبدل الحرف بالحرف الثالث عشر بعده في الأبجدية. إنها حالة خاصة من تشفير قيصر. تطبيق ROT13 مرتين على جزء من النص سيعيد النص الأصلي، مما يجعله معكوسًا لنفسه. لا يتم استخدامه للأمان، ولكن لإخفاء النص البسيط."></p>
+            
+            <h3 data-en="Common Uses" data-ar="الاستخدامات الشائعة">Common Uses</h3>
+            <ul>
+                <li data-en="<strong>Hiding Spoilers:</strong> Used in online forums to hide movie or book spoilers from a casual glance."><strong>إخفاء المفسدين:</strong> يستخدم في المنتديات عبر الإنترنت لإخفاء مفسدات الأفلام أو الكتب عن الأنظار العابرة.</li>
+                <li data-en="<strong>Puzzles and Geocaching:</strong> A fun and simple cipher for use in puzzles and games."><strong>الألغاز وتحديد المواقع الجغرافية:</strong> تشفير ممتع وبسيط للاستخدام في الألغاز والألعاب.</li>
+                <li data-en="<strong>Email Obfuscation:</strong> A very basic method to hide email addresses from simple spam bots."><strong>إخفاء البريد الإلكتروني:</strong> طريقة أساسية جدًا لإخفاء عناوين البريد الإلكتروني عن روبوتات البريد العشوائي البسيطة.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Is ROT13 a secure way to encrypt information?" data-ar="هل ROT13 طريقة آمنة لتشفير المعلومات؟">Is ROT13 a secure way to encrypt information?</summary>
+                        <p data-en="No, not at all. ROT13 is a recreational cipher and provides no real security. Since the method is always the same (a shift of 13), anyone can decode it instantly. It should never be used for sensitive information.">لا، على الإطلاق. ROT13 هو تشفير ترفيهي ولا يوفر أي أمان حقيقي. نظرًا لأن الطريقة هي نفسها دائمًا (إزاحة 13)، يمكن لأي شخص فك تشفيره على الفور. لا ينبغي أبدًا استخدامه للمعلومات الحساسة.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How is ROT13 different from the Caesar cipher?" data-ar="كيف يختلف ROT13 عن تشفير قيصر؟">How is ROT13 different from the Caesar cipher?</summary>
+                        <p data-en="ROT13 is a specific type of Caesar cipher where the shift is always 13. A general Caesar cipher can use any shift value (from 1 to 25). The fixed shift of 13 is what makes ROT13 its own inverse.">ROT13 هو نوع معين من تشفير قيصر حيث تكون الإزاحة دائمًا 13. يمكن لتشفير قيصر العام استخدام أي قيمة إزاحة (من 1 إلى 25). الإزاحة الثابتة البالغة 13 هي ما يجعل ROT13 معكوسًا لنفسه."></p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/rot13-cipher.js"></script>
+  </body>
+</html>

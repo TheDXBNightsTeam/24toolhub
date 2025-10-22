@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Speed Test | Analyze Page Load Time & Performance | 24ToolHub</title>
+    <meta name="description" content="How fast is your website? Use our free speed test tool to analyze your page load time, get key performance insights (Core Web Vitals), and discover how to improve.">
+    <meta name="keywords" content="website speed test, page speed test, site speed, check website speed, page load time, core web vitals">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Website Speed Test - 24ToolHub">
+    <meta property="og:description" content="Test your website's loading speed and performance with our free speed test tool.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/website-speed-test">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Speed Test - 24ToolHub">
+    <meta name="twitter:description" content="Test your website's loading speed and performance with our free speed test tool.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Website Speed Test" data-ar="اختبار سرعة الموقع">Website Speed Test</h1>
+                <p class="tool-description" data-en="Test your website's loading speed and performance with detailed insights and optimization recommendations" data-ar="اختبر سرعة تحميل موقعك والأداء مع رؤى مفصلة وتوصيات التحسين">Test your website's loading speed and performance with detailed insights and optimization recommendations</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <div class="input-group">
+                    <label class="input-label" data-en="Website URL:" data-ar="رابط الموقع:">Website URL:</label>
+                    <input type="url" id="websiteUrl" class="input-field" placeholder="https://example.com" data-en-placeholder="https://example.com" data-ar-placeholder="https://example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label" data-en="Test Options:" data-ar="خيارات الاختبار:">Test Options:</label>
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="checkbox" id="testDesktop" checked>
+                            <span data-en="Desktop Test" data-ar="اختبار سطح المكتب">Desktop Test</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="testMobile" checked>
+                            <span data-en="Mobile Test" data-ar="اختبار الهاتف المحمول">Mobile Test</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="testPerformance" checked>
+                            <span data-en="Performance Metrics" data-ar="مقاييس الأداء">Performance Metrics</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" id="testSEO" checked>
+                            <span data-en="SEO Analysis" data-ar="تحليل SEO">SEO Analysis</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="startTest" class="btn btn-primary" data-en="Start Speed Test" data-ar="بدء اختبار السرعة">Start Speed Test</button>
+                    <button id="clearResults" class="btn btn-secondary" data-en="Clear Results" data-ar="مسح النتائج">Clear Results</button>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p data-en="Testing website speed..." data-ar="جاري اختبار سرعة الموقع...">Testing website speed...</p>
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultsSection" class="results-section" style="display: none;">
+                    <h3 class="results-heading" data-en="Speed Test Results" data-ar="نتائج اختبار السرعة">Speed Test Results</h3>
+                    
+                    <!-- Overall Score -->
+                    <div class="score-section">
+                        <div class="score-circle">
+                            <div class="score-value" id="overallScore">0</div>
+                            <div class="score-label" data-en="Overall Score" data-ar="النتيجة الإجمالية">Overall Score</div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label" data-en="First Contentful Paint" data-ar="أول محتوى مرئي">First Contentful Paint</div>
+                            <div class="metric-value" id="fcpValue">-</div>
+                            <div class="metric-grade" id="fcpGrade">-</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label" data-en="Largest Contentful Paint" data-ar="أكبر محتوى مرئي">Largest Contentful Paint</div>
+                            <div class="metric-value" id="lcpValue">-</div>
+                            <div class="metric-grade" id="lcpGrade">-</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label" data-en="Cumulative Layout Shift" data-ar="تحول التخطيط التراكمي">Cumulative Layout Shift</div>
+                            <div class="metric-value" id="clsValue">-</div>
+                            <div class="metric-grade" id="clsGrade">-</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label" data-en="First Input Delay" data-ar="تأخير الإدخال الأول">First Input Delay</div>
+                            <div class="metric-value" id="fidValue">-</div>
+                            <div class="metric-grade" id="fidGrade">-</div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="recommendations-section">
+                        <h4 class="recommendations-heading" data-en="Optimization Recommendations" data-ar="توصيات التحسين">Optimization Recommendations</h4>
+                        <div id="recommendationsList" class="recommendations-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="Why Does Website Speed Matter?" data-ar="لماذا تهم سرعة الموقع؟">Why Does Website Speed Matter?</h2>
+                <p data-en="A slow website frustrates visitors and hurts your search engine rankings. Our Website Speed Test, powered by Google PageSpeed Insights, analyzes your site's performance and provides actionable recommendations to help you deliver a faster, more enjoyable user experience." data-ar="الموقع البطيء يحبط الزوار ويضر بترتيبك في محركات البحث. يقوم اختبار سرعة موقع الويب الخاص بنا، المدعوم من Google PageSpeed Insights، بتحليل أداء موقعك وتقديم توصيات قابلة للتنفيذ لمساعدتك على تقديم تجربة مستخدم أسرع وأكثر متعة."></p>
+                
+                <h3 data-en="Understanding the Core Metrics" data-ar="فهم المقاييس الأساسية">Understanding the Core Metrics</h3>
+                <ul>
+                    <li data-en="<strong>Largest Contentful Paint (LCP):</strong> Measures how long it takes for the largest image or text block to become visible. A good LCP means the user feels the page has loaded quickly."><strong>أكبر محتوى مرئي (LCP):</strong> يقيس المدة التي يستغرقها ظهور أكبر صورة أو كتلة نصية. يعني LCP الجيد أن المستخدم يشعر بأن الصفحة قد تم تحميلها بسرعة.</li>
+                    <li data-en="<strong>First Input Delay (FID):</strong> Measures how long it takes for the browser to respond to a user's first interaction (like a click). A low FID makes your site feel responsive."><strong>تأخير الإدخال الأول (FID):</strong> يقيس المدة التي يستغرقها المتصفح للاستجابة لأول تفاعل للمستخدم (مثل نقرة). يجعل FID المنخفض موقعك يبدو سريع الاستجابة.</li>
+                    <li data-en="<strong>Cumulative Layout Shift (CLS):</strong> Measures visual stability. A low CLS prevents annoying layout shifts where elements move around as the page loads."><strong>تحول التخطيط التراكمي (CLS):</strong> يقيس الاستقرار البصري. يمنع CLS المنخفض تحولات التخطيط المزعجة حيث تتحرك العناصر أثناء تحميل الصفحة.</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="What is a good page load time?" data-ar="ما هو وقت تحميل الصفحة الجيد؟">What is a good page load time?</summary>
+                            <p data-en="Ideally, a page should load in under 2-3 seconds. Anything longer can lead to a higher bounce rate, as users may leave before the page fully loads.">من الناحية المثالية، يجب تحميل الصفحة في أقل من 2-3 ثوانٍ. أي شيء أطول يمكن أن يؤدي إلى ارتفاع معدل الارتداد، حيث قد يغادر المستخدمون قبل تحميل الصفحة بالكامل.</p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="Why is my mobile score lower than my desktop score?" data-ar="لماذا تكون درجة هاتفي المحمول أقل من درجة سطح المكتب؟">Why is my mobile score lower than my desktop score?</summary>
+                            <p data-en="Mobile scores are often lower because they are tested on a slower network connection and less powerful device to simulate a real-world mobile user's experience. This highlights the importance of optimizing for mobile.">غالبًا ما تكون درجات الهاتف المحمول أقل لأنه يتم اختبارها على اتصال شبكة أبطأ وجهاز أقل قوة لمحاكاة تجربة مستخدم الهاتف المحمول في العالم الحقيقي. هذا يسلط الضوء على أهمية التحسين للجوال.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/website-speed-test.js"></script>
+</body>
+</html>

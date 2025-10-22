@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Formatter & Beautifier | 24ToolHub</title>
+    <meta name="description" content="Format, beautify, and validate your code instantly. Supports JavaScript, Python, HTML, CSS, JSON, and more. Improve readability and maintain a consistent style.">
+    <meta name="keywords" content="code formatter, code beautifier, online code editor, javascript formatter, python formatter, json validator, code cleaner">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Online Code Formatter & Beautifier | 24ToolHub">
+    <meta property="og:description" content="Format, beautify, and validate your code instantly. Supports JavaScript, Python, HTML, CSS, JSON, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/code-formatter">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Code Formatter & Beautifier | 24ToolHub">
+    <meta name="twitter:description" content="Format, beautify, and validate your code instantly. Supports JavaScript, Python, HTML, CSS, JSON, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Code Formatter" data-ar="منسق الكود">Code Formatter</h1>
+                <p class="tool-description" data-en="Format and beautify your code online. Support for JavaScript, Python, HTML, CSS, JSON, XML, and more programming languages" data-ar="نسق وجمّل الكود الخاص بك عبر الإنترنت. دعم لـ JavaScript و Python و HTML و CSS و JSON و XML والمزيد من لغات البرمجة">Format and beautify your code online. Support for JavaScript, Python, HTML, CSS, JSON, XML, and more programming languages</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Language Selection -->
+                <div class="language-section">
+                    <div class="input-group">
+                        <label class="input-label" data-en="Programming Language:" data-ar="لغة البرمجة:">Programming Language:</label>
+                        <select id="languageSelect" class="input-field">
+                            <option value="javascript" data-en="JavaScript" data-ar="JavaScript">JavaScript</option>
+                            <option value="python" data-en="Python" data-ar="Python">Python</option>
+                            <option value="html" data-en="HTML" data-ar="HTML">HTML</option>
+                            <option value="css" data-en="CSS" data-ar="CSS">CSS</option>
+                            <option value="json" data-en="JSON" data-ar="JSON">JSON</option>
+                            <option value="xml" data-en="XML" data-ar="XML">XML</option>
+                            <option value="sql" data-en="SQL" data-ar="SQL">SQL</option>
+                            <option value="php" data-en="PHP" data-ar="PHP">PHP</option>
+                            <option value="java" data-en="Java" data-ar="Java">Java</option>
+                            <option value="cpp" data-en="C++" data-ar="C++">C++</option>
+                            <option value="csharp" data-en="C#" data-ar="C#">C#</option>
+                            <option value="go" data-en="Go" data-ar="Go">Go</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Formatting Options -->
+                <div class="formatting-options">
+                    <h4 class="section-heading" data-en="Formatting Options" data-ar="خيارات التنسيق">Formatting Options</h4>
+                    <div class="options-grid">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Indentation:" data-ar="المسافة البادئة:">Indentation:</label>
+                            <select id="indentationSelect" class="input-field">
+                                <option value="2" data-en="2 Spaces" data-ar="مسافتان">2 Spaces</option>
+                                <option value="4" data-en="4 Spaces" data-ar="4 مسافات" selected>4 Spaces</option>
+                                <option value="8" data-en="8 Spaces" data-ar="8 مسافات">8 Spaces</option>
+                                <option value="tab" data-en="Tab" data-ar="Tab">Tab</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-label" data-en="Line Length:" data-ar="طول السطر:">Line Length:</label>
+                            <input type="number" id="lineLength" class="input-field" value="80" min="40" max="200">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-label" data-en="Quote Style:" data-ar="نمط الاقتباس:">Quote Style:</label>
+                            <select id="quoteStyle" class="input-field">
+                                <option value="double" data-en="Double Quotes" data-ar="اقتباسات مزدوجة" selected>Double Quotes</option>
+                                <option value="single" data-en="Single Quotes" data-ar="اقتباسات مفردة">Single Quotes</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-label" data-en="Semicolons:" data-ar="الفاصلة المنقوطة:">Semicolons:</label>
+                            <select id="semicolonStyle" class="input-field">
+                                <option value="always" data-en="Always" data-ar="دائماً" selected>Always</option>
+                                <option value="never" data-en="Never" data-ar="أبداً">Never</option>
+                                <option value="auto" data-en="Auto" data-ar="تلقائي">Auto</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Input -->
+                <div class="code-input-section">
+                    <div class="input-group">
+                        <label class="input-label" data-en="Input Code:" data-ar="الكود المدخل:">Input Code:</label>
+                        <textarea id="codeInput" class="input-textarea code-textarea" placeholder="Paste your code here..." data-en-placeholder="Paste your code here..." data-ar-placeholder="الصق الكود هنا..." rows="15"></textarea>
+                    </div>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+                    <button id="formatCode" class="btn btn-primary" data-en="Format Code" data-ar="تنسيق الكود">Format Code</button>
+                    <button id="minifyCode" class="btn btn-secondary" data-en="Minify Code" data-ar="ضغط الكود">Minify Code</button>
+                    <button id="validateCode" class="btn btn-secondary" data-en="Validate Code" data-ar="التحقق من الكود">Validate Code</button>
+                    <button id="clearCode" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+                </div>
+
+                <!-- Code Output -->
+                <div id="codeOutputSection" class="code-output-section" style="display: none;">
+                    <h4 class="section-heading" data-en="Formatted Code" data-ar="الكود المنسق">Formatted Code</h4>
+                    <div class="output-container">
+                        <textarea id="codeOutput" class="input-textarea code-textarea" rows="15" readonly></textarea>
+                    </div>
+                    <div class="output-actions">
+                        <button id="copyCode" class="btn btn-primary" data-en="Copy Code" data-ar="نسخ الكود">Copy Code</button>
+                        <button id="downloadCode" class="btn btn-secondary" data-en="Download Code" data-ar="تحميل الكود">Download Code</button>
+                    </div>
+                </div>
+
+                <!-- Validation Results -->
+                <div id="validationResults" class="validation-results" style="display: none;">
+                    <h4 class="section-heading" data-en="Validation Results" data-ar="نتائج التحقق">Validation Results</h4>
+                    <div id="validationContent" class="validation-content"></div>
+                </div>
+
+                <!-- Code Statistics -->
+                <div id="codeStats" class="code-stats" style="display: none;">
+                    <h4 class="section-heading" data-en="Code Statistics" data-ar="إحصائيات الكود">Code Statistics</h4>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label" data-en="Lines:" data-ar="الأسطر:">Lines:</span>
+                            <span class="stat-value" id="lineCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label" data-en="Characters:" data-ar="الأحرف:">Characters:</span>
+                            <span class="stat-value" id="charCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label" data-en="Words:" data-ar="الكلمات:">Words:</span>
+                            <span class="stat-value" id="wordCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label" data-en="Size:" data-ar="الحجم:">Size:</span>
+                            <span class="stat-value" id="sizeCount">0 B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Examples -->
+                <div class="examples-section">
+                    <h4 class="section-heading" data-en="Quick Examples:" data-ar="أمثلة سريعة:">Quick Examples:</h4>
+                    <div class="examples-grid">
+                        <button class="example-btn" data-example="javascript" data-en="JavaScript Function" data-ar="دالة JavaScript">JavaScript Function</button>
+                        <button class="example-btn" data-example="python" data-en="Python Script" data-ar="سكريبت Python">Python Script</button>
+                        <button class="example-btn" data-example="html" data-en="HTML Document" data-ar="مستند HTML">HTML Document</button>
+                        <button class="example-btn" data-example="css" data-en="CSS Styles" data-ar="أنماط CSS">CSS Styles</button>
+                        <button class="example-btn" data-example="json" data-en="JSON Data" data-ar="بيانات JSON">JSON Data</button>
+                        <button class="example-btn" data-example="sql" data-en="SQL Query" data-ar="استعلام SQL">SQL Query</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="What is Code Formatting?" data-ar="ما هو تنسيق الكود؟">What is Code Formatting?</h2>
+                <p data-en="Code formatting is the process of organizing and styling source code to improve readability and maintainability. It involves applying consistent indentation, spacing, line breaks, and other formatting rules. Our code formatter supports multiple programming languages and provides various customization options to match your coding style preferences." data-ar="تنسيق الكود هو عملية تنظيم وتنسيق الكود المصدري لتحسين القابلية للقراءة والصيانة. يتضمن تطبيق مسافات بادئة متسقة ومسافات وفواصل أسطر وقواعد تنسيق أخرى. يدعم منسق الكود لغات برمجة متعددة ويوفر خيارات تخصيص متنوعة لتتناسب مع تفضيلات أسلوب البرمجة الخاص بك.">Code formatting is the process of organizing and styling source code to improve readability and maintainability. It involves applying consistent indentation, spacing, line breaks, and other formatting rules. Our code formatter supports multiple programming languages and provides various customization options to match your coding style preferences.</p>
+                
+                <h3 data-en="Supported Languages" data-ar="اللغات المدعومة">Supported Languages</h3>
+                <ul>
+                    <li data-en="<strong>JavaScript:</strong> Web development and Node.js applications" data-ar="<strong>JavaScript:</strong> تطوير الويب وتطبيقات Node.js"><strong>JavaScript:</strong> Web development and Node.js applications</li>
+                    <li data-en="<strong>Python:</strong> Data science, web development, and automation" data-ar="<strong>Python:</strong> علوم البيانات وتطوير الويب والأتمتة"><strong>Python:</strong> Data science, web development, and automation</li>
+                    <li data-en="<strong>HTML:</strong> Web page structure and markup" data-ar="<strong>HTML:</strong> هيكل الصفحة والترميز"><strong>HTML:</strong> Web page structure and markup</li>
+                    <li data-en="<strong>CSS:</strong> Web styling and layout" data-ar="<strong>CSS:</strong> تنسيق وتخطيط الويب"><strong>CSS:</strong> Web styling and layout</li>
+                    <li data-en="<strong>JSON:</strong> Data interchange and configuration" data-ar="<strong>JSON:</strong> تبادل البيانات والتكوين"><strong>JSON:</strong> Data interchange and configuration</li>
+                    <li data-en="<strong>XML:</strong> Data storage and configuration" data-ar="<strong>XML:</strong> تخزين البيانات والتكوين"><strong>XML:</strong> Data storage and configuration</li>
+                    <li data-en="<strong>SQL:</strong> Database queries and operations" data-ar="<strong>SQL:</strong> استعلامات وعمليات قاعدة البيانات"><strong>SQL:</strong> Database queries and operations</li>
+                </ul>
+
+                <h3 data-en="Formatting Features" data-ar="ميزات التنسيق">Formatting Features</h3>
+                <ul>
+                    <li data-en="Consistent indentation and spacing" data-ar="مسافات بادئة ومسافات متسقة">Consistent indentation and spacing</li>
+                    <li data-en="Automatic line breaking and wrapping" data-ar="كسر الأسطر والالتفاف التلقائي">Automatic line breaking and wrapping</li>
+                    <li data-en="Quote style standardization" data-ar="توحيد نمط الاقتباسات">Quote style standardization</li>
+                    <li data-en="Semicolon insertion and removal" data-ar="إدراج وإزالة الفاصلة المنقوطة">Semicolon insertion and removal</li>
+                    <li data-en="Code minification for production" data-ar="ضغط الكود للإنتاج">Code minification for production</li>
+                    <li data-en="Syntax validation and error detection" data-ar="التحقق من التركيب واكتشاف الأخطاء">Syntax validation and error detection</li>
+                </ul>
+
+                <h3 data-en="Benefits of Code Formatting" data-ar="فوائد تنسيق الكود">Benefits of Code Formatting</h3>
+                <ul>
+                    <li data-en="Improved code readability and maintainability" data-ar="تحسين قابلية قراءة وصيانة الكود">Improved code readability and maintainability</li>
+                    <li data-en="Consistent coding style across projects" data-ar="أسلوب برمجة متسق عبر المشاريع">Consistent coding style across projects</li>
+                    <li data-en="Easier code review and collaboration" data-ar="مراجعة الكود والتعاون أسهل">Easier code review and collaboration</li>
+                    <li data-en="Reduced debugging time" data-ar="تقليل وقت التصحيح">Reduced debugging time</li>
+                    <li data-en="Professional code presentation" data-ar="عرض الكود بشكل احترافي">Professional code presentation</li>
+                    <li data-en="Better version control diffs" data-ar="فروقات تحكم إصدار أفضل">Better version control diffs</li>
+                </ul>
+
+                <h3 data-en="Use Cases" data-ar="حالات الاستخدام">Use Cases</h3>
+                <ul>
+                    <li data-en="Code cleanup and refactoring" data-ar="تنظيف وإعادة هيكلة الكود">Code cleanup and refactoring</li>
+                    <li data-en="Pre-commit code preparation" data-ar="تحضير الكود قبل الالتزام">Pre-commit code preparation</li>
+                    <li data-en="Legacy code modernization" data-ar="تحديث الكود القديم">Legacy code modernization</li>
+                    <li data-en="Code documentation and sharing" data-ar="توثيق ومشاركة الكود">Code documentation and sharing</li>
+                    <li data-en="Educational and learning purposes" data-ar="أغراض تعليمية وتعلمية">Educational and learning purposes</li>
+                    <li data-en="Production code optimization" data-ar="تحسين الكود للإنتاج">Production code optimization</li>
+                </ul>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="How does the 'Minify' function work?" data-ar="كيف تعمل وظيفة 'الضغط' (Minify)؟">How does the 'Minify' function work?</summary>
+                            <p data-en="Minification removes all unnecessary characters from the source code (like whitespace, comments, and newlines) without changing its functionality. This reduces the file size, leading to faster load times." data-ar="تقوم عملية الضغط بإزالة جميع الأحرف غير الضرورية من الكود المصدري (مثل المسافات البيضاء والتعليقات والأسطر الجديدة) دون تغيير وظائفه. هذا يقلل من حجم الملف، مما يؤدي إلى أوقات تحميل أسرع.">Minification removes all unnecessary characters from the source code (like whitespace, comments, and newlines) without changing its functionality. This reduces the file size, leading to faster load times.</p>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary data-en="What happens when I click 'Validate Code'?" data-ar="ماذا يحدث عند النقر فوق 'التحقق من الكود'؟">What happens when I click 'Validate Code'?</summary>
+                            <p data-en="The validator checks your code for syntax errors and potential issues based on the selected language's rules. It helps you catch mistakes early and ensure your code is well-formed." data-ar="يتحقق المدقق من الكود الخاص بك بحثًا عن أخطاء في بناء الجملة والمشكلات المحتملة بناءً على قواعد اللغة المحددة. يساعدك على اكتشاف الأخطاء مبكرًا والتأكد من أن الكود الخاص بك سليم.">The validator checks your code for syntax errors and potential issues based on the selected language's rules. It helps you catch mistakes early and ensure your code is well-formed.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/code-formatter.js"></script>
+</body>
+</html>

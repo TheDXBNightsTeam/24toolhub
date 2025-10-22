@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A versatile and free online percentage calculator to solve all your percentage problems. Easily find percentages, calculate increases/decreases, and solve for parts of a whole.">
+    <meta name="keywords" content="percentage calculator, calculate percentage, percent of a number, percentage change, online calculator, math tool">
+    <title>Online Percentage Calculator | Calculate Percentages Easily | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+            <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Percentage Calculator" data-ar="حاسبة النسب">Percentage Calculator</h1>
+          <p class="tool-description" data-en="Calculate percentages, increases, and decreases easily" data-ar="احسب النسب والزيادات والنقصان بسهولة">Calculate percentages, increases, and decreases easily</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="What is X% of Y?" data-ar="ما هو X% من Y؟">What is X% of Y?</label>
+            <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+              <input type="number" id="percent1" class="input-field" placeholder="10" data-en-placeholder="10" data-ar-placeholder="10" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff); font-weight: bold;">%</span>
+              <span style="color: var(--text-primary, #fff);" data-en="of" data-ar="من">of</span>
+              <input type="number" id="number1" class="input-field" placeholder="100" data-en-placeholder="100" data-ar-placeholder="100" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff);">=</span>
+              <input type="number" id="result1" class="input-field" placeholder="Result" data-en-placeholder="Result" data-ar-placeholder="النتيجة" readonly style="flex: 1; min-width: 100px;" />
+            </div>
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="X is what % of Y?" data-ar="X هو كم % من Y؟">X is what % of Y?</label>
+            <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+              <input type="number" id="number2" class="input-field" placeholder="25" data-en-placeholder="25" data-ar-placeholder="25" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff);" data-en="is what % of" data-ar="هو كم % من">is what % of</span>
+              <input type="number" id="number3" class="input-field" placeholder="200" data-en-placeholder="200" data-ar-placeholder="200" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff);">=</span>
+              <input type="number" id="result2" class="input-field" placeholder="Result" data-en-placeholder="Result" data-ar-placeholder="النتيجة" readonly style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff); font-weight: bold;">%</span>
+                    </div>
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Percentage Increase/Decrease" data-ar="زيادة/نقصان النسبة">Percentage Increase/Decrease</label>
+            <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+              <input type="number" id="oldValue" class="input-field" placeholder="100" data-en-placeholder="100" data-ar-placeholder="100" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff);" data-en="to" data-ar="إلى">to</span>
+              <input type="number" id="newValue" class="input-field" placeholder="150" data-en-placeholder="150" data-ar-placeholder="150" style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff);">=</span>
+              <input type="number" id="result3" class="input-field" placeholder="Result" data-en-placeholder="Result" data-ar-placeholder="النتيجة" readonly style="flex: 1; min-width: 100px;" />
+              <span style="color: var(--text-primary, #fff); font-weight: bold;">%</span>
+                    </div>
+                </div>
+
+          <div class="button-group">
+            <button onclick="calculatePercentages()" class="btn btn-primary" data-en="Calculate All" data-ar="احسب الكل">Calculate All</button>
+            <button onclick="clearPercentages()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyResults()" class="btn btn-secondary" data-en="Copy Results" data-ar="نسخ النتائج">Copy Results</button>
+                    </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="Understanding Percentages" data-ar="فهم النسب المئوية">Understanding Percentages</h2>
+            <p data-en="A percentage is a number or ratio expressed as a fraction of 100. It is a common way to represent parts of a whole, calculate discounts, and understand statistical changes. Our versatile calculator handles the most common percentage tasks to make your life easier." data-ar="النسبة المئوية هي رقم أو نسبة يتم التعبير عنها ككسر من 100. وهي طريقة شائعة لتمثيل أجزاء من الكل، وحساب الخصومات، وفهم التغييرات الإحصائية. تتعامل حاسبتنا متعددة الاستخدامات مع مهام النسبة المئوية الأكثر شيوعًا لتسهيل حياتك."></p>
+            
+            <h3 data-en="Core Percentage Formulas" data-ar="صيغ النسبة المئوية الأساسية">Core Percentage Formulas</h3>
+            <ul>
+                <li data-en="<strong>Find a percentage of a number:</strong> (Percentage / 100) * Whole Number"><strong>إيجاد نسبة مئوية من رقم:</strong> (النسبة المئوية / 100) * العدد الكامل</li>
+                <li data-en="<strong>Find what percentage one number is of another:</strong> (Part / Whole) * 100"><strong>إيجاد النسبة المئوية لرقم من آخر:</strong> (الجزء / الكل) * 100</li>
+                <li data-en="<strong>Calculate Percentage Change:</strong> ((New Value - Old Value) / Old Value) * 100"><strong>حساب النسبة المئوية للتغيير:</strong> ((القيمة الجديدة - القيمة القديمة) / القيمة القديمة) * 100</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="How do I calculate a 20% discount on a $50 item?" data-ar="كيف أحسب خصم 20% على سلعة بقيمة 50 دولارًا؟">How do I calculate a 20% discount on a $50 item?</summary>
+                        <p data-en="Use the first formula: What is 20% of 50? The calculation is (20 / 100) * 50 = $10. The final price would be $50 - $10 = $40." data-ar="استخدم الصيغة الأولى: ما هو 20% من 50؟ الحساب هو (20 / 100) * 50 = 10 دولارات. السعر النهائي سيكون 50 دولارًا - 10 دولارات = 40 دولارًا."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What's the difference between a percentage and a percentage point?" data-ar="ما الفرق بين النسبة المئوية والنقطة المئوية؟">What's the difference between a percentage and a percentage point?</summary>
+                        <p data-en="A percentage is a relative change (e.g., a 10% increase from 100 is 110). A percentage point is an absolute change in rates. For example, if an interest rate goes from 5% to 6%, it has increased by one percentage point, which is a 20% increase." data-ar="النسبة المئوية هي تغيير نسبي (على سبيل المثال، زيادة بنسبة 10% من 100 هي 110). النقطة المئوية هي تغيير مطلق في المعدلات. على سبيل المثال، إذا ارتفع سعر الفائدة من 5% إلى 6%، فقد زاد بمقدار نقطة مئوية واحدة، وهي زيادة بنسبة 20%."></p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/percentage-calculator.js"></script>
+</body>
+</html>

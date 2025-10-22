@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple and free online tool to encode and decode text using the Caesar cipher. Learn about one of history's oldest encryption methods." />
+    <meta name="keywords" content="caesar cipher, shift cipher, rot13, cryptography, encryption, decryption, online tool" />
+    <title>Caesar Cipher Encoder & Decoder | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="Caesar Cipher Generator" data-ar="مولد تشفير قيصر">Caesar Cipher Generator</h1>
+          <p class="tool-description" data-en="Easily encrypt and decrypt messages with this classic substitution cipher." data-ar="قم بتشفير وفك تشفير الرسائل بسهولة باستخدام هذا التشفير الاستبدالي الكلاسيكي.">Easily encrypt and decrypt messages with this classic substitution cipher.</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Input Text:" data-ar="النص المدخل:">Input Text:</label>
+            <textarea id="inputText" class="input-textarea" placeholder="Enter text to encode/decode..." data-en-placeholder="Enter text to encode/decode..." data-ar-placeholder="أدخل النص للتشفير/فك التشفير..." rows="6"></textarea>
+        </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Shift Amount:" data-ar="مقدار الإزاحة:">Shift Amount:</label>
+            <input type="number" id="shiftAmount" class="input-field" placeholder="Enter shift amount (1-25)" data-en-placeholder="Enter shift amount (1-25)" data-ar-placeholder="أدخل مقدار الإزاحة (1-25)" value="3" min="1" max="25" />
+                </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Quick Shift Options:" data-ar="خيارات الإزاحة السريعة:">Quick Shift Options:</label>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button onclick="setShift(1)" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Shift 1" data-ar="إزاحة 1">Shift 1</button>
+              <button onclick="setShift(3)" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Shift 3" data-ar="إزاحة 3">Shift 3</button>
+              <button onclick="setShift(13)" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Shift 13 (ROT13)" data-ar="إزاحة 13 (ROT13)">Shift 13 (ROT13)</button>
+              <button onclick="setShift(25)" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem;" data-en="Shift 25" data-ar="إزاحة 25">Shift 25</button>
+            </div>
+                </div>
+
+          <div class="button-group">
+            <button onclick="encodeCaesar()" class="btn btn-primary" data-en="Encode" data-ar="تشفير">Encode</button>
+            <button onclick="decodeCaesar()" class="btn btn-primary" data-en="Decode" data-ar="فك التشفير">Decode</button>
+            <button onclick="clearCaesar()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyResult()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+                </div>
+
+          <div id="outputSection" class="output-section" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="Result:" data-ar="النتيجة:">Result:</h3>
+            <div id="outputText" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6); font-family: monospace; white-space: pre-wrap; min-height: 100px;"></div>
+          </div>
+                </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <div class="content-header">
+              <h2 data-en="What is a Caesar Cipher?" data-ar="ما هو Caesar Cipher؟">What is a Caesar Cipher?</h2>
+              <div class="content-image">
+                <img src="../images/caesar-cipher-diagram.svg" alt="Caesar Cipher Diagram" class="diagram-image" 
+                     data-en-alt="Caesar cipher shows letter shifting encryption" 
+                     data-ar-alt="Caesar cipher يوضح تشفير إزاحة الأحرف">
+              </div>
+            </div>
+            <p data-en="A Caesar cipher is one of the oldest and simplest encryption techniques, named after Julius Caesar who used it to protect his military communications. It's a type of substitution cipher where each letter in the plaintext is shifted a certain number of positions down or up the alphabet. Our free Caesar cipher tool allows you to encode and decode text with any shift value from 1 to 25." data-ar="Caesar cipher هو واحد من أقدم وأبسط تقنيات التشفير، سمي على اسم يوليوس قيصر الذي استخدمه لحماية اتصالاته العسكرية. إنه نوع من التشفير الاستبدالي حيث يتم إزاحة كل حرف في النص الأصلي عدداً معيناً من المواضع لأسفل أو لأعلى في الأبجدية. أداة Caesar cipher المجانية الخاصة بنا تسمح لك بتشفير وفك تشفير النص بأي قيمة إزاحة من 1 إلى 25."></p>
+
+            <!-- How It Works Section -->
+            <div class="how-it-works">
+              <h3 data-en="How Caesar Cipher Works" data-ar="كيف يعمل Caesar Cipher">How Caesar Cipher Works:</h3>
+              <div class="steps-container">
+                <div class="step">
+                  <div class="step-number">1</div>
+                  <div class="step-content">
+                    <h4 data-en="Choose Shift Value" data-ar="اختر قيمة الإزاحة">Choose Shift Value</h4>
+                    <p data-en="Select a number from 1 to 25 to shift letters" data-ar="اختر رقماً من 1 إلى 25 لإزاحة الأحرف"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">2</div>
+                  <div class="step-content">
+                    <h4 data-en="Shift Each Letter" data-ar="إزاحة كل حرف">Shift Each Letter</h4>
+                    <p data-en="Move each letter that many positions in the alphabet" data-ar="حرك كل حرف هذا العدد من المواضع في الأبجدية"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">3</div>
+                  <div class="step-content">
+                    <h4 data-en="Wrap Around" data-ar="الالتفاف">Wrap Around</h4>
+                    <p data-en="If you reach Z, continue from A (and vice versa)" data-ar="إذا وصلت إلى Z، استمر من A (والعكس صحيح)"></p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-number">4</div>
+                  <div class="step-content">
+                    <h4 data-en="Get Encrypted Text" data-ar="احصل على النص المشفر">Get Encrypted Text</h4>
+                    <p data-en="The result is your encrypted message" data-ar="النتيجة هي رسالتك المشفرة"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Examples Section -->
+            <div class="examples-section">
+              <h3 data-en="Caesar Cipher Examples" data-ar="أمثلة Caesar Cipher">Caesar Cipher Examples:</h3>
+              <div class="examples-grid">
+                <div class="example-card">
+                  <h4 data-en="Shift of 3" data-ar="إزاحة 3">Shift of 3</h4>
+                  <div class="example-mapping">
+                    <div class="mapping-item">
+                      <span class="original">A</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">D</span>
+                    </div>
+                    <div class="mapping-item">
+                      <span class="original">B</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">E</span>
+                    </div>
+                    <div class="mapping-item">
+                      <span class="original">C</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">F</span>
+                    </div>
+                    <div class="mapping-item">
+                      <span class="original">X</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">A</span>
+                    </div>
+                    <div class="mapping-item">
+                      <span class="original">Y</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">B</span>
+                    </div>
+                    <div class="mapping-item">
+                      <span class="original">Z</span>
+                      <span class="arrow">→</span>
+                      <span class="shifted">C</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="example-card">
+                  <h4 data-en="Example Text" data-ar="نص المثال">Example Text</h4>
+                  <div class="text-example">
+                    <div class="example-line">
+                      <span class="label" data-en="Original:" data-ar="الأصلي:">Original:</span>
+                      <span class="text">"HELLO WORLD"</span>
+                    </div>
+                    <div class="example-line">
+                      <span class="label" data-en="Encrypted:" data-ar="مشفر:">Encrypted:</span>
+                      <span class="text">"KHOOR ZRUOG"</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>Caesar Cipher with Shift 3</h3>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace;">
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+              D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+                </div>
+
+            <h3>Key Features of Caesar Cipher</h3>
+            <ul>
+              <li><strong>Simple Algorithm:</strong> Easy to understand and implement</li>
+              <li><strong>Customizable Shift:</strong> Any shift value from 1 to 25</li>
+              <li><strong>Case Preserving:</strong> Maintains original letter case</li>
+              <li><strong>Non-Alphabetic Safe:</strong> Numbers and symbols remain unchanged</li>
+              <li><strong>Reversible:</strong> Can be easily reversed with opposite shift</li>
+            </ul>
+
+            <h3>Applications of Caesar Cipher</h3>
+            <ul>
+              <li><strong>Educational Purposes:</strong> Teaching basic cryptography concepts</li>
+              <li><strong>Simple Text Obfuscation:</strong> Hiding text from casual reading</li>
+              <li><strong>Puzzles and Games:</strong> Creating cipher challenges</li>
+              <li><strong>Historical Study:</strong> Understanding ancient encryption methods</li>
+              <li><strong>Programming Exercises:</strong> Learning string manipulation</li>
+              <li><strong>Fun Activities:</strong> Creating secret messages</li>
+            </ul>
+
+            <h3>Caesar Cipher Examples</h3>
+            <h4>Basic Examples (Shift 3)</h4>
+            <ul>
+              <li><strong>"Hello World"</strong> becomes <strong>"Khoor Zruog"</strong></li>
+              <li><strong>"Caesar Cipher"</strong> becomes <strong>"Fdhvdu Flskhu"</strong></li>
+              <li><strong>"This is a test"</strong> becomes <strong>"Wklv lv d whvw"</strong></li>
+            </ul>
+
+            <h4>Different Shift Values</h4>
+            <ul>
+              <li><strong>Shift 1:</strong> "ABC" becomes "BCD"</li>
+              <li><strong>Shift 13:</strong> "HELLO" becomes "URYYB" (same as ROT13)</li>
+              <li><strong>Shift 25:</strong> "ABC" becomes "ZAB"</li>
+            </ul>
+
+            <h3>Special Cases</h3>
+            <h4>ROT13 (Shift 13)</h4>
+            <p>ROT13 is a special case of the Caesar cipher with a shift of 13. It's particularly popular because it's its own inverse - applying ROT13 twice returns the original text.</p>
+
+            <h4>Shift 0</h4>
+            <p>A shift of 0 means no encryption - the text remains unchanged.</p>
+
+            <h4>Shift 26</h4>
+            <p>A shift of 26 (or any multiple of 26) also results in no change, as it completes a full cycle of the alphabet.</p>
+
+            <h3>Caesar Cipher vs Other Ciphers</h3>
+            <h4>Advantages</h4>
+            <ul>
+              <li>Simple to understand and implement</li>
+              <li>Fast encryption and decryption</li>
+              <li>No key management required</li>
+              <li>Preserves case and non-alphabetic characters</li>
+            </ul>
+
+            <h4>Limitations</h4>
+            <ul>
+              <li>Very weak security (easily broken)</li>
+              <li>Only 25 possible keys (shift values)</li>
+              <li>Vulnerable to frequency analysis</li>
+              <li>Not suitable for serious encryption</li>
+            </ul>
+
+            <h3>Security Considerations</h3>
+            <p><strong>Important:</strong> The Caesar cipher is NOT a secure encryption method. It should only be used for:</p>
+            <ul>
+              <li>Educational purposes</li>
+              <li>Simple text obfuscation</li>
+              <li>Creating puzzles and games</li>
+              <li>Understanding basic cryptography concepts</li>
+            </ul>
+            <p>For secure encryption, use modern cryptographic methods like AES, RSA, or other industry-standard algorithms.</p>
+
+            <h3>Breaking Caesar Cipher</h3>
+            <p>The Caesar cipher can be easily broken using several methods:</p>
+            <ul>
+              <li><strong>Brute Force:</strong> Try all 25 possible shift values</li>
+              <li><strong>Frequency Analysis:</strong> Analyze letter frequency patterns</li>
+              <li><strong>Pattern Recognition:</strong> Look for common words or patterns</li>
+                    </ul>
+
+            <h3>Historical Context</h3>
+            <p>The Caesar cipher is named after Julius Caesar, who used it to protect his military communications. It's one of the oldest known encryption methods and has been used throughout history. While it's no longer secure for modern applications, it remains an important part of cryptography education.</p>
+
+            <h3>Programming Implementation</h3>
+            <h4>JavaScript Example</h4>
+            <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; font-family: monospace; font-size: 0.875rem;">
+              function caesarCipher(str, shift) {<br>
+              &nbsp;&nbsp;return str.replace(/[A-Za-z]/g, function(c) {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;const base = c < 'a' ? 65 : 97;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;return String.fromCharCode(<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((c.charCodeAt(0) - base + shift) % 26) + base<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;);<br>
+              &nbsp;&nbsp;});<br>
+              }
+            </div>
+
+            <h3>Related Tools</h3>
+            <ul>
+              <li><strong>ROT13 Cipher:</strong> Special case of Caesar cipher with shift 13</li>
+              <li><strong>Base64 Encoder:</strong> Encode text in Base64 format</li>
+              <li><strong>Text Case Converter:</strong> Convert text between different cases</li>
+              <li><strong>String Reverser:</strong> Reverse text strings</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Is the Caesar cipher secure?" data-ar="هل تشفير قيصر آمن؟">Is the Caesar cipher secure?</summary>
+                        <p data-en="No, it is not. The Caesar cipher is a very weak form of encryption and can be broken easily with brute-force attacks (by trying all 25 possible shifts) or frequency analysis. It should only be used for educational purposes or fun." data-ar="لا، ليس آمناً. تشفير قيصر هو شكل ضعيف جداً من التشفير ويمكن كسره بسهولة عن طريق هجمات القوة الغاشمة (بتجربة كل الإزاحات الـ 25 الممكنة) أو تحليل الترددات. يجب استخدامه فقط للأغراض التعليمية أو الترفيه.">No, it is not. The Caesar cipher is a very weak form of encryption and can be broken easily with brute-force attacks (by trying all 25 possible shifts) or frequency analysis. It should only be used for educational purposes or fun.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What is ROT13?" data-ar="ما هو ROT13؟">What is ROT13?</summary>
+                        <p data-en="ROT13 (rotate by 13 places) is a special case of the Caesar cipher where the shift is 13. It's unique because applying it twice returns the original text, making it its own inverse." data-ar="ROT13 (تدوير بمقدار 13 مكانًا) هو حالة خاصة من تشفير قيصر حيث تكون الإزاحة 13. وهو فريد من نوعه لأن تطبيقه مرتين يعيد النص الأصلي، مما يجعله معكوسه الخاص.">ROT13 (rotate by 13 places) is a special case of the Caesar cipher where the shift is 13. It's unique because applying it twice returns the original text, making it its own inverse.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Are numbers and symbols encrypted?" data-ar="هل يتم تشفير الأرقام والرموز؟">Are numbers and symbols encrypted?</summary>
+                        <p data-en="No, this implementation of the Caesar cipher only shifts alphabetic characters (A-Z, a-z). Numbers, symbols, and spaces are left unchanged to preserve the structure of the original message." data-ar="لا، هذا التطبيق لتشفير قيصر يقوم فقط بإزاحة الأحرف الأبجدية (A-Z, a-z). الأرقام والرموز والمسافات تُترك دون تغيير للحفاظ على بنية الرسالة الأصلية.">No, this implementation of the Caesar cipher only shifts alphabetic characters (A-Z, a-z). Numbers, symbols, and spaces are left unchanged to preserve the structure of the original message.</p>
+                    </details>
+                </div>
+            </div>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/caesar-cipher.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quickly find the correct MIME type for any file extension. Our free online tool helps web developers ensure files are served and interpreted correctly by browsers.">
+    <meta name="keywords" content="mime type lookup, content type, file extension, mime types list, web development, http headers">
+    <title>MIME Type Lookup | Find Content-Type for any File Extension | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="MIME Type Lookup" data-ar="البحث عن نوع MIME">MIME Type Lookup</h1>
+          <p class="tool-description" data-en="Find MIME types for file extensions" data-ar="ابحث عن أنواع MIME لامتدادات الملفات">Find MIME types for file extensions</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="File Extension:" data-ar="امتداد الملف:">File Extension:</label>
+            <input type="text" id="extension" class="input-field" placeholder="Enter file extension (e.g., .jpg, .pdf, .html)" data-en-placeholder="Enter file extension (e.g., .jpg, .pdf, .html)" data-ar-placeholder="أدخل امتداد الملف (مثل .jpg, .pdf, .html)" />
+          </div>
+
+          <div class="button-group">
+            <button onclick="lookupMimeType()" class="btn btn-primary" data-en="Lookup MIME Type" data-ar="البحث عن نوع MIME">Lookup MIME Type</button>
+            <button onclick="clearMimeType()" class="btn btn-secondary" data-en="Clear" data-ar="مسح">Clear</button>
+            <button onclick="copyMimeType()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+                </div>
+
+          <div id="mimeOutput" class="mime-output" style="margin-top: 2rem; display: none;">
+            <h3 style="color: var(--accent-primary, #3b82f6); margin-bottom: 1rem;" data-en="MIME Type Information:" data-ar="معلومات نوع MIME:">MIME Type Information:</h3>
+            <div id="mimeResult" style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-primary, #3b82f6);"></div>
+                    </div>
+
+          <div class="input-group" style="margin-top: 2rem;">
+            <label class="input-label" data-en="Common File Extensions:" data-ar="امتدادات الملفات الشائعة:">Common File Extensions:</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+                <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">Images</h4>
+                <div style="font-size: 0.875rem; line-height: 1.5;">
+                  <div>.jpg → image/jpeg</div>
+                  <div>.png → image/png</div>
+                  <div>.gif → image/gif</div>
+                  <div>.svg → image/svg+xml</div>
+                  <div>.webp → image/webp</div>
+                </div>
+                    </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+                <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">Documents</h4>
+                <div style="font-size: 0.875rem; line-height: 1.5;">
+                  <div>.pdf → application/pdf</div>
+                  <div>.doc → application/msword</div>
+                  <div>.docx → application/vnd.openxmlformats-officedocument.wordprocessingml.document</div>
+                  <div>.txt → text/plain</div>
+                  <div>.rtf → application/rtf</div>
+                </div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+                <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">Web</h4>
+                <div style="font-size: 0.875rem; line-height: 1.5;">
+                  <div>.html → text/html</div>
+                  <div>.css → text/css</div>
+                  <div>.js → application/javascript</div>
+                  <div>.json → application/json</div>
+                  <div>.xml → application/xml</div>
+                </div>
+            </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem;">
+                <h4 style="color: var(--accent-primary, #3b82f6); margin-bottom: 0.5rem;">Media</h4>
+                <div style="font-size: 0.875rem; line-height: 1.5;">
+                  <div>.mp4 → video/mp4</div>
+                  <div>.mp3 → audio/mpeg</div>
+                  <div>.wav → audio/wav</div>
+                  <div>.avi → video/x-msvideo</div>
+                  <div>.mov → video/quicktime</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2 data-en="What is a MIME Type?" data-ar="ما هو نوع MIME؟">What is a MIME Type?</h2>
+            <p data-en="A MIME (Multipurpose Internet Mail Extensions) type is a standard that indicates the nature and format of a document, file, or assortment of bytes. It is used by browsers to determine how to process and display a file. For example, a `Content-Type` header with a value of `text/html` tells the browser to render the content as an HTML page." data-ar="نوع MIME (ملحقات بريد الإنترنت متعددة الأغراض) هو معيار يشير إلى طبيعة وتنسيق مستند أو ملف أو مجموعة من البايتات. يتم استخدامه بواسطة المتصفحات لتحديد كيفية معالجة وعرض الملف. على سبيل المثال، يخبر رأس `Content-Type` بقيمة `text/html` المتصفح بعرض المحتوى كصفحة HTML."></p>
+            
+            <h3 data-en="Why is it Important?" data-ar="لماذا هو مهم؟">Why is it Important?</h3>
+            <ul>
+                <li data-en="<strong>Correct Display:</strong> Ensures browsers render content correctly (e.g., showing an image vs. downloading it)."><strong>العرض الصحيح:</strong> يضمن عرض المتصفحات للمحتوى بشكل صحيح (على سبيل المثال، عرض صورة مقابل تنزيلها).</li>
+                <li data-en="<strong>Security:</strong> Helps prevent security risks by stopping browsers from misinterpreting file types (e.g., executing a script disguised as an image)."><strong>الأمان:</strong> يساعد في منع المخاطر الأمنية عن طريق منع المتصفحات من إساءة تفسير أنواع الملفات (على سبيل المثال، تنفيذ برنامج نصي متخفي في صورة).</li>
+                <li data-en="<strong>Server Configuration:</strong> Essential for configuring web servers (like Apache or Nginx) to serve files with the correct `Content-Type` header."><strong>تكوين الخادم:</strong> ضروري لتكوين خوادم الويب (مثل Apache أو Nginx) لخدمة الملفات برأس `Content-Type` الصحيح.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What if I can't find a MIME type for my file extension?" data-ar="ماذا لو لم أتمكن من العثور على نوع MIME لامتداد ملفي؟">What if I can't find a MIME type for my file extension?</summary>
+                        <p data-en="If a specific MIME type isn't available, the generic type `application/octet-stream` is often used as a fallback. This tells the browser that the file is binary data and should be downloaded rather than displayed." data-ar="إذا لم يكن نوع MIME معين متاحًا، فغالبًا ما يتم استخدام النوع العام `application/octet-stream` كحل بديل. هذا يخبر المتصفح أن الملف هو بيانات ثنائية ويجب تنزيله بدلاً من عرضه."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Is a MIME type the same as a file extension?" data-ar="هل نوع MIME هو نفسه امتداد الملف؟">Is a MIME type the same as a file extension?</summary>
+                        <p data-en="No. A file extension (e.g., `.jpg`) is part of the filename, while the MIME type (e.g., `image/jpeg`) is sent in the HTTP headers to describe the file's content. While they are closely related, they are not the same thing." data-ar="لا. امتداد الملف (على سبيل المثال، `.jpg`) هو جزء من اسم الملف، بينما يتم إرسال نوع MIME (على سبيل المثال، `image/jpeg`) في رؤوس HTTP لوصف محتوى الملف. على الرغم من ارتباطهما الوثيق، إلا أنهما ليسا نفس الشيء."></p>
+                    </details>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/mime-type-lookup.js"></script>
+</body>
+</html>

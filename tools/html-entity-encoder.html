@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A free online tool to encode and decode HTML entities. Convert special characters like <, >, & to their corresponding entities to safely display code and prevent XSS attacks.">
+    <meta name="keywords" content="html entity encoder, html entity decoder, html entities, special characters, xss prevention, web developer tool">
+    <title>HTML Entity Encoder & Decoder | 24ToolHub</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+            <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Ad Space - Top Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+          <h1 class="tool-title" data-en="HTML Entity Encoder/Decoder" data-ar="مشفر/فك تشفير كيانات HTML">HTML Entity Encoder/Decoder</h1>
+          <p class="tool-description" data-en="Convert special characters to HTML entities and vice versa" data-ar="حول الأحرف الخاصة إلى كيانات HTML والعكس">Convert special characters to HTML entities and vice versa</p>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <div class="input-group">
+            <label class="input-label" data-en="Mode:" data-ar="الوضع:">Mode:</label>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="radio" name="mode" value="encode" checked onchange="updateMode()" />
+                <span data-en="Encode" data-ar="تشفير">Encode</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="radio" name="mode" value="decode" onchange="updateMode()" />
+                <span data-en="Decode" data-ar="فك التشفير">Decode</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Input Text:" data-ar="النص المدخل:">Input Text:</label>
+            <textarea id="inputText" class="input-field" placeholder="Enter text to encode/decode..." data-en-placeholder="Enter text to encode/decode..." data-ar-placeholder="أدخل النص للتشفير/فك التشفير..." rows="6"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Options:" data-ar="الخيارات:">Options:</label>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+              <div>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="checkbox" id="encodeAll" />
+                  <span data-en="Encode all characters" data-ar="تشفير جميع الأحرف">Encode all characters</span>
+                        </label>
+              </div>
+              <div>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="checkbox" id="useNamedEntities" checked />
+                  <span data-en="Use named entities" data-ar="استخدام الكيانات المسماة">Use named entities</span>
+                        </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button onclick="processText()" class="btn btn-primary" data-en="Process Text" data-ar="معالجة النص">Process Text</button>
+            <button onclick="clearAll()" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+            <button onclick="copyOutput()" class="btn btn-secondary" data-en="Copy Result" data-ar="نسخ النتيجة">Copy Result</button>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Output:" data-ar="الإخراج:">Output:</label>
+            <textarea id="outputText" class="input-field" placeholder="Processed text will appear here..." data-en-placeholder="Processed text will appear here..." data-ar-placeholder="ستظهر النص المعالج هنا..." rows="6" readonly></textarea>
+                    </div>
+
+          <div class="input-group">
+            <label class="input-label" data-en="Statistics:" data-ar="الإحصائيات:">Statistics:</label>
+            <div id="textStats" class="text-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--accent-primary, #3b82f6);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--accent-primary, #3b82f6);" id="originalLength">0</div>
+                <div style="color: var(--text-secondary, #888);">Original Length</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--success, #10b981);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--success, #10b981);" id="processedLength">0</div>
+                <div style="color: var(--text-secondary, #888);">Processed Length</div>
+              </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--warning, #f59e0b);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--warning, #f59e0b);" id="entitiesCount">0</div>
+                <div style="color: var(--text-secondary, #888);">Entities Found</div>
+                        </div>
+              <div style="background: var(--card-bg, #2a2a2a); padding: 1rem; border-radius: 0.5rem; text-align: center; border-left: 4px solid var(--error, #ef4444);">
+                <div style="font-size: 1.5rem; font-weight: bold; color: var(--error, #ef4444);" id="specialChars">0</div>
+                <div style="color: var(--text-secondary, #888);">Special Characters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Ad Space - Rectangle -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+          <div class="seo-section">
+            <h2>What is an HTML Entity Encoder/Decoder?</h2>
+            <p>An HTML entity encoder/decoder is an essential tool for web developers and content creators who need to convert special characters to HTML entities and vice versa. HTML entities are special codes used to represent characters that have special meanings in HTML or cannot be directly typed. Our tool supports both encoding (converting special characters to entities) and decoding (converting entities back to characters), making it perfect for web development, content management, and data processing tasks.</p>
+
+            <h3>How to Use the HTML Entity Encoder/Decoder</h3>
+            <ol>
+              <li>Select the mode: Encode (text to entities) or Decode (entities to text)</li>
+              <li>Enter your text in the input field</li>
+              <li>Choose your encoding options</li>
+              <li>Click "Process Text" to convert your content</li>
+              <li>Copy the result for use in your projects</li>
+            </ol>
+
+            <h3>What are HTML Entities?</h3>
+            <p>HTML entities are special codes that represent characters in HTML. They are used to display characters that have special meanings in HTML (like &lt; and &gt;) or characters that cannot be directly typed on a keyboard. HTML entities start with an ampersand (&) and end with a semicolon (;).</p>
+
+            <h3>Types of HTML Entities</h3>
+            <h4>Named Entities</h4>
+            <p>Named entities use descriptive names for characters:</p>
+            <ul>
+              <li><strong>&amp;lt;</strong> - Less than (&lt;)</li>
+              <li><strong>&amp;gt;</strong> - Greater than (&gt;)</li>
+              <li><strong>&amp;amp;</strong> - Ampersand (&amp;)</li>
+              <li><strong>&amp;quot;</strong> - Double quote (")</li>
+              <li><strong>&amp;apos;</strong> - Single quote (')</li>
+              <li><strong>&amp;nbsp;</strong> - Non-breaking space</li>
+              <li><strong>&amp;copy;</strong> - Copyright symbol (©)</li>
+              <li><strong>&amp;reg;</strong> - Registered trademark (®)</li>
+            </ul>
+
+            <h4>Numeric Entities</h4>
+            <p>Numeric entities use decimal or hexadecimal numbers:</p>
+            <ul>
+              <li><strong>&amp;#60;</strong> - Less than (&lt;) - Decimal</li>
+              <li><strong>&amp;#x3C;</strong> - Less than (&lt;) - Hexadecimal</li>
+              <li><strong>&amp;#169;</strong> - Copyright symbol (©) - Decimal</li>
+              <li><strong>&amp;#xA9;</strong> - Copyright symbol (©) - Hexadecimal</li>
+            </ul>
+
+            <h3>Common HTML Entities</h3>
+            <h4>Special Characters</h4>
+            <ul>
+              <li><strong>&amp;lt;</strong> - Less than (&lt;)</li>
+              <li><strong>&amp;gt;</strong> - Greater than (&gt;)</li>
+              <li><strong>&amp;amp;</strong> - Ampersand (&amp;)</li>
+              <li><strong>&amp;quot;</strong> - Double quote (")</li>
+              <li><strong>&amp;apos;</strong> - Single quote (')</li>
+              <li><strong>&amp;nbsp;</strong> - Non-breaking space</li>
+            </ul>
+
+            <h4>Currency Symbols</h4>
+            <ul>
+              <li><strong>&amp;cent;</strong> - Cent (¢)</li>
+              <li><strong>&amp;pound;</strong> - Pound (£)</li>
+              <li><strong>&amp;yen;</strong> - Yen (¥)</li>
+              <li><strong>&amp;euro;</strong> - Euro (€)</li>
+              <li><strong>&amp;dollar;</strong> - Dollar ($)</li>
+            </ul>
+
+            <h4>Mathematical Symbols</h4>
+            <ul>
+              <li><strong>&amp;plusmn;</strong> - Plus-minus (±)</li>
+              <li><strong>&amp;times;</strong> - Multiplication (×)</li>
+              <li><strong>&amp;divide;</strong> - Division (÷)</li>
+              <li><strong>&amp;infin;</strong> - Infinity (∞)</li>
+              <li><strong>&amp;sum;</strong> - Sum (∑)</li>
+            </ul>
+
+            <h4>Arrows</h4>
+            <ul>
+              <li><strong>&amp;larr;</strong> - Left arrow (←)</li>
+              <li><strong>&amp;rarr;</strong> - Right arrow (→)</li>
+              <li><strong>&amp;uarr;</strong> - Up arrow (↑)</li>
+              <li><strong>&amp;darr;</strong> - Down arrow (↓)</li>
+              <li><strong>&amp;harr;</strong> - Left-right arrow (↔)</li>
+            </ul>
+
+            <h3>Use Cases</h3>
+            <h4>Web Development</h4>
+            <ul>
+              <li>Escaping user input to prevent XSS attacks</li>
+              <li>Displaying special characters in HTML content</li>
+              <li>Converting data from databases for web display</li>
+              <li>Processing form submissions safely</li>
+            </ul>
+
+            <h4>Content Management</h4>
+            <ul>
+              <li>Converting special characters in blog posts</li>
+              <li>Processing imported content from other sources</li>
+              <li>Ensuring proper display of international characters</li>
+              <li>Converting between different text formats</li>
+            </ul>
+
+            <h4>Data Processing</h4>
+            <ul>
+              <li>Cleaning and normalizing text data</li>
+              <li>Converting between different encoding formats</li>
+              <li>Processing CSV or XML data</li>
+              <li>Preparing data for API responses</li>
+            </ul>
+
+            <h3>Encoding Options</h3>
+            <h4>Encode All Characters</h4>
+            <p>When enabled, all characters will be converted to HTML entities, not just special characters. This is useful for creating completely safe HTML content.</p>
+
+            <h4>Use Named Entities</h4>
+            <p>When enabled, the tool will use named entities (like &amp;lt;) instead of numeric entities (like &amp;#60;) when possible. Named entities are more readable but not all characters have named equivalents.</p>
+
+            <h3>Security Considerations</h4>
+            <ul>
+              <li><strong>XSS Prevention:</strong> Always encode user input before displaying it</li>
+              <li><strong>Data Validation:</strong> Validate input before processing</li>
+              <li><strong>Context Awareness:</strong> Use appropriate encoding for different contexts</li>
+              <li><strong>Regular Updates:</strong> Keep your encoding functions up to date</li>
+            </ul>
+
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Always encode user input before displaying it in HTML</li>
+              <li>Use appropriate encoding for different contexts (HTML, XML, etc.)</li>
+              <li>Test your encoding with various special characters</li>
+              <li>Consider using a library for complex encoding needs</li>
+              <li>Document your encoding standards for your team</li>
+            </ul>
+
+            <h3>Common Issues and Solutions</h3>
+            <h4>Double Encoding</h4>
+            <p>Be careful not to encode already encoded text, as this will result in double encoding and incorrect display.</p>
+
+            <h4>Context Mismatch</h4>
+            <p>Different contexts (HTML attributes, text content, etc.) may require different encoding approaches.</p>
+
+            <h4>Character Set Issues</h4>
+            <p>Ensure your HTML document uses the correct character encoding (UTF-8) to display all characters properly.</p>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Why is encoding entities important for security?" data-ar="لماذا يعد تشفير الكيانات مهمًا للأمان؟">Why is encoding entities important for security?</summary>
+                        <p data-en="Encoding user-generated content into HTML entities is a critical step in preventing Cross-Site Scripting (XSS) attacks. It ensures that any malicious scripts are treated as plain text by the browser instead of being executed." data-ar="يعد تشفير المحتوى الذي ينشئه المستخدم إلى كيانات HTML خطوة حاسمة في منع هجمات البرمجة النصية عبر المواقع (XSS). فهو يضمن أن أي نصوص برمجية ضارة يتم التعامل معها كنص عادي بواسطة المتصفح بدلاً من تنفيذها."></p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What's the difference between named and numeric entities?" data-ar="ما الفرق بين الكيانات المسماة والرقمية؟">What's the difference between named and numeric entities?</summary>
+                        <p data-en="Named entities (e.g., `&amp;copy;`) are easier for humans to read, but they don't exist for all characters. Numeric entities (e.g., `&amp;#169;`) can represent any character and are more universally supported." data-ar="الكيانات المسماة (مثل `&amp;copy;`) أسهل في القراءة للبشر، لكنها غير موجودة لجميع الأحرف. يمكن للكيانات الرقمية (مثل `&amp;#169;`) تمثيل أي حرف وهي مدعومة عالميًا بشكل أكبر."></p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Related Tools Section -->
+            <div class="tools-resources">
+                <h3 data-en="Related Encoding Tools" data-ar="أدوات التشفير ذات الصلة">Related Encoding Tools:</h3>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4 data-en="Encoding Tools" data-ar="أدوات التشفير">Encoding Tools</h4>
+                        <p data-en="Other encoding and decoding tools on our platform" data-ar="أدوات التشفير وفك التشفير الأخرى على منصتنا"></p>
+                        <div class="internal-links">
+                            <a href="base64-encoder.html" class="resource-link" data-en="Base64 Encoder" data-ar="مشفر Base64">Base64 Encoder</a>
+                            <a href="url-encoder.html" class="resource-link" data-en="URL Encoder" data-ar="مشفر URL">URL Encoder</a>
+                            <a href="sha256-hash.html" class="resource-link" data-en="SHA256 Hash" data-ar="تشفير SHA256">SHA256 Hash</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Text Processing Tools" data-ar="أدوات معالجة النصوص">Text Processing Tools</h4>
+                        <p data-en="More tools for text manipulation and formatting" data-ar="المزيد من أدوات معالجة وتنسيق النصوص"></p>
+                        <div class="internal-links">
+                            <a href="text-case-converter.html" class="resource-link" data-en="Text Case Converter" data-ar="محول حالة النص">Text Case Converter</a>
+                            <a href="string-reverser.html" class="resource-link" data-en="String Reverser" data-ar="عكس النص">String Reverser</a>
+                            <a href="find-replace.html" class="resource-link" data-en="Find & Replace" data-ar="البحث والاستبدال">Find & Replace</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Web Development Tools" data-ar="أدوات تطوير الويب">Web Development Tools</h4>
+                        <p data-en="Tools for web development and HTML processing" data-ar="أدوات تطوير الويب ومعالجة HTML"></p>
+                        <div class="internal-links">
+                            <a href="html-formatter.html" class="resource-link" data-en="HTML Formatter" data-ar="منسق HTML">HTML Formatter</a>
+                            <a href="markdown-to-html.html" class="resource-link" data-en="Markdown to HTML" data-ar="Markdown إلى HTML">Markdown to HTML</a>
+                            <a href="code-formatter.html" class="resource-link" data-en="Code Formatter" data-ar="منسق الكود">Code Formatter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h4 data-en="Security Tools" data-ar="أدوات الأمان">Security Tools</h4>
+                        <p data-en="Tools for web security and data protection" data-ar="أدوات أمان الويب وحماية البيانات"></p>
+                        <div class="internal-links">
+                            <a href="password-generator.html" class="resource-link" data-en="Password Generator" data-ar="مولد كلمات المرور">Password Generator</a>
+                            <a href="password-strength-checker.html" class="resource-link" data-en="Password Strength Checker" data-ar="فحص قوة كلمة المرور">Password Strength Checker</a>
+                            <a href="uuid-generator.html" class="resource-link" data-en="UUID Generator" data-ar="مولد UUID">UUID Generator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Ad Space - Bottom Leaderboard -->
+    <div class="ad-space ad-leaderboard" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/nnh-logo.png" alt="NNH Logo" class="footer-logo" />
+          <span class="footer-branding-text">BUILT BY NNH - AI STUDIO</span>
+            </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/html-entity-encoder.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-LD Schema Generator for SEO | Create Structured Data | 24ToolHub</title>
+    <meta name="description" content="Easily generate JSON-LD schema markup for your website. Our tool helps you create structured data for articles, products, events, and more to improve your SEO and get rich snippets.">
+    <meta name="keywords" content="schema generator, json-ld generator, structured data generator, seo schema, rich snippets, schema markup">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Schema Generator - 24ToolHub">
+    <meta property="og:description" content="Generate JSON-LD structured data schemas for better SEO. Create schema markup for websites, articles, products, organizations, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/schema-generator">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Schema Generator - 24ToolHub">
+    <meta name="twitter:description" content="Generate JSON-LD structured data schemas for better SEO. Create schema markup for websites, articles, products, organizations, and more.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-branding">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          </a>
+          <h1 class="site-title">24ToolHub</h1>
+        </div>
+        <div class="header-actions">
+          <button id="langSwitcher" class="lang-switcher">العربية</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ad Space -->
+    <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="tool-container">
+        <!-- Tool Header -->
+        <div class="tool-header">
+          <h1 data-en="Schema Generator" data-ar="مولد Schema">Schema Generator</h1>
+          <p data-en="Generate JSON-LD structured data schemas for better SEO. Create schema markup for websites, articles, products, organizations, and more." data-ar="أنشئ بيانات JSON-LD منظمة لتحسين SEO. أنشئ markup للـ schema للمواقع والمقالات والمنتجات والمنظمات والمزيد."></p>
+          <a href="../index.html" class="back-link" data-en="← Back to Tools" data-ar="← العودة للأدوات"></a>
+        </div>
+
+        <!-- Tool Interface -->
+        <div class="tool-interface">
+          <!-- Schema Type Selection -->
+          <div class="form-group">
+            <label for="schemaType" data-en="Schema Type" data-ar="نوع Schema">Schema Type:</label>
+            <select id="schemaType" class="form-select">
+              <option value="website" data-en="Website" data-ar="موقع ويب">Website</option>
+              <option value="article" data-en="Article" data-ar="مقال">Article</option>
+              <option value="product" data-en="Product" data-ar="منتج">Product</option>
+              <option value="organization" data-en="Organization" data-ar="منظمة">Organization</option>
+              <option value="person" data-en="Person" data-ar="شخص">Person</option>
+              <option value="localbusiness" data-en="Local Business" data-ar="عمل محلي">Local Business</option>
+              <option value="event" data-en="Event" data-ar="حدث">Event</option>
+              <option value="recipe" data-en="Recipe" data-ar="وصفة">Recipe</option>
+              <option value="review" data-en="Review" data-ar="مراجعة">Review</option>
+              <option value="faq" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</option>
+            </select>
+          </div>
+
+          <!-- Dynamic Form Fields -->
+          <div id="schemaForm" class="schema-form">
+            <!-- Form fields will be generated dynamically -->
+          </div>
+
+          <!-- Generated Schema Output -->
+          <div class="form-group">
+            <label for="schemaOutput" data-en="Generated JSON-LD Schema" data-ar="Schema JSON-LD المُولد">Generated JSON-LD Schema:</label>
+            <textarea id="schemaOutput" class="form-textarea" rows="15" placeholder="Generated schema will appear here..." data-en-placeholder="Generated schema will appear here..." data-ar-placeholder="سيظهر الـ schema المُولد هنا..."></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="button-group">
+            <button id="generateSchema" class="btn btn-primary" data-en="Generate Schema" data-ar="إنشاء Schema">Generate Schema</button>
+            <button id="copySchema" class="btn btn-secondary" data-en="Copy Schema" data-ar="نسخ Schema">Copy Schema</button>
+            <button id="validateSchema" class="btn btn-secondary" data-en="Validate Schema" data-ar="التحقق من Schema">Validate Schema</button>
+            <button id="clearAll" class="btn btn-secondary" data-en="Clear All" data-ar="مسح الكل">Clear All</button>
+          </div>
+
+          <!-- Schema Preview -->
+          <div class="form-group">
+            <label data-en="Schema Preview" data-ar="معاينة Schema">Schema Preview:</label>
+            <div id="schemaPreview" class="schema-preview">
+              <p data-en="Schema preview will appear here..." data-ar="ستظهر معاينة الـ schema هنا...">Schema preview will appear here...</p>
+            </div>
+          </div>
+
+          <!-- Statistics -->
+          <div class="stats-container">
+            <h3 data-en="Schema Statistics" data-ar="إحصائيات Schema">Schema Statistics:</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-label" data-en="Schema Type:" data-ar="نوع Schema:">Schema Type:</span>
+                <span id="statType" class="stat-value">-</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label" data-en="Properties:" data-ar="الخصائص:">Properties:</span>
+                <span id="statProperties" class="stat-value">0</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label" data-en="Schema Size:" data-ar="حجم Schema:">Schema Size:</span>
+                <span id="statSize" class="stat-value">0 bytes</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label" data-en="Validation:" data-ar="التحقق:">Validation:</span>
+                <span id="statValidation" class="stat-value">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- SEO Content -->
+    <div class="seo-content">
+        <div class="seo-section">
+            <h2 data-en="What is Schema Markup?" data-ar="ما هو ترميز Schema؟">What is Schema Markup?</h2>
+            <p data-en="Schema markup (or structured data) is a code vocabulary that you add to your website to help search engines like Google understand your content better. By providing explicit clues about the meaning of a page, you can enable special search result features, known as 'rich snippets' (e.g., ratings, prices, event dates)." data-ar="ترميز Schema (أو البيانات المنظمة) هو مفردات برمجية تضيفها إلى موقع الويب الخاص بك لمساعدة محركات البحث مثل Google على فهم المحتوى الخاص بك بشكل أفضل. من خلال توفير أدلة صريحة حول معنى الصفحة، يمكنك تمكين ميزات نتائج البحث الخاصة، والمعروفة باسم 'المقتطفات المنسقة' (على سبيل المثال، التقييمات والأسعار وتواريخ الأحداث)."></p>
+            
+            <h3 data-en="Why is Schema Important for SEO?" data-ar="لماذا يعتبر Schema مهمًا لتحسين محركات البحث؟">Why is Schema Important for SEO?</h3>
+            <ul>
+                <li data-en="<strong>Enhanced Visibility:</strong> Stand out in search results with rich snippets that increase click-through rates."><strong>ظهور معزز:</strong> تميز في نتائج البحث بمقتطفات منسقة تزيد من معدلات النقر.</li>
+                <li data-en="<strong>Better Context:</strong> Give search engines clear context about your business, products, or articles."><strong>سياق أفضل:</strong> امنح محركات البحث سياقًا واضحًا حول عملك أو منتجاتك أو مقالاتك.</li>
+                <li data-en="<strong>Voice Search Optimization:</strong> Structured data is crucial for providing answers to voice assistants like Google Assistant and Alexa."><strong>تحسين البحث الصوتي:</strong> البيانات المنظمة ضرورية لتقديم إجابات للمساعدين الصوتيين مثل مساعد Google و Alexa.</li>
+            </ul>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions:</h3>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Which schema format is best?" data-ar="ما هو أفضل تنسيق لـ Schema؟">Which schema format is best?</summary>
+                        <p data-en="Google recommends JSON-LD, which is the format our generator uses. It's implemented as a script in your page's head or body and is less error-prone than embedding microdata directly into your HTML.">توصي Google باستخدام JSON-LD، وهو التنسيق الذي يستخدمه منشئنا. يتم تنفيذه كبرنامج نصي في رأس أو جسم صفحتك وهو أقل عرضة للخطأ من تضمين البيانات الجزئية مباشرة في HTML الخاص بك.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Where do I put the generated schema code?" data-ar="أين أضع رمز Schema الذي تم إنشاؤه؟">Where do I put the generated schema code?</summary>
+                        <p data-en="You should place the generated JSON-LD script tag inside the `<head>` section of your HTML page. However, placing it in the `<body>` is also acceptable.">يجب عليك وضع علامة البرنامج النصي JSON-LD التي تم إنشاؤها داخل قسم `<head>` في صفحة HTML الخاصة بك. ومع ذلك، فإن وضعه في `<body>` مقبول أيضًا.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-branding">
+          <img src="../images/logo.png" alt="24ToolHub" class="logo">
+          <span class="site-title">24ToolHub</span>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 24ToolHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/schema-generator.js"></script>
+</body>
+</html>

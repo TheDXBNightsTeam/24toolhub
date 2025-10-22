@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Online API Tester - 24ToolHub</title>
+    <meta name="description" content="Easily test your RESTful APIs. Free online API tester supporting GET, POST, PUT, DELETE requests with authentication and custom headers. Perfect for developers.">
+    <meta name="keywords" content="API tester, REST client, HTTP testing, API developer, endpoint, JSON, debug API">
+    <meta name="author" content="24ToolHub">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="API Tester - 24ToolHub">
+    <meta property="og:description" content="Test REST APIs instantly. Free online API tester with support for GET, POST, PUT, DELETE methods and authentication.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://24toolhub.com/tools/api-tester">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="API Tester - 24ToolHub">
+    <meta name="twitter:description" content="Test REST APIs instantly. Free online API tester with support for GET, POST, PUT, DELETE methods and authentication.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446710277775155" crossorigin="anonymous"></script>
+<style>
+
+/* ===== Enhanced Professional Styles ===== */
+
+/* Examples Section */
+.examples-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--bg-secondary, #f8f9fa);
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.example-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.example-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.example-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Pro Tips */
+.pro-tips {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.pro-tips h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.pro-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pro-tips li {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+/* Use Cases */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.use-case-card {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-primary, #667eea);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateX(5px);
+}
+
+.use-case-card h4 {
+    margin-top: 0;
+    color: var(--accent-primary, #667eea);
+    font-size: 1.1rem;
+}
+
+/* Statistics */
+.stats-section {
+    background: var(--bg-tertiary, #f0f0f0);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-primary, #667eea);
+    display: block;
+}
+
+.stat-label {
+    color: var(--text-secondary, #666);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.comparison-table th {
+    background: var(--bg-secondary, #f8f9fa);
+    font-weight: 600;
+    color: var(--text-primary, #333);
+}
+
+.comparison-table tr:hover {
+    background: var(--bg-secondary, #f8f9fa);
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 40px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item details {
+    background: var(--bg-secondary, #f8f9fa);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color, #e0e0e0);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-primary, #333);
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* Rating */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-branding">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/logo.png" alt="24ToolHub" class="logo">
+                </a>
+                <h1 class="site-title">24ToolHub</h1>
+            </div>
+            <div class="header-actions">
+                <button id="langSwitcher" class="lang-switcher">العربية</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="tool-container">
+            <!-- Tool Header -->
+            <div class="tool-header">
+                <a href="../index.html" class="back-link" data-en="← Back to Home" data-ar="← العودة للرئيسية">← Back to Home</a>
+                <h1 class="tool-title" data-en="Advanced API Tester" data-ar="أداة اختبار واجهات برمجة التطبيقات (API)">Advanced API Tester</h1>
+                <p class="tool-description" data-en="Effortlessly send HTTP requests and inspect responses instantly. A powerful tool for developers to test and debug APIs." data-ar="أرسل طلبات HTTP بسهولة وافحص الاستجابات على الفور. أداة قوية للمطورين لاختبار وتصحيح أخطاء واجهات برمجة التطبيقات.">Effortlessly send HTTP requests and inspect responses instantly. A powerful tool for developers to test and debug APIs.</p>
+            </div>
+
+            <!-- Tool Interface -->
+            <div class="tool-interface">
+                <!-- Request Configuration -->
+                <div class="request-section">
+                    <div class="request-row">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Method:" data-ar="الطريقة:">Method:</label>
+                            <select id="httpMethod" class="input-field">
+                                <option value="GET" data-en="GET" data-ar="GET">GET</option>
+                                <option value="POST" data-en="POST" data-ar="POST">POST</option>
+                                <option value="PUT" data-en="PUT" data-ar="PUT">PUT</option>
+                                <option value="PATCH" data-en="PATCH" data-ar="PATCH">PATCH</option>
+                                <option value="DELETE" data-en="DELETE" data-ar="DELETE">DELETE</option>
+                                <option value="HEAD" data-en="HEAD" data-ar="HEAD">HEAD</option>
+                                <option value="OPTIONS" data-en="OPTIONS" data-ar="OPTIONS">OPTIONS</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group" style="flex: 1;">
+                            <label class="input-label" data-en="URL:" data-ar="الرابط:">URL:</label>
+                            <input type="url" id="apiUrl" class="input-field" placeholder="https://api.example.com/endpoint" data-en-placeholder="https://api.example.com/endpoint" data-ar-placeholder="https://api.example.com/endpoint" required>
+                        </div>
+                        
+                        <button id="sendRequest" class="btn btn-primary" data-en="Send Request" data-ar="إرسال الطلب">Send Request</button>
+                    </div>
+                </div>
+
+                <!-- Authentication -->
+                <div class="auth-section">
+                    <h4 class="section-heading" data-en="Authentication" data-ar="المصادقة">Authentication</h4>
+                    <div class="auth-options">
+                        <label class="option-label">
+                            <input type="radio" name="authType" value="none" checked>
+                            <span data-en="None" data-ar="لا شيء">None</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="authType" value="bearer">
+                            <span data-en="Bearer Token" data-ar="رمز Bearer">Bearer Token</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="authType" value="basic">
+                            <span data-en="Basic Auth" data-ar="مصادقة أساسية">Basic Auth</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="authType" value="apikey">
+                            <span data-en="API Key" data-ar="مفتاح API">API Key</span>
+                        </label>
+                    </div>
+                    
+                    <div id="authFields" class="auth-fields" style="display: none;">
+                        <div class="input-group">
+                            <label class="input-label" data-en="Token/Key:" data-ar="الرمز/المفتاح:">Token/Key:</label>
+                            <input type="text" id="authToken" class="input-field" placeholder="Enter your token or API key" data-en-placeholder="Enter your token or API key" data-ar-placeholder="أدخل الرمز أو مفتاح API">
+                        </div>
+                        <div class="input-group" id="usernameField" style="display: none;">
+                            <label class="input-label" data-en="Username:" data-ar="اسم المستخدم:">Username:</label>
+                            <input type="text" id="authUsername" class="input-field" placeholder="Username" data-en-placeholder="Username" data-ar-placeholder="اسم المستخدم">
+                        </div>
+                        <div class="input-group" id="passwordField" style="display: none;">
+                            <label class="input-label" data-en="Password:" data-ar="كلمة المرور:">Password:</label>
+                            <input type="password" id="authPassword" class="input-field" placeholder="Password" data-en-placeholder="Password" data-ar-placeholder="كلمة المرور">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Headers -->
+                <div class="headers-section">
+                    <h4 class="section-heading" data-en="Headers" data-ar="الرؤوس">Headers</h4>
+                    <div id="headersList" class="headers-list">
+                        <div class="header-row">
+                            <input type="text" class="header-key" placeholder="Header name" data-en-placeholder="Header name" data-ar-placeholder="اسم الرأس">
+                            <input type="text" class="header-value" placeholder="Header value" data-en-placeholder="Header value" data-ar-placeholder="قيمة الرأس">
+                            <button class="remove-header" style="display: none;">×</button>
+                        </div>
+                    </div>
+                    <button id="addHeader" class="btn btn-secondary" data-en="Add Header" data-ar="إضافة رأس">Add Header</button>
+                </div>
+
+                <!-- Request Body -->
+                <div class="body-section" id="bodySection" style="display: none;">
+                    <h4 class="section-heading" data-en="Request Body" data-ar="نص الطلب">Request Body</h4>
+                    <div class="body-type-selector">
+                        <label class="option-label">
+                            <input type="radio" name="bodyType" value="json" checked>
+                            <span data-en="JSON" data-ar="JSON">JSON</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="bodyType" value="form">
+                            <span data-en="Form Data" data-ar="بيانات النموذج">Form Data</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="bodyType" value="text">
+                            <span data-en="Raw Text" data-ar="نص خام">Raw Text</span>
+                        </label>
+                    </div>
+                    <textarea id="requestBody" class="input-textarea" rows="8" placeholder='{"key": "value"}' data-en-placeholder='{"key": "value"}' data-ar-placeholder='{"مفتاح": "قيمة"}'></textarea>
+                </div>
+
+                <!-- Response Section -->
+                <div id="responseSection" class="response-section" style="display: none;">
+                    <h4 class="section-heading" data-en="Response" data-ar="الاستجابة">Response</h4>
+                    
+                    <div class="response-info">
+                        <div class="response-status">
+                            <span class="status-label" data-en="Status:" data-ar="الحالة:">Status:</span>
+                            <span id="responseStatus" class="status-code"></span>
+                        </div>
+                        <div class="response-time">
+                            <span class="time-label" data-en="Time:" data-ar="الوقت:">Time:</span>
+                            <span id="responseTime" class="time-value"></span>
+                        </div>
+                        <div class="response-size">
+                            <span class="size-label" data-en="Size:" data-ar="الحجم:">Size:</span>
+                            <span id="responseSize" class="size-value"></span>
+                        </div>
+                    </div>
+
+                    <div class="response-tabs">
+                        <button class="tab-btn active" data-tab="body" data-en="Body" data-ar="النص">Body</button>
+                        <button class="tab-btn" data-tab="headers" data-en="Headers" data-ar="الرؤوس">Headers</button>
+                        <button class="tab-btn" data-tab="cookies" data-en="Cookies" data-ar="الكوكيز">Cookies</button>
+                    </div>
+
+                    <div class="response-content">
+                        <div id="responseBody" class="tab-content active">
+                            <pre id="responseBodyText"></pre>
+                        </div>
+                        <div id="responseHeaders" class="tab-content">
+                            <pre id="responseHeadersText"></pre>
+                        </div>
+                        <div id="responseCookies" class="tab-content">
+                            <pre id="responseCookiesText"></pre>
+                        </div>
+                    </div>
+
+                    <div class="response-actions">
+                        <button id="copyResponse" class="btn btn-primary" data-en="Copy Response" data-ar="نسخ الاستجابة">Copy Response</button>
+                        <button id="clearResponse" class="btn btn-secondary" data-en="Clear Response" data-ar="مسح الاستجابة">Clear Response</button>
+                    </div>
+                </div>
+
+                <!-- Quick Examples -->
+                <div class="examples-section">
+                    <h4 class="section-heading" data-en="Quick Examples" data-ar="أمثلة سريعة">Quick Examples</h4>
+                    <div class="examples-grid">
+                        <button class="example-btn" data-method="GET" data-url="https://jsonplaceholder.typicode.com/posts/1" data-en="Get Post" data-ar="جلب منشور">Get Post</button>
+                        <button class="example-btn" data-method="GET" data-url="https://api.github.com/users/octocat" data-en="GitHub User" data-ar="مستخدم GitHub">GitHub User</button>
+                        <button class="example-btn" data-method="GET" data-url="https://httpbin.org/json" data-en="JSON Response" data-ar="استجابة JSON">JSON Response</button>
+                        <button class="example-btn" data-method="POST" data-url="https://httpbin.org/post" data-en="Test POST" data-ar="اختبار POST">Test POST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-space ad-rectangle" aria-label="Advertisement"><!-- AdSense will be inserted here by adsense.js --></div>
+
+        <!-- SEO Content -->
+        <div class="seo-content">
+            <div class="seo-section">
+                <h2 data-en="Master API Testing with Our Free Online Tool" data-ar="أتقن اختبار API باستخدام أداتنا المجانية عبر الإنترنت">Master API Testing with Our Free Online Tool</h2>
+                <p data-en="An API (Application Programming Interface) acts as a bridge between different software applications, allowing them to communicate. An API Tester is a crucial tool for developers to verify that this communication works as expected. Our tool provides a simple yet powerful interface to send requests to your API endpoints and analyze the full response, including status codes, headers, and body content." data-ar="واجهة برمجة التطبيقات (API) هي جسر بين تطبيقات البرامج المختلفة، مما يسمح لها بالتواصل. أداة اختبار API هي أداة حيوية للمطورين للتحقق من أن هذا الاتصال يعمل كما هو متوقع. توفر أداتنا واجهة بسيطة وقوية لإرسال الطلبات إلى نقاط نهاية API الخاصة بك وتحليل الاستجابة الكاملة، بما في ذلك رموز الحالة والرؤوس ومحتوى النص.">An API (Application Programming Interface) acts as a bridge between different software applications, allowing them to communicate. An API Tester is a crucial tool for developers to verify that this communication works as expected. Our tool provides a simple yet powerful interface to send requests to your API endpoints and analyze the full response, including status codes, headers, and body content.</p>
+
+                <h3 data-en="How to Use the API Tester?" data-ar="كيفية استخدام أداة اختبار API؟">How to Use the API Tester?</h3>
+                <ol>
+                    <li data-en="<strong>Enter URL:</strong> Paste the full URL of the API endpoint you want to test." data-ar="<strong>أدخل الرابط:</strong> الصق الرابط الكامل لنقطة نهاية API التي تريد اختبارها."><strong>Enter URL:</strong> Paste the full URL of the API endpoint you want to test.</li>
+                    <li data-en="<strong>Select Method:</strong> Choose the appropriate HTTP method (GET, POST, etc.) from the dropdown menu." data-ar="<strong>اختر الطريقة:</strong> اختر طريقة HTTP المناسبة (GET, POST، إلخ) من القائمة المنسدلة."><strong>Select Method:</strong> Choose the appropriate HTTP method (GET, POST, etc.) from the dropdown menu.</li>
+                    <li data-en="<strong>Set Authentication (Optional):</strong> If your API requires authentication, select the type (Bearer Token, Basic Auth, API Key) and enter the necessary credentials." data-ar="<strong>عيّن المصادقة (اختياري):</strong> إذا كانت واجهة API الخاصة بك تتطلب مصادقة، فاختر النوع (رمز Bearer، مصادقة أساسية، مفتاح API) وأدخل البيانات اللازمة."><strong>Set Authentication (Optional):</strong> If your API requires authentication, select the type (Bearer Token, Basic Auth, API Key) and enter the necessary credentials.</li>
+                    <li data-en="<strong>Add Headers & Body (Optional):</strong> Add any custom headers or request body data (e.g., JSON) as needed." data-ar="<strong>أضف الرؤوس والنص (اختياري):</strong> أضف أي رؤوس مخصصة أو بيانات نص الطلب (مثل JSON) حسب الحاجة."><strong>Add Headers & Body (Optional):</strong> Add any custom headers or request body data (e.g., JSON) as needed.</li>
+                    <li data-en="<strong>Send Request:</strong> Click the 'Send Request' button to execute the call and see the results instantly." data-ar="<strong>أرسل الطلب:</strong> انقر على زر 'إرسال الطلب' لتنفيذ الاستدعاء ورؤية النتائج على الفور."><strong>Send Request:</strong> Click the 'Send Request' button to execute the call and see the results instantly.</li>
+                </ol>
+
+                <h3 data-en="Why is API Testing Important?" data-ar="لماذا يعتبر اختبار API مهمًا؟">Why is API Testing Important?</h3>
+                <p data-en="Thorough API testing ensures that your application's backend is reliable, secure, and performs well. It helps catch bugs early in the development cycle, prevents data inconsistencies, and guarantees that all parts of your software ecosystem can communicate effectively. Regular testing is key to maintaining a high-quality, robust application." data-ar="يضمن اختبار API الشامل أن الواجهة الخلفية لتطبيقك موثوقة وآمنة وذات أداء جيد. يساعد على اكتشاف الأخطاء في وقت مبكر من دورة التطوير، ويمنع عدم تناسق البيانات، ويضمن أن جميع أجزاء نظام البرامج الخاص بك يمكنها التواصل بفعالية. الاختبار المنتظم هو مفتاح الحفاظ على تطبيق عالي الجودة وقوي.">Thorough API testing ensures that your application's backend is reliable, secure, and performs well. It helps catch bugs early in the development cycle, prevents data inconsistencies, and guarantees that all parts of your software ecosystem can communicate effectively. Regular testing is key to maintaining a high-quality, robust application.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+        <!-- Enhanced Professional Content -->
+        <div class="enhanced-content">
+            
+            <!-- Examples Section -->
+            <div class="examples-section">
+                <h3>🎯 Quick Examples - Try These!</h3>
+                <div class="example-buttons">
+                    <button class="example-btn" onclick="loadExample(0)">📝 Quick Example</button><button class="example-btn" onclick="loadExample(1)">💼 Professional</button><button class="example-btn" onclick="loadExample(2)">🚀 Advanced</button>
+                </div>
+            </div>
+            
+            <!-- Pro Tips -->
+            <div class="pro-tips">
+                <h3 data-en="💡 Pro Tips for API Testing" data-ar="💡 نصائح احترافية لاختبار API">💡 Pro Tips for API Testing</h3>
+                <ul>
+                    <li data-en="Bookmark common requests to save time during development sprints." data-ar="احفظ الطلبات الشائعة لتوفير الوقت أثناء دورات التطوير.">Bookmark common requests to save time during development sprints.</li>
+                    <li data-en="Check the browser's developer console (F12) for detailed network error information if a request fails unexpectedly." data-ar="تحقق من وحدة تحكم المطور في المتصفح (F12) للحصول على معلومات مفصلة عن أخطاء الشبكة إذا فشل الطلب بشكل غير متوقع.">Check the browser's developer console (F12) for detailed network error information if a request fails unexpectedly.</li>
+                    <li data-en="Use the 'Quick Examples' to test public APIs and understand different response structures." data-ar="استخدم 'الأمثلة السريعة' لاختبار واجهات برمجة التطبيقات العامة وفهم هياكل الاستجابة المختلفة.">Use the 'Quick Examples' to test public APIs and understand different response structures.</li>
+                </ul>
+            </div>
+            
+            <!-- Use Cases -->
+            <h2 data-en="📋 API Tester Use Cases" data-ar="📋 حالات استخدام أداة اختبار API">📋 API Tester Use Cases</h2>
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h4 data-en="Backend Development" data-ar="تطوير الواجهة الخلفية">Backend Development</h4>
+                    <p data-en="Quickly test and verify your API endpoints as you build them, without needing a frontend client." data-ar="اختبر وتحقق بسرعة من نقاط نهاية API الخاصة بك أثناء بنائها، دون الحاجة إلى عميل واجهة أمامية.">Quickly test and verify your API endpoints as you build them, without needing a frontend client.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="Frontend Integration" data-ar="تكامل الواجهة الأمامية">Frontend Integration</h4>
+                    <p data-en="Simulate API calls and responses to develop frontend components before the backend is fully ready." data-ar="حاكِ استدعاءات واستجابات API لتطوير مكونات الواجهة الأمامية قبل أن تكون الواجهة الخلفية جاهزة بالكامل.">Simulate API calls and responses to develop frontend components before the backend is fully ready.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="Debugging & Troubleshooting" data-ar="التصحيح واستكشاف الأخطاء">Debugging & Troubleshooting</h4>
+                    <p data-en="Isolate and diagnose issues by sending specific requests and inspecting the raw server response." data-ar="اعزل وشخص المشكلات عن طريق إرسال طلبات محددة وفحص استجابة الخادم الأولية.">Isolate and diagnose issues by sending specific requests and inspecting the raw server response.</p>
+                </div>
+                <div class="use-case-card">
+                    <h4 data-en="Learning & Exploration" data-ar="التعلم والاستكشاف">Learning & Exploration</h4>
+                    <p data-en="Experiment with third-party APIs (like GitHub, Twitter, etc.) to understand how they work and what data they provide." data-ar="جرّب واجهات برمجة التطبيقات التابعة لجهات خارجية (مثل GitHub و Twitter وما إلى ذلك) لفهم كيفية عملها والبيانات التي تقدمها.">Experiment with third-party APIs (like GitHub, Twitter, etc.) to understand how they work and what data they provide.</p>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <h2>📊 Why Users Love 24ToolHub</h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Happy Users</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Free</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comparison Table -->
+            <h2>🏆 Why Choose 24ToolHub?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>24ToolHub ✅</th>
+                        <th>Others ❌</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Price</td>
+                        <td>✓ 100% Free Forever</td>
+                        <td>× Often Paid/Limited</td>
+                    </tr>
+                    <tr>
+                        <td>Registration</td>
+                        <td>✓ No Sign-up Required</td>
+                        <td>× Email Required</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>✓ Lightning Fast</td>
+                        <td>× Often Slow</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td>✓ 100% Private</td>
+                        <td>× Tracks Your Data</td>
+                    </tr>
+                    <tr>
+                        <td>Ads</td>
+                        <td>✓ Minimal & Clean</td>
+                        <td>× Overwhelming</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2 data-en="❓ Frequently Asked Questions (API Tester)" data-ar="❓ الأسئلة الشائعة (أداة اختبار API)">❓ Frequently Asked Questions (API Tester)</h2>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Can this tool handle file uploads?" data-ar="هل يمكن لهذه الأداة التعامل مع تحميل الملفات؟">Can this tool handle file uploads?</summary>
+                        <p data-en="Currently, our API tester focuses on text-based requests (JSON, Form Data, Raw Text). For multipart/form-data file uploads, you may need a more advanced desktop client like Postman." data-ar="حاليًا، تركز أداة اختبار API الخاصة بنا على الطلبات النصية (JSON، بيانات النموذج، نص خام). لتحميل الملفات من نوع multipart/form-data، قد تحتاج إلى عميل سطح مكتب أكثر تقدمًا مثل Postman.">Currently, our API tester focuses on text-based requests (JSON, Form Data, Raw Text). For multipart/form-data file uploads, you may need a more advanced desktop client like Postman.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="Are my API keys and tokens secure?" data-ar="هل مفاتيح API والرموز الخاصة بي آمنة؟">Are my API keys and tokens secure?</summary>
+                        <p data-en="Yes. All requests are sent directly from your browser to the API server. Your credentials, headers, and request data never touch our servers, ensuring complete privacy." data-ar="نعم. يتم إرسال جميع الطلبات مباشرة من متصفحك إلى خادم API. بيانات الاعتماد الخاصة بك والرؤوس وبيانات الطلب لا تصل أبدًا إلى خوادمنا، مما يضمن الخصوصية الكاملة.">Yes. All requests are sent directly from your browser to the API server. Your credentials, headers, and request data never touch our servers, ensuring complete privacy.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary data-en="What does a 'CORS Error' mean?" data-ar="ماذا يعني 'خطأ CORS'؟">What does a 'CORS Error' mean?</summary>
+                        <p data-en="A Cross-Origin Resource Sharing (CORS) error is a security feature implemented by browsers. It means the API server does not allow requests from other domains (like this website). This is a server-side configuration and cannot be bypassed by a client-side tool." data-ar="خطأ مشاركة الموارد عبر المصادر (CORS) هو ميزة أمان تطبقها المتصفحات. ويعني أن خادم API لا يسمح بالطلبات من نطاقات أخرى (مثل هذا الموقع). هذا تكوين من جانب الخادم ولا يمكن تجاوزه بواسطة أداة من جانب العميل.">A Cross-Origin Resource Sharing (CORS) error is a security feature implemented by browsers. It means the API server does not allow requests from other domains (like this website). This is a server-side configuration and cannot be bypassed by a client-side tool.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // Tool examples data
+        window.toolExamples = [{'label': '📝 Quick Example', 'text': 'Try this example to get started quickly'}, {'label': '💼 Professional', 'text': 'Perfect for business documents'}, {'label': '🚀 Advanced', 'text': 'Advanced features for power users'}];
+        
+        // Load example function
+        function loadExample(index) {
+            const examples = window.toolExamples;
+            if (examples && examples[index]) {
+                const inputField = document.querySelector('#inputText, #input, textarea');
+                if (inputField) {
+                    inputField.value = examples[index].text;
+                    inputField.dispatchEvent(new Event('input'));
+                }
+            }
+        }
+        </script>
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <img src="../images/logo.png" alt="24ToolHub" class="footer-logo">
+                <p class="footer-description" data-en="Your ultimate toolkit for productivity and creativity" data-ar="أداتك الشاملة للإنتاجية والإبداع">Your ultimate toolkit for productivity and creativity</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 24ToolHub. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/api-tester.js"></script>
+</body>
+</html>
